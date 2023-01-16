@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\stepheight-web",
+    "\\stepheight-web\\src"
   ],
-  "SelectedNode": "\\C:\\Users\\Oskar\\Source\\Repos\\Stepheight",
+  "SelectedNode": "\\stepheight-web",
   "PreviewInSolutionExplorer": false
 }
