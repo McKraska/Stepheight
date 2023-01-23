@@ -7,10 +7,14 @@ export default function Navbar() {
     return (
         <div id='Nav'>
             
-           {/*<img src={logo} alt="Logo"/> <a>DOWNLOAD</a> <a>GLOSSARY</a> <a>DEV LIBRARY</a> */} 
+            {/*<img src={logo} alt="Logo"/> <a>DOWNLOAD</a> <a>GLOSSARY</a> <a>DEV LIBRARY</a> */} 
             
             <div id='Nav_Kicking_Brass' class ='Navbox'>
                 <a>KICKING BRASS</a> 
+            </div>
+
+            <div id='Nav_Download' class ='Navbox'>
+                <a>DOWNLOAD</a> 
             </div>
 
           
