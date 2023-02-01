@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\stepheight-web",
-    "\\stepheight-web\\src"
+    "\\public",
+    "\\src"
   ],
-  "SelectedNode": "\\stepheight-web",
   "PreviewInSolutionExplorer": false
 }
