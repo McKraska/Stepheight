@@ -1,21 +1,24 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Socials from './components/Socials';
 
 function App() {
 
     return (
         <>
 
-        <div id='Header'>
- 
-        </div>
+            <div id='Header'>
 
-        <div id='Body'>
+            </div>
 
-            <Navbar />
+            <div id='Body'>
 
-            <div id='Canvas'>
+                <Navbar />
+
+                <Socials />
+
+                <div id='Canvas'>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -24,14 +27,14 @@ function App() {
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>  
+                    </p>
+                </div>
+
             </div>
-            
-        </div> 
-            
+
         </>
-        
-        
+
+
     );
 }
 

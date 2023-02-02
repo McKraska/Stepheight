@@ -1,24 +1,24 @@
-/* 
-
-
 #Nav {
     color: #ffffff;
     display: flex;
     align-items: center;
-    height: fit-content;
+    height: 70px;
     padding: 10px 0%;
     position: fixed;
     top: 0;
-    right: 0;
-    width: 20%;
+    width: 100%;
     z-index: 999;
-    background-color: red;
-    justify-content: space-between; 
+    background-color: darkblue;
+    justify-content: space-between;
+    opacity: .8;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.4);
+    font-size: large;
 }
 
+/*
 #Nav .Navbox {
     margin-top: 1%;
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
     opacity: .8;
     height: 70px;
     align-items: center;
@@ -28,24 +28,33 @@
     backdrop-filter: blur(10px);
     float: right;
 }
+*/
 
-#Nav #Nav_Download {
-    
-}
 
 #Nav a {
-	text-decoration: none;
-	color: #ffffff;
-	font-weight: bold;
-	font-kerning: normal;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-kerning: normal;
+    z-index: 999;
 }
 
 #Nav a:hover {
-	color: #695EA0;
+    color: #695EA0;
+}
+
+
+#Nav #logo {
+    background-color: none;
+    height: 70%;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    margin-left: 1%;
 }
 
 #Nav img {
-    height: 70%;
+    height: 100%;
 }
 
 #Nav #placeholder {
@@ -54,15 +63,21 @@
     background-color: red;
 }
 
-#Nav_Selection {
-    width: 60%;
+#Nav #Nav_Selection {
+    width: 45%;
     height: 100%;
     background-color: none;
     justify-content: space-between;
     align-items: center;
     display: flex;
     position: absolute;
-    left: 20%;
+    left: 27.5%;
 }
 
-*/
+#Nav #socials {
+    width: fit-content;
+    height: fit-content;
+    background-color: red;
+    bottom: 0;
+
+}
