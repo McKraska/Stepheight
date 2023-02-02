@@ -8,6 +8,8 @@ import Container from '@mui/material/Container';
 import logo from '../logo_7.png';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 
 
 
@@ -46,8 +48,8 @@ export default function Navbar() {
             </a>
 
             <div id='Nav_Selection'>
-                <a>KICKING BRASS</a>
-                <a>DOWNLOAD</a>
+                <a href=''>KICKING BRASS</a>
+                <a href='Patch.js'>DOWNLOAD</a>
                 <a>GLOSSARY</a>
                 <a>DEV LIBRARY</a>
             </div>

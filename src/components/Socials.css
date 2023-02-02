@@ -1,6 +1,6 @@
 #socials {
     color: #00008B;
-    height: 20%;
+    height: 25%;
     padding: 10px 0%;
     position: fixed;
     bottom: 0;
@@ -16,4 +16,8 @@
     display: block;
     background-color: none;
     margin-top: 15%;
+}
+
+#socials .box img {
+    max-height: 100%;
 }

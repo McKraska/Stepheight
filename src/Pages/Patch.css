@@ -1,0 +1,22 @@
+#Body {
+    top: 0;
+    float: left;
+    background-color: lightgray;
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+}
+
+#Canvas {
+    float: left;
+    margin-top: 90px;
+    margin-left: 20%;
+    width: 60%;
+    height: 1500px;
+    top: 0px;
+    background-color: pink;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 70px;
+}
