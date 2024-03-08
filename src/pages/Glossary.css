@@ -1,0 +1,15 @@
+/* Glossary.css */
+.glossary-content {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.glossary-content h1 {
+    color: #333;
+}
+
+.glossary-content p {
+    color: #666;
+    font-size: 16px;
+}

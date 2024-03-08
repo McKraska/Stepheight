@@ -1,0 +1,15 @@
+/* Downloads.css */
+.downloads-content {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.downloads-content h1 {
+    color: #333;
+}
+
+.downloads-content p {
+    color: #666;
+    font-size: 16px;
+}

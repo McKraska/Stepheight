@@ -1,0 +1,31 @@
+.home-content {
+    text-align: center;
+    max-width: 100%;
+}
+
+.gif-container {
+    position: relative;
+    text-align: center;
+}
+
+.gif-container img {
+    width: 100%;
+    max-width: 640px;
+    /* Adjust based on your GIF size and preference */
+    height: auto;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Adjust text color based on your GIF */
+    font-size: 24px;
+    /* Adjust text size as needed */
+}
+
+.description {
+    margin-top: 20px;
+}

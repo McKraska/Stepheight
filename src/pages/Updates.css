@@ -1,0 +1,15 @@
+/* Updates.css */
+.updates-content {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.updates-content h1 {
+    color: #333;
+}
+
+.updates-content p {
+    color: #666;
+    font-size: 16px;
+}
