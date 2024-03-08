@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Stepheight Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt text](/public/logo_7.png "Logo")
+
+v.1.0.0
 
 ## Available Scripts
 
