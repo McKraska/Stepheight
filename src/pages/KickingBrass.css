@@ -1,0 +1,15 @@
+/* KickingBrass.css */
+.kickingbrass-content {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.kickingbrass-content h1 {
+    color: #333;
+}
+
+.kickingbrass-content p {
+    color: #666;
+    font-size: 16px;
+}

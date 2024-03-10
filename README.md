@@ -1,6 +1,6 @@
 # Stepheight Website
 
-![Alt text](/public/logo_7.png "Logo")
+![Alt text](/public/logo_nav.png "Logo")
 
 v.1.0.0
 

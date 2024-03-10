@@ -1,44 +1,54 @@
+/* Navbar.css */
+
 #Nav .MuiContainer-maxWidthXl {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+#Nav .MuiAppBar-root {
+    background-color: #b8a571 !important;
 }
 
 #Nav img {
     width: 100px;
+    /* Adjust as necessary */
     height: auto;
-    margin-bottom: 20px;
+}
+
+#Nav .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 0;
+    /* You can adjust padding as per your design */
 }
 
 #Nav .MuiBox-root {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 #Nav .MuiButton-root {
-    margin: 5px 0;
+    margin: 0 10px;
+    /* Horizontal margin for buttons */
 }
 
-@media (min-width: 601px) {
-    #Nav .MuiContainer-maxWidthXl {
-        flex-direction: row;
-    }
-
-    #Nav img {
-        margin-bottom: 0;
+@media (max-width: 600px) {
+    #Nav .MuiToolbar-root {
+        flex-direction: column;
     }
 
     #Nav .MuiBox-root {
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: right;
-        flex-grow: 1;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        /* Add some space between logo and nav buttons */
     }
 
     #Nav .MuiButton-root {
-        margin: 0 10px;
+        margin: 5px 0;
+        /* More vertical space between buttons on small screens */
     }
 }
