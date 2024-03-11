@@ -11,17 +11,19 @@ import Updates from './pages/Updates';
 
 function App() {
     return (
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/kickingbrass" element={<KickingBrass />} />
-                <Route path="/download" element={<Downloads />} />
-                <Route path="/glossary" element={<Glossary />} />
-                <Route path="/updates" element={<Updates />} />
-            </Routes>
-            <Footer />
-        </Router>
+        <div className='app'>
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/kickingbrass" element={<KickingBrass />} />
+                    <Route path="/downloads" element={<Downloads />} />
+                    <Route path="/glossary" element={<Glossary />} />
+                    <Route path="/updates" element={<Updates />} />
+                </Routes>
+                <Footer />
+            </Router>
+        </div>
     );
 }
 

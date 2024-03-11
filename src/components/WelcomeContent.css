@@ -1,12 +1,19 @@
-/* Welcome.css */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
 .welcome-content {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    max-width: 600px;
 }
 
 .welcome-content h1 {
     color: #333;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .welcome-content p {

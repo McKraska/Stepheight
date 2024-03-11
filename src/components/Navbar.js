@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../images/logo_nav.png';
 import AppBar from '@mui/material/AppBar';
@@ -8,7 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 
-const pages = ['KICKING_BRASS', 'DOWNLOAD', 'GLOSSARY', 'UPDATES'];
+const pages = ['KICKING_BRASS', 'DOWNLOADS', 'GLOSSARY', 'UPDATES'];
 
 export default function Navbar() {
   return (
@@ -16,13 +16,12 @@ export default function Navbar() {
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
-              <Link to="/">
-                <img src={logo} alt="Logo" style={{ cursor: 'pointer' }} />
-              </Link>
-            </Box>
+            <Link to="/">
+              <img src={logo} alt="Logo" />
+            </Link>
+            <input type="checkbox" id="nav-toggle" className="nav-toggle" />
 
-            <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
+            <Box component="section" className="nav-items">
               {pages.map((page) => (
                 <Button
                   key={page}
@@ -34,9 +33,15 @@ export default function Navbar() {
                 </Button>
               ))}
             </Box>
+            <label htmlFor="nav-toggle" className="nav-toggle-label">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
           </Toolbar>
         </Container>
       </AppBar>
     </div>
   );
 }
+

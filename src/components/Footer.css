@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
 .footer {
     padding: 20px 0;
     margin-top: auto;
     background-color: #efdeae;
     text-align: center;
     color: #666;
+    font-family: 'Maven Pro', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }

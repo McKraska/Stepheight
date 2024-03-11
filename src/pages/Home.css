@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
 .home-content {
     text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     max-width: 100%;
 }
 
