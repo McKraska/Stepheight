@@ -1,4 +1,4 @@
-![image info](./public/logo_nav.png)
+![image info](./src/images/logo_nav.png)
 
 # Stepheight Website
 v.2.0.0
