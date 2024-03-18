@@ -13,3 +13,32 @@
     color: #666;
     font-size: 16px;
 }
+
+.image-row {
+    display: flex;
+    /* Aligns children (img) in a row */
+    justify-content: center;
+    /* Centers the images horizontally */
+    align-items: center;
+    /* Aligns the images vertically */
+}
+
+.image {
+    max-width: 200px;
+    max-height: 200px;
+    /* Each image can take up to half the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    padding: 10%;
+}
+
+@media (max-width: 750px) {
+    .image-row {
+        display: contents;
+        justify-content: center;
+        /* Centers the images horizontally */
+        align-items: center;
+        /* Aligns the images vertically */
+    }
+}

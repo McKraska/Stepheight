@@ -1,8 +1,7 @@
+![image info](./public/logo_nav.png)
+
 # Stepheight Website
-
-![Alt text](/public/logo_nav.png "Logo")
-
-v.1.0.0
+v.2.0.0
 
 ## Available Scripts
 
