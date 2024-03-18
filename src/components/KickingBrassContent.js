@@ -9,10 +9,10 @@ export default function KickingBrassContent() {
     const youtubeLink = "https://www.youtube.com/channel/UCtTJj2MDiIE9sjcd4jZgXsQ";
 
     return (
-        <div>
+        <div className='kickingbrass-body'>
             <div className="video-container">
                 <img src={kb_logo} alt="Logo" />
-                <video autoPlay loop muted>
+                <video autoPlay loop muted playsInline>
                     <source src={kb_banner} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -20,12 +20,16 @@ export default function KickingBrassContent() {
             </div>
 
             <div className="kickingbrass-content">
-                <h2>
+                <h1>
                     THE WORLD OF KICKING BRASS
+                </h1>
+
+                <h2>
+                    Your family is missing, your village has been ransacked, and hostile forces surround you on all sides.
                 </h2>
 
                 <p>
-                    Your family is missing, your village has been ransacked, and hostile forces surround you on all sides. King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!
+                    King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!
 
                     Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven! Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
 

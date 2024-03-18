@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap');
 
+.kickingbrass-body {
+    background-color: #d4bf86;
+}
+
 .kickingbrass-content {
     margin: 20px auto;
     padding: 20px;
@@ -8,12 +12,14 @@
     max-width: 600px;
 }
 
-.kickingbrass-content h1 {
-    color: #333;
+.kickingbrass-content h1,
+h2,
+h3 {
+    color: #ffffff;
 }
 
 .kickingbrass-content p {
-    color: #666;
+    color: #e3e3e3;
     font-size: 16px;
 }
 
