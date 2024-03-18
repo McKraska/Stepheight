@@ -1,15 +1,15 @@
-/* Home.css */
-.home-content {
+/* Team.css */
+.team-content {
     margin: 20px;
     padding: 20px;
     text-align: center;
 }
 
-.home-content h1 {
+.team-content h1 {
     color: #333;
 }
 
-.home-content p {
+.team-content p {
     color: #666;
     font-size: 16px;
 }
@@ -22,7 +22,6 @@
 
 .image {
     max-width: 100%;
-    /* Makes sure the images are responsive and do not overflow their container */
     height: auto;
     max-height: 200px;
     display: block;

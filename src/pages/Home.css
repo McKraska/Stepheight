@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 
+.home-body {
+    background-color: aliceblue;
+
+}
+
 .home-content {
     text-align: center;
     font-family: 'Maven Pro', sans-serif;
@@ -16,7 +21,6 @@
 .gif-container img {
     width: 100%;
     max-width: 640px;
-    /* Adjust based on your GIF size and preference */
     height: auto;
 }
 
@@ -26,9 +30,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    /* Adjust text color based on your GIF */
     font-size: 24px;
-    /* Adjust text size as needed */
 }
 
 .description {
