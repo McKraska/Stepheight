@@ -3,6 +3,7 @@ import './KickingBrassContent.css';
 
 import kb_logo from '../images/kicking_brass_logo.png';
 import kb_banner from '../images/tuba_banner_video.mp4';
+import kb_img1 from '../images/Promo_art_bw.png';
 
 export default function KickingBrassContent() {
     const discordInviteLink = "https://discord.com/invite/fbngXskVkW";
@@ -35,6 +36,8 @@ export default function KickingBrassContent() {
 
                     Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
                 </p>
+
+                <img src={kb_img1} alt="Colosseum" className='img1' />
 
                 <h3>
                     THE COLOSSEUM

@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 
-.welcome-content {
+.banner {
+    width: 100%;
+}
+
+.welcome-section {
     margin: 20px auto;
     padding: 20px;
     text-align: center;
@@ -11,12 +15,21 @@
     max-width: 600px;
 }
 
-.welcome-content h1 {
+.welcome-message h1 {
+    color: #333;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.welcome-message h2,
+.welcome-message h3 {
     color: #333;
     font-family: 'Chakra Petch', sans-serif;
 }
 
-.welcome-content p {
+.welcome-message p {
     color: #666;
     font-size: 16px;
 }
