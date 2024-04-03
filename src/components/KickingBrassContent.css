@@ -59,14 +59,11 @@ h3 {
 .links {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .discord-button,
 .youtube-button {
-    background-color: #d4bf86;
-    color: white;
-    padding: 5px 10px;
+    padding: 50px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -75,18 +72,6 @@ h3 {
     font-optical-sizing: auto;
     font-style: normal;
     margin-right: 10px;
-}
-
-.discord-button:hover {
-    background-color: #d4bf86;
-}
-
-.youtube-button {
-    background-color: #d4bf86;
-}
-
-.youtube-button:hover {
-    background-color: #d4bf86;
 }
 
 @media (min-width: 900px) {

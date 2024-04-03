@@ -22,9 +22,8 @@
 
 .image {
     max-width: 100%;
-    /* Makes sure the images are responsive and do not overflow their container */
     height: auto;
-    max-height: 200px;
+    max-height: 100px;
     display: block;
     padding: 10%;
 }

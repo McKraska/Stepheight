@@ -1,8 +1,11 @@
 /* Team.css */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
 .team-content {
     margin: 20px;
     padding: 20px;
     text-align: center;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .team-content h1 {
@@ -14,10 +17,18 @@
     font-size: 16px;
 }
 
+.image-card {
+    margin: 30px;
+}
+
 .image-row {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 16px;
+}
+
+.team-content {
+    padding: 16px;
 }
 
 .image {

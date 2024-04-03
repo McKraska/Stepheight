@@ -2,6 +2,10 @@ import React from 'react';
 import './KickingBrassContent.css';
 
 import kb_logo from '../images/kicking_brass_logo.png';
+
+import youtube from '../images/youtube.png';
+import discord from '../images/discord.png';
+
 import kb_banner from '../images/tuba_banner_video.mp4';
 import kb_img1 from '../images/Promo_art_bw.png';
 
@@ -55,11 +59,11 @@ export default function KickingBrassContent() {
 
                 <div className='links'>
                     <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
-                        Discord
+                        <img src={discord} alt="discord" />
                     </a>
 
                     <a href={youtubeLink} target="_blank" rel="noopener noreferrer" className="youtube-button">
-                        Youtube
+                        <img src={youtube} alt="youtube" />
                     </a>
                 </div>
             </div>

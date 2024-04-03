@@ -1,0 +1,27 @@
+.downloads-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.button-row .MuiButton-root {
+    background-color: #b8a571;
+    color: white;
+}
+
+.button-row .MuiButton-root:hover {
+    background-color: #70623a;
+}
+
+@media (max-width: 768px) {
+    .button-row {}
+}

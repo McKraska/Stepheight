@@ -9,8 +9,8 @@ export default function Home() {
     return (
         <div className='home-body'>
             <WelcomeContent />
-            <HomeContent />
             <TeamContent />
+            <HomeContent />
         </div>
     );
 }
