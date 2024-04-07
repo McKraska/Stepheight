@@ -8,7 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 
-const pages = ['KICKING_BRASS', 'DOWNLOADS', 'GLOSSARY', 'UPDATES'];
+const pages = ['KICKING_BRASS', 'DOWNLOADS', 'UPDATES'];
 
 export default function Navbar() {
   return (
