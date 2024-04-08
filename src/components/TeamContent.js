@@ -13,9 +13,11 @@ import image3 from '../images/oskar.jpg';
 export default function TeamContent() {
     return (
         <div className="team-content">
+            <h1>Our Team</h1>
+
             <div className="image-row">
                 {/* SAM */}
-                <Card className="image-card">
+                <Card className="image-card" sx={{ backgroundColor: '#fffde6' }}>
                     <CardHeader
                         title="Sam Flentje"
                         subheader="@CheatinSloth"
@@ -36,7 +38,7 @@ export default function TeamContent() {
                 </Card>
 
                 {/* PETER */}
-                <Card className="image-card">
+                <Card className="image-card" sx={{ backgroundColor: '#fffde6' }}>
                     <CardHeader
                         title="Peter Dunn"
                         subheader="@PeteTheN00b"
@@ -57,7 +59,7 @@ export default function TeamContent() {
                 </Card>
 
                 {/* OSKAR */}
-                <Card className="image-card">
+                <Card className="image-card" sx={{ backgroundColor: '#fffde6' }}>
                     <CardHeader
                         title="Oskar Kraska McKone"
                         subheader="@McK"

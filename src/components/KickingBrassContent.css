@@ -66,9 +66,8 @@ h3 {
     justify-content: center;
 }
 
-.discord-button,
-.youtube-button {
-    padding: 50px;
+.discord-button {
+    padding: 10px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -76,7 +75,7 @@ h3 {
     font-family: 'Maven Pro', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 @media (min-width: 900px) {

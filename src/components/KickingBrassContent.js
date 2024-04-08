@@ -3,7 +3,6 @@ import { Typography, List, ListItem, ListItemText, Card, Tabs, Tab, Grid, CardCo
 import './KickingBrassContent.css';
 
 import kb_logo from '../images/kicking_brass_logo.png';
-import youtube from '../images/youtube.png';
 import discord from '../images/discord.png';
 import kb_banner from '../images/tuba_banner_video.mp4';
 import kb_img1 from '../images/Promo_art_bw.png';
@@ -15,7 +14,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 export default function KickingBrassContent() {
     const discordInviteLink = "https://discord.com/invite/fbngXskVkW";
-    const youtubeLink = "https://www.youtube.com/channel/UCtTJj2MDiIE9sjcd4jZgXsQ";
 
     const [value, setValue] = useState(0);
 
@@ -65,6 +63,9 @@ export default function KickingBrassContent() {
                     <Tab label="About" />
                     <Tab label="Fundamentals" />
                     <Tab label="Glossary" />
+                    <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
+                        <img src={discord} alt="discord" />
+                    </a>
                 </Tabs>
                 {/* Your other components go here */}
             </ThemeProvider>
@@ -94,15 +95,6 @@ export default function KickingBrassContent() {
                         Face waves upon waves of enemies, each more challenging than the last. Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
                         Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
                     </p>
-
-                    <div className='links'>
-                        <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
-                            <img src={discord} alt="discord" />
-                        </a>
-                        <a href={youtubeLink} target="_blank" rel="noopener noreferrer" className="youtube-button">
-                            <img src={youtube} alt="youtube" />
-                        </a>
-                    </div>
                 </div>
             )}
 
@@ -141,7 +133,7 @@ export default function KickingBrassContent() {
                                         alignItems="center"
                                         height="100%"
                                     >
-                                        <img src={controlsGif} alt="Controls GIF" style={{ maxWidth: '100%', height: '75%' }} />
+                                        <img src={controlsGif} className='img1' alt="Controls GIF" style={{ maxWidth: '100%', height: '75%' }} />
                                     </Box>
                                 </Grid>
                             </Grid>

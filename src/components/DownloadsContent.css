@@ -2,7 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 75vh;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .button-row {
@@ -14,14 +20,12 @@
 }
 
 .button-row .MuiButton-root {
-    background-color: #b8a571;
+    background-color: #051a6f;
     color: white;
 }
 
 .button-row .MuiButton-root:hover {
-    background-color: #70623a;
+    background-color: #0a0f27;
 }
 
-@media (max-width: 768px) {
-    .button-row {}
-}
+@media (max-width: 768px) {}

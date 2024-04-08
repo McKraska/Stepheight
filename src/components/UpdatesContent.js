@@ -7,10 +7,9 @@ export default function UpdatesContent() {
         <div className="updates-content">
             <Typography variant="h4" gutterBottom>Patch Notes</Typography>
 
-            {/* Patch 0.06a */}
             <Card sx={{ marginBottom: '20px' }}>
                 <CardContent>
-                    <Typography variant="h5" gutterBottom>0.06a</Typography>
+                    <Typography variant="h5" gutterBottom>Kicking Brass 0.06a</Typography>
                     <Typography variant="h6">General Changes</Typography>
                     <Typography paragraph>Shadow beneath the player is now clearer</Typography>
                     <Typography paragraph>More improvements to UI</Typography>
@@ -28,20 +27,16 @@ export default function UpdatesContent() {
                 </CardContent>
             </Card>
 
-            {/* Patch 0.06 */}
             <Card>
                 <CardContent>
-                    <Typography variant="h5" gutterBottom>0.06</Typography>
+                    <Typography variant="h5" gutterBottom>Kicking Brass 0.06</Typography>
                     <Typography variant="h6">General Changes</Typography>
-                    {/* ... list other changes similarly ... */}
 
                     <Typography variant="h6">Player Changes</Typography>
                     <Typography paragraph>added a visual effect on spawn and death</Typography>
-                    {/* ... list other changes similarly ... */}
 
                     <Typography variant="h6">Enemy Changes</Typography>
                     <Typography paragraph>Heavy brass now has a 4 second cooldown...</Typography>
-                    {/* ... list other changes similarly ... */}
 
                     <Typography variant="h6">Map Changes</Typography>
                     <Typography paragraph>Environmental terrain changes have been added to waves 11-19</Typography>
