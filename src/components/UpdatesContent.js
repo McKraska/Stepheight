@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Box, Card, CardContent } from '@mui/material';
+import { Typography, Card, CardContent } from '@mui/material';
 import './UpdatesContent.css';
 
 export default function UpdatesContent() {

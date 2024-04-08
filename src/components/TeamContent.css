@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 
 .team-content {
-    margin: 20px;
-    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     font-family: 'Maven Pro', sans-serif;
 }
@@ -18,17 +18,18 @@
 }
 
 .image-card {
-    margin: 30px;
+    margin: 10px;
+
 }
 
 .image-row {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 1px;
 }
 
 .team-content {
-    padding: 16px;
+    padding: 8px;
 }
 
 .image {
@@ -36,7 +37,6 @@
     height: auto;
     max-height: 200px;
     display: block;
-    padding: 10%;
 }
 
 @media (max-width: 750px) {

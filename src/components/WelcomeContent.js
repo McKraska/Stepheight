@@ -2,6 +2,7 @@ import React from 'react';
 import './WelcomeContent.css';
 
 import banner from '../images/collage.png';
+import banner1 from '../images/banner_01.jpg';
 
 export default function Welcome() {
   return (
@@ -29,6 +30,8 @@ export default function Welcome() {
           Our team started doing this in an area where game development is basically unheard of, while also juggling university, side jobs, and a handful of personal challenges.
           We want Stepheight to be a beacon of what is possible, no matter what restrictions one might face.
         </p>
+
+        <img src={banner1} alt="banner" className="banner" />
       </div>
     </div>
   );

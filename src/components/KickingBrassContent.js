@@ -11,6 +11,8 @@ import controlsGif from '../images/Controls.gif';
 import inventory from '../images/Inventory.png';
 import hearts from '../images/hearts.png';
 
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
 export default function KickingBrassContent() {
     const discordInviteLink = "https://discord.com/invite/fbngXskVkW";
     const youtubeLink = "https://www.youtube.com/channel/UCtTJj2MDiIE9sjcd4jZgXsQ";
@@ -20,6 +22,26 @@ export default function KickingBrassContent() {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+
+    const theme = createTheme({
+        palette: {
+            primary: {
+                main: '#051a6f',
+            },
+        },
+        typography: {
+            fontFamily: "'Maven Pro', sans-serif",
+        },
+        components: {
+            MuiTab: {
+                styleOverrides: {
+                    root: {
+                        color: '#051a6f',
+                    },
+                },
+            },
+        },
+    });
 
     return (
         <div className='kickingbrass-body'>
@@ -32,12 +54,22 @@ export default function KickingBrassContent() {
                 <div className="video-fade"></div>
             </div>
 
-            <Tabs value={value} onChange={handleChange} centered>
-                <Tab label="About" />
-                <Tab label="Fundamentals" />
-                <Tab label="Glossary" />
-            </Tabs>
+            <ThemeProvider theme={theme}>
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    centered
+                    textColor="primary"
+                    indicatorColor="primary"
+                >
+                    <Tab label="About" />
+                    <Tab label="Fundamentals" />
+                    <Tab label="Glossary" />
+                </Tabs>
+                {/* Your other components go here */}
+            </ThemeProvider>
 
+            {/* about */}
             {value === 0 && (
                 <div className="kickingbrass-content">
                     <h1>THE WORLD OF KICKING BRASS</h1>
@@ -74,6 +106,7 @@ export default function KickingBrassContent() {
                 </div>
             )}
 
+            {/* controls */}
             {value === 1 && (
                 <Box sx={{ margin: '100px' }}>
                     <Card sx={{ marginBottom: '20px' }}>
@@ -175,8 +208,47 @@ export default function KickingBrassContent() {
                 </Box>
             )}
 
+            {/* glossary */}
             {value === 2 && (
-                <Box></Box>
+                <Box sx={{ margin: '100px' }}>
+                    <Card>
+                        <CardContent>
+                            <Typography variant="h5" gutterBottom>INSTRUMENTS</Typography>
+                            <Typography variant="h6" gutterBottom>LYRE</Typography>
+                            <Typography paragraph>
+                                Primary: Shoots [2 connected 8th] in a straight trajectory.
+                                Secondary: Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.
+                            </Typography>
+
+                            <Typography variant="h6" gutterBottom>SNARE</Typography>
+                            <Typography paragraph>
+                                Primary: Commands all minion units to fire.
+                                Secondary: Rearranges the formation of all minions you own.
+                                Passive: Summons two sousaphone minions.
+                            </Typography>
+
+                            <Typography variant="h6" gutterBottom>XYLOPHONE</Typography>
+                            <Typography paragraph>
+                                Primary: Summons a spooky scary skeleton.
+                                Secondary: Detonates all minions you own.
+                            </Typography>
+
+                            {/* ... Add other instruments and items in similar fashion ... */}
+
+                            <Typography variant="h5" gutterBottom>ITEMS</Typography>
+                            <Typography variant="h6" gutterBottom>Floog L. Horn</Typography>
+                            <Typography paragraph>
+                                Instruments can also be found at this vendor *
+                            </Typography>
+
+                            <Typography variant="h6" gutterBottom>ELECTRO LOOP</Typography>
+                            <Typography paragraph>
+                                Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage.
+                                Cooldown: 7 Seconds.
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Box>
             )}
         </div>
     );

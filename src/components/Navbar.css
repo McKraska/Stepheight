@@ -7,12 +7,18 @@
 }
 
 #Nav .MuiAppBar-root {
-    background-color: #b8a571;
+    background-color: #fffde6;
 }
 
-#Nav img {
+.navbar-logo {
     width: 80px;
     height: auto;
+}
+
+.navbar-icon {
+    width: 30px;
+    height: auto;
+    padding-left: 50px;
 }
 
 #Nav .MuiToolbar-root {
@@ -71,9 +77,15 @@
 }
 
 @media (max-width: 750px) {
-    #Nav img {
-        width: 50px;
+    .navbar-logo {
+        width: 80px;
         height: auto;
+    }
+
+    .navbar-icon {
+        width: 30px;
+        height: auto;
+        padding-left: 20px;
     }
 
     #Nav .MuiButton-root {

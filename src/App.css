@@ -16,8 +16,7 @@
 .App-header {}
 
 .App-link {
-  color: #61dafb;
-
+  color: rgb(242, 239, 206)
 }
 
 @keyframes App-logo-spin {
@@ -33,7 +32,7 @@
 #Body {
   top: 0;
   float: left;
-  background-color: lightgray;
+  background-color: #fffde6;
   width: 100%;
   height: fit-content;
   text-align: left;
@@ -46,7 +45,7 @@
   width: 50%;
   height: 1500px;
   top: 0px;
-  background-color: cornflowerblue;
+  background-color: #fffde6;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
