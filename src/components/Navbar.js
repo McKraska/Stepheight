@@ -16,7 +16,7 @@ const pages = ['KICKING_BRASS', 'DOWNLOADS', 'UPDATES'];
 export default function Navbar() {
   return (
     <div id='Nav'>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Link to="/">

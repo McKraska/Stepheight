@@ -6,9 +6,9 @@ import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
 import './TeamContent.css';
 
-import image1 from '../images/sam.jpg';
-import image2 from '../images/peter.jpg';
-import image3 from '../images/oskar.jpg';
+import image1 from '../images/startup_sam.jpg';
+import image2 from '../images/startup_peter.jpg';
+import image3 from '../images/startup_oskar.jpg';
 
 export default function TeamContent() {
     return (

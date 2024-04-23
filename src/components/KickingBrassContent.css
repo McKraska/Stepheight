@@ -14,17 +14,17 @@ body {
     padding: 20px;
     text-align: center;
     font-family: 'Fanwood Text', serif;
-    max-width: 600px;
+    max-width: 1000px;
 }
 
 .kickingbrass-content h1,
 h2,
 h3 {
-    color: #2b2b2b;
+    color: #a16edd;
 }
 
 .kickingbrass-content p {
-    color: #3b3b3b;
+    color: #a684cd;
     font-size: 16px;
 }
 

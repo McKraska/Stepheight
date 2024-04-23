@@ -7,7 +7,7 @@ export default function UpdatesContent() {
         <div className="updates-content">
             <Typography variant="h4" gutterBottom>Patch Notes</Typography>
 
-            <Card sx={{ marginBottom: '20px' }}>
+            <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }}>
                 <CardContent>
                     <Typography variant="h5" gutterBottom>Kicking Brass 0.06a</Typography>
                     <Typography variant="h6">General Changes</Typography>
@@ -27,7 +27,7 @@ export default function UpdatesContent() {
                 </CardContent>
             </Card>
 
-            <Card>
+            <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }}>
                 <CardContent>
                     <Typography variant="h5" gutterBottom>Kicking Brass 0.06</Typography>
                     <Typography variant="h6">General Changes</Typography>
@@ -42,8 +42,6 @@ export default function UpdatesContent() {
                     <Typography paragraph>Environmental terrain changes have been added to waves 11-19</Typography>
                 </CardContent>
             </Card>
-
-            {/* Add more patches here */}
         </div>
     );
 }

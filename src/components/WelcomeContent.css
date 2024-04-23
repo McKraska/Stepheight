@@ -16,6 +16,7 @@
 }
 
 .welcome-message h1 {
+    padding-top: 100px;
     color: #333;
     font-family: 'Chakra Petch', sans-serif;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './WelcomeContent.css';
 
 import banner from '../images/collage.png';
-import banner1 from '../images/banner_01.jpg';
+import banner1 from '../images/startup_group.jpg';
 
 export default function Welcome() {
   return (

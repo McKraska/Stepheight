@@ -10,7 +10,7 @@ export default function DownloadsContent() {
         <div className="downloads-content">
             <div class="card-container">
                 <div className="card-content">
-                    <Card className="image-card">
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
                         <CardHeader
                             title="Limited Art test Version 0.1a Windows 64bit"
                             subheader="To play, extract the Zip and open KB_Art.exe"
@@ -27,7 +27,7 @@ export default function DownloadsContent() {
                         </CardContent>
                     </Card>
 
-                    <Card className="image-card">
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
                         <CardHeader
                             title="Limited Art test Version 0.1a Windows 64bit"
                             subheader="To play, extract the Zip and open KB_Art.exe"
@@ -44,7 +44,7 @@ export default function DownloadsContent() {
                         </CardContent>
                     </Card>
 
-                    <Card className="image-card">
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
                         <CardHeader
                             title="Limited Art test Version 0.1a Windows 64bit"
                             subheader="To play, extract the Zip and open KB_Art.exe"

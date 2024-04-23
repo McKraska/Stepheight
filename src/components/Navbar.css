@@ -78,14 +78,12 @@
 
 @media (max-width: 750px) {
     .navbar-logo {
-        width: 80px;
+        width: 50px;
         height: auto;
     }
 
     .navbar-icon {
-        width: 30px;
-        height: auto;
-        padding-left: 20px;
+        display: none;
     }
 
     #Nav .MuiButton-root {

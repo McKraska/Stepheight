@@ -63,9 +63,6 @@ export default function KickingBrassContent() {
                     <Tab label="About" />
                     <Tab label="Fundamentals" />
                     <Tab label="Glossary" />
-                    <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
-                        <img src={discord} alt="discord" />
-                    </a>
                 </Tabs>
                 {/* Your other components go here */}
             </ThemeProvider>
@@ -73,35 +70,58 @@ export default function KickingBrassContent() {
             {/* about */}
             {value === 0 && (
                 <div className="kickingbrass-content">
-                    <h1>THE WORLD OF KICKING BRASS</h1>
+                    <Card sx={{ backgroundColor: '#180d25' }}>
+                        <CardContent>
+                            <h1>THE WORLD OF KICKING BRASS</h1>
 
-                    <h2>
-                        Your family is missing, your village has been ransacked, and hostile forces surround you on all sides.
-                    </h2>
+                            <h2>
+                                Your family is missing,
+                            </h2>
 
-                    <p>
-                        King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!
-                        Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven! Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
-                        Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
-                    </p>
+                            <h2>
+                                your village has been ransacked,
+                            </h2>
 
-                    <img src={kb_img1} alt="Colosseum" className='img1' />
+                            <h2>
+                                and hostile forces surround you on all sides.
+                            </h2>
 
-                    <h3> THE COLOSSEUM </h3>
+                            <p>
+                                King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!</p>
+                            <p>
+                                Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven!
+                            </p>
+                            <p>
 
-                    <p>
-                        The gates to King Brasshoven’s colosseum open once again! For centuries only the strongest, bravest, and dumbest warriors from all over the continent have made their way to these sacred grounds in order to prove themselves (and/or die horrifically).
-                        Each year a champion has left their mark on the Empire of Brass and each year more contestants try to do the same.
-                        Face waves upon waves of enemies, each more challenging than the last. Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
-                        Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
-                    </p>
+                                Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
+                            </p>
+                            <p>
+                                Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
+                            </p>
+
+                            <img src={kb_img1} alt="Colosseum" className='img1' />
+
+                            <h3> THE COLOSSEUM </h3>
+
+                            <p>
+                                The gates to King Brasshoven’s colosseum open once again! For centuries only the strongest, bravest, and dumbest warriors from all over the continent have made their way to these sacred grounds in order to prove themselves (and/or die horrifically).
+                                Each year a champion has left their mark on the Empire of Brass and each year more contestants try to do the same.
+                                Face waves upon waves of enemies, each more challenging than the last. Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
+                                Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
+                            </p>
+                        </CardContent>
+                    </Card>
+
+                    <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
+                        <img src={discord} alt="discord" />
+                    </a>
                 </div>
             )}
 
             {/* controls */}
             {value === 1 && (
-                <Box sx={{ margin: '100px' }}>
-                    <Card sx={{ marginBottom: '20px' }}>
+                <Box sx={{ margin: '30px' }}>
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }}>
                         <CardContent>
                             <Grid container spacing={2}>
                                 <Grid item xs={12} md={8}>
@@ -140,7 +160,7 @@ export default function KickingBrassContent() {
                         </CardContent>
                     </Card>
 
-                    <Card sx={{ marginBottom: '20px' }}>
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }}>
                         <CardContent>
                             <Grid container spacing={2}>
                                 <Grid item xs={12} md={8}>
@@ -169,7 +189,7 @@ export default function KickingBrassContent() {
                         </CardContent>
                     </Card>
 
-                    <Card sx={{ marginBottom: '20px' }}>
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }}>
                         <CardContent>
                             <Grid container spacing={2}>
                                 <Grid item xs={12} md={8}>
@@ -202,8 +222,8 @@ export default function KickingBrassContent() {
 
             {/* glossary */}
             {value === 2 && (
-                <Box sx={{ margin: '100px' }}>
-                    <Card>
+                <Box sx={{ margin: '50px' }}>
+                    <Card sx={{ backgroundColor: '#fffde6' }}>
                         <CardContent>
                             <Typography variant="h5" gutterBottom>INSTRUMENTS</Typography>
                             <Typography variant="h6" gutterBottom>LYRE</Typography>
