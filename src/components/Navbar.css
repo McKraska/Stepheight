@@ -122,6 +122,10 @@
         visibility: visible;
     }
 
+    .nav-toggle:checked~.nav-icons {
+        background-color: aqua;
+    }
+
     .nav-toggle:checked~.nav-toggle-label span:nth-child(1) {
         top: 0px;
         left: 10px;
