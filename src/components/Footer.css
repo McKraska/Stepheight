@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 
+.navbar-icon {
+    width: 30px;
+    height: auto;
+    padding-right: 5px;
+}
+
 .footer {
     padding: 20px 0;
     margin-top: auto;
-    background-color: #fffde6;
+    background-color: #d8d6c2;
     text-align: center;
     color: #666;
     font-family: 'Maven Pro', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+@media (min-width: 750px) {
+    .navbar-icon {
+        display: block;
+    }
 }

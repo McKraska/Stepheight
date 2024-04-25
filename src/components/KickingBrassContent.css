@@ -21,11 +21,13 @@ body {
 h2,
 h3 {
     color: #a16edd;
+    font-family: 'Fanwood Text', serif;
 }
 
 .kickingbrass-content p {
     color: #a684cd;
     font-size: 16px;
+    font-family: 'Fanwood Text', serif;
 }
 
 .img1 {

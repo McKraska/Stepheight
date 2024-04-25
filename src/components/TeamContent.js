@@ -13,7 +13,7 @@ import image3 from '../images/startup_oskar.jpg';
 export default function TeamContent() {
     return (
         <div className="team-content">
-            <h1>Our Team</h1>
+
 
             <div className="image-row">
                 {/* SAM */}

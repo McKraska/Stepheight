@@ -9,6 +9,7 @@ export default function Welcome() {
     <div class="welcome-section">
       <div class="welcome-message">
         <h1>Stepheight</h1>
+
         <h2>
           What we stand for:
           <i>

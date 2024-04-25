@@ -10,6 +10,12 @@ import controlsGif from '../images/Controls.gif';
 import inventory from '../images/Inventory.png';
 import hearts from '../images/hearts.png';
 
+import lyre from '../images/pickup_lyre.png';
+import snare from '../images/pickup_snare.png';
+import electroloop from '../images/pickup_electro_loop.png';
+import xylophone from '../images/pickup_xylophone.png';
+import floog from '../images/pickup_fleet.png';
+
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 export default function KickingBrassContent() {
@@ -226,42 +232,89 @@ export default function KickingBrassContent() {
                     <Card sx={{ backgroundColor: '#fffde6' }}>
                         <CardContent>
                             <Typography variant="h5" gutterBottom>INSTRUMENTS</Typography>
-                            <Typography variant="h6" gutterBottom>LYRE</Typography>
-                            <Typography paragraph>
-                                Primary: Shoots [2 connected 8th] in a straight trajectory.
-                                Secondary: Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.
-                            </Typography>
 
-                            <Typography variant="h6" gutterBottom>SNARE</Typography>
-                            <Typography paragraph>
-                                Primary: Commands all minion units to fire.
-                                Secondary: Rearranges the formation of all minions you own.
-                                Passive: Summons two sousaphone minions.
-                            </Typography>
+                            {/* Lyre Section */}
+                            <Grid container spacing={2} alignItems="center">
+                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
+                                    <Typography variant="h6" gutterBottom>LYRE</Typography>
+                                    <Typography paragraph>
+                                        Primary: Shoots [2 connected 8th] in a straight trajectory.
+                                        Secondary: Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
+                                    {/* Place the image URL here */}
+                                    <img src={lyre} alt="Lyre" style={{ width: '100%', height: 'auto' }} />
+                                </Grid>
+                            </Grid>
 
-                            <Typography variant="h6" gutterBottom>XYLOPHONE</Typography>
-                            <Typography paragraph>
-                                Primary: Summons a spooky scary skeleton.
-                                Secondary: Detonates all minions you own.
-                            </Typography>
+                            {/* Snare Section */}
+                            <Grid container spacing={2} alignItems="center">
+                                <Grid item xs={12} md={6}>
+                                    {/* Place the image URL here */}
+                                    <img src={snare} alt="Snare" style={{ width: '100%', height: 'auto' }} />
+                                </Grid>
+                                <Grid item xs={12} md={6}>
+                                    <Typography variant="h6" gutterBottom>SNARE</Typography>
+                                    <Typography paragraph>
+                                        Primary: Commands all minion units to fire.
+                                        Secondary: Rearranges the formation of all minions you own.
+                                        Passive: Summons two sousaphone minions.
+                                    </Typography>
+                                </Grid>
+                            </Grid>
 
-                            {/* ... Add other instruments and items in similar fashion ... */}
+                            {/* Xylophone Section */}
+                            <Grid container spacing={2} alignItems="center">
+                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
+                                    <Typography variant="h6" gutterBottom>XYLOPHONE</Typography>
+                                    <Typography paragraph>
+                                        Primary: Summons a spooky scary skeleton.
+                                        Secondary: Detonates all minions you own.
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
+                                    {/* Place the image URL here */}
+                                    <img src={xylophone} alt="Xylophone" style={{ width: '100%', height: 'auto' }} />
+                                </Grid>
+                            </Grid>
+
+                            {/* ... Add other instruments and items in a similar fashion ... */}
 
                             <Typography variant="h5" gutterBottom>ITEMS</Typography>
-                            <Typography variant="h6" gutterBottom>Floog L. Horn</Typography>
-                            <Typography paragraph>
-                                Instruments can also be found at this vendor *
-                            </Typography>
+                            {/* Floog L. Horn Section */}
+                            <Grid container spacing={2} alignItems="center">
+                                <Grid item xs={12} md={6}>
+                                    {/* Place the image URL here */}
+                                    <img src={floog} alt="Floog L. Horn" style={{ width: '100%', height: 'auto' }} />
+                                </Grid>
+                                <Grid item xs={12} md={6}>
+                                    <Typography variant="h6" gutterBottom>Floog L. Horn</Typography>
+                                    <Typography paragraph>
+                                        Instruments can also be found at this vendor *
+                                    </Typography>
+                                </Grid>
+                            </Grid>
 
-                            <Typography variant="h6" gutterBottom>ELECTRO LOOP</Typography>
-                            <Typography paragraph>
-                                Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage.
-                                Cooldown: 7 Seconds.
-                            </Typography>
+                            {/* Electro Loop Section */}
+                            <Grid container spacing={2} alignItems="center">
+                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
+                                    <Typography variant="h6" gutterBottom>ELECTRO LOOP</Typography>
+                                    <Typography paragraph>
+                                        Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage.
+                                        Cooldown: 7 Seconds.
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
+                                    {/* Place the image URL here */}
+                                    <img src={electroloop} alt="Electro Loop" style={{ width: '100%', height: 'auto' }} />
+                                </Grid>
+                            </Grid>
                         </CardContent>
                     </Card>
                 </Box>
             )}
+
         </div>
     );
 }
