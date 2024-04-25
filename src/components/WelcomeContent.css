@@ -6,6 +6,7 @@
 }
 
 .welcome-section {
+    padding-top: 100px;
     margin: auto;
     padding: 20px;
     text-align: center;
@@ -16,7 +17,7 @@
 }
 
 .welcome-message h1 {
-    padding-top: 100px;
+    padding-top: 300px;
     color: #333;
     font-family: 'Chakra Petch', sans-serif;
 }
@@ -30,4 +31,24 @@
 .welcome-message p {
     color: #666;
     font-size: 16px;
+}
+
+.sprite-row {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+@media (max-width: 750px) {
+    .welcome-message h1 {
+        padding-top: 100px;
+    }
+
+    .welcome-section {
+        padding-top: 100px;
+    }
+
+    .sprite-row {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
 }

@@ -30,7 +30,7 @@ export default function KickingBrassContent() {
     const theme = createTheme({
         palette: {
             primary: {
-                main: '#051a6f',
+                main: '#a16edd',
             },
         },
         typography: {
@@ -40,7 +40,7 @@ export default function KickingBrassContent() {
             MuiTab: {
                 styleOverrides: {
                     root: {
-                        color: '#051a6f',
+                        color: '#a16edd',
                     },
                 },
             },

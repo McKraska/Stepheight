@@ -1,24 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
-
-.navbar-icon {
-    width: 30px;
-    height: auto;
-    padding-right: 5px;
+.admin-link {
+    margin-right: 20px;
+    /* This creates a gap to the right of the Admin link */
 }
 
 .footer {
-    padding: 20px 0;
-    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically on mobile */
+    align-items: center;
+    /* Center-align children */
+    justify-content: center;
+    padding: 20px;
     background-color: #d8d6c2;
-    text-align: center;
     color: #666;
     font-family: 'Maven Pro', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    /* Line up icons horizontally */
+    justify-content: center;
+    /* Center-align icons */
+    align-items: center;
+    width: 100%;
+    /* Take full width to center content */
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    display: block;
+    width: 100%;
+}
+
+/* Icon size adjusted for mobile */
+.footer-icon {
+    width: 24px;
+    /* Adjust size as needed */
+    height: 24px;
+    margin: 0 20px;
+    /* Space between icons */
+}
+
+/* Text size and margins for mobile */
+.footer-text-content {
+    margin-top: 10px;
+    /* Space between text and icon row */
+    font-size: 14px;
+    /* Adjust size as needed */
 }
 
 @media (min-width: 750px) {
-    .navbar-icon {
-        display: block;
+    .footer {
+        flex-direction: row;
+        /* Row direction for larger screens */
+        align-items: center;
+        /* Keep content vertically aligned */
+        justify-content: space-between;
+        /* Distribute space between items */
+        padding: 20px 50px;
+    }
+
+    .footer-icons {
+        display: none;
+    }
+
+    .footer-icon {
+        width: 30px;
+        /* Larger size for icons */
+        height: 30px;
+    }
+
+    .footer-text-content {
+        margin-top: 0;
+        font-size: 16px;
+        gap: 5px;
+        /* Adjust size as needed */
     }
 }

@@ -6,7 +6,7 @@ body {
 }
 
 .kickingbrass-body {
-    background-color: #fffde6;
+    background-color: #13001b;
 }
 
 .kickingbrass-content {
@@ -80,7 +80,7 @@ h3 {
     margin-left: 10px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 751px) {
     .video-container {
         position: relative;
         width: 100%;
@@ -89,5 +89,15 @@ h3 {
 
     .video-container video {
         height: 300px;
+    }
+
+    .kickingbrass-body {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .kickingbrass-body {
+        padding-top: 80px;
     }
 }

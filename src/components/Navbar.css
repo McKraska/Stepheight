@@ -86,13 +86,14 @@
         display: none;
     }
 
-    #Nav .MuiButton-root {
+    #Nav .MuiBox-root {
         flex-wrap: wrap;
         display: flex;
-        justify-content: center;
-        align-items: center;
         width: 85%;
         font-size: larger;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .nav-toggle-label {
