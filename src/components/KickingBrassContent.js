@@ -76,9 +76,12 @@ export default function KickingBrassContent() {
             {/* about */}
             {value === 0 && (
                 <div className="kickingbrass-content">
-                    <Card sx={{ backgroundColor: '#180d25' }}>
+                    <Card sx={{ backgroundColor: '#180d25' }} className="card">
                         <CardContent>
                             <h1>THE WORLD OF KICKING BRASS</h1>
+                            <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
+                                <img src={discord} alt="discord" />
+                            </a>
 
                             <h2>
                                 Your family is missing,
@@ -117,21 +120,17 @@ export default function KickingBrassContent() {
                             </p>
                         </CardContent>
                     </Card>
-
-                    <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
-                        <img src={discord} alt="discord" />
-                    </a>
                 </div>
             )}
 
             {/* controls */}
             {value === 1 && (
                 <Box sx={{ margin: '30px' }}>
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }}>
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
                         <CardContent>
                             <Grid container spacing={2}>
                                 <Grid item xs={12} md={8}>
-                                    <Typography variant="h5" gutterBottom>Controls</Typography>
+                                    <Typography variant="h5" gutterBottom color={''}>Controls</Typography>
                                     <List dense>
                                         <ListItem><ListItemText primary="[W] - Move Forward" /></ListItem>
                                         <ListItem><ListItemText primary="[A] - Move Left" /></ListItem>
@@ -166,7 +165,7 @@ export default function KickingBrassContent() {
                         </CardContent>
                     </Card>
 
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }}>
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
                         <CardContent>
                             <Grid container spacing={2}>
                                 <Grid item xs={12} md={8}>
@@ -195,7 +194,7 @@ export default function KickingBrassContent() {
                         </CardContent>
                     </Card>
 
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }}>
+                    <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
                         <CardContent>
                             <Grid container spacing={2}>
                                 <Grid item xs={12} md={8}>
@@ -229,7 +228,7 @@ export default function KickingBrassContent() {
             {/* glossary */}
             {value === 2 && (
                 <Box sx={{ margin: '50px' }}>
-                    <Card sx={{ backgroundColor: '#fffde6' }}>
+                    <Card sx={{ backgroundColor: '#180d25' }} className="card">
                         <CardContent>
                             <Typography variant="h5" gutterBottom>INSTRUMENTS</Typography>
 
@@ -244,7 +243,7 @@ export default function KickingBrassContent() {
                                 </Grid>
                                 <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
                                     {/* Place the image URL here */}
-                                    <img src={lyre} alt="Lyre" style={{ width: '100%', height: 'auto' }} />
+                                    <img src={lyre} alt="Lyre" className='glossary-image' />
                                 </Grid>
                             </Grid>
 
@@ -252,7 +251,7 @@ export default function KickingBrassContent() {
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} md={6}>
                                     {/* Place the image URL here */}
-                                    <img src={snare} alt="Snare" style={{ width: '100%', height: 'auto' }} />
+                                    <img src={snare} alt="Snare" className='glossary-image' />
                                 </Grid>
                                 <Grid item xs={12} md={6}>
                                     <Typography variant="h6" gutterBottom>SNARE</Typography>
@@ -275,18 +274,16 @@ export default function KickingBrassContent() {
                                 </Grid>
                                 <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
                                     {/* Place the image URL here */}
-                                    <img src={xylophone} alt="Xylophone" style={{ width: '100%', height: 'auto' }} />
+                                    <img src={xylophone} alt="Xylophone" className='glossary-image' />
                                 </Grid>
                             </Grid>
-
-                            {/* ... Add other instruments and items in a similar fashion ... */}
 
                             <Typography variant="h5" gutterBottom>ITEMS</Typography>
                             {/* Floog L. Horn Section */}
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} md={6}>
                                     {/* Place the image URL here */}
-                                    <img src={floog} alt="Floog L. Horn" style={{ width: '100%', height: 'auto' }} />
+                                    <img src={floog} alt="Floog L. Horn" className='glossary-image' />
                                 </Grid>
                                 <Grid item xs={12} md={6}>
                                     <Typography variant="h6" gutterBottom>Floog L. Horn</Typography>
@@ -307,14 +304,13 @@ export default function KickingBrassContent() {
                                 </Grid>
                                 <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
                                     {/* Place the image URL here */}
-                                    <img src={electroloop} alt="Electro Loop" style={{ width: '100%', height: 'auto' }} />
+                                    <img src={electroloop} alt="Electro Loop" className='glossary-image' />
                                 </Grid>
                             </Grid>
                         </CardContent>
                     </Card>
                 </Box>
             )}
-
         </div>
     );
 }

@@ -10,16 +10,20 @@ body {
 }
 
 .kickingbrass-content {
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0px auto;
+    padding: 50px;
     text-align: center;
-    font-family: 'Fanwood Text', serif;
+    font-family: 'Maven Pro', sans-serif;
     max-width: 1000px;
+    color: #a16edd;
 }
 
 .kickingbrass-content h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     color: #a16edd;
     font-family: 'Fanwood Text', serif;
 }
@@ -68,19 +72,28 @@ h3 {
     justify-content: center;
 }
 
-.discord-button {
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    font-family: 'Maven Pro', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    margin-left: 10px;
+.card {
+    position: relative;
+}
+
+.glossary-image {
+    height: 100px;
+    width: auto;
+    padding: 0px;
 }
 
 @media (min-width: 751px) {
+    .card {
+        position: relative;
+        max-width: 1000px;
+    }
+
+    .discord-button {
+        position: absolute;
+        top: 20px;
+        right: 50px;
+    }
+
     .video-container {
         position: relative;
         width: 100%;
@@ -94,10 +107,24 @@ h3 {
     .kickingbrass-body {
         padding-top: 100px;
     }
+
+    .kickingbrass-content {
+        padding: 50px;
+    }
 }
 
 @media (max-width: 750px) {
+    .kickingbrass-content {
+        padding: 50px;
+    }
+
     .kickingbrass-body {
         padding-top: 80px;
+    }
+
+    .discord-button {
+        position: absolute;
+        top: 2px;
+        right: 5px;
     }
 }

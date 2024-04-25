@@ -45,6 +45,7 @@ export default function Navbar() {
                 </Button>
               ))}
             </Box>
+
             <label htmlFor="nav-toggle" className="nav-toggle-label">
               <span></span>
               <span></span>
