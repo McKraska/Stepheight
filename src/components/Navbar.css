@@ -7,7 +7,8 @@
 }
 
 #Nav .MuiAppBar-root {
-    background-color: #fffde6;
+    background-color: #051a6f3a;
+    backdrop-filter: blur(5px);
 }
 
 .navbar-logo {
@@ -38,6 +39,8 @@
     margin: 0 10px;
     font-family: 'Maven Pro', sans-serif;
     color: #051a6f;
+    font-size: larger;
+
 }
 
 .nav-toggle {
