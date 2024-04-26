@@ -24,11 +24,13 @@
 
 .welcome-message h2,
 .welcome-message h3 {
+    padding-bottom: 5%;
     color: #333;
     font-family: 'Chakra Petch', sans-serif;
 }
 
 .welcome-message p {
+    padding-top: 5%;
     color: #666;
     font-size: 16px;
 }

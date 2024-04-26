@@ -18,7 +18,7 @@ body {
     color: #a16edd;
 }
 
-.kickingbrass-content h1,
+.kickingbrass-body h1,
 h2,
 h3,
 h4,
@@ -28,7 +28,7 @@ h6 {
     font-family: 'Fanwood Text', serif;
 }
 
-.kickingbrass-content p {
+.kickingbrass-body p {
     color: #a684cd;
     font-size: 16px;
     font-family: 'Fanwood Text', serif;
@@ -73,21 +73,21 @@ h6 {
 }
 
 .card {
-    position: relative;
+    position: center;
+    max-width: 900px;
 }
 
 .glossary-image {
     height: 100px;
     width: auto;
-    padding: 0px;
+    padding-top: 50px;
+}
+
+.sprite-row {
+    margin-bottom: 5%;
 }
 
 @media (min-width: 751px) {
-    .card {
-        position: relative;
-        max-width: 1000px;
-    }
-
     .discord-button {
         position: absolute;
         top: 20px;
