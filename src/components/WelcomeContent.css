@@ -5,6 +5,11 @@
     width: 100%;
 }
 
+.welcome-sprite-row {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
 .welcome-section {
     padding-top: 100px;
     margin: auto;
@@ -33,11 +38,6 @@
     padding-top: 5%;
     color: #666;
     font-size: 16px;
-}
-
-.sprite-row {
-    margin-top: 50px;
-    margin-bottom: 200px;
 }
 
 @media (max-width: 750px) {

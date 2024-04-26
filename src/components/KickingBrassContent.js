@@ -82,61 +82,70 @@ export default function KickingBrassContent() {
 
             {/* about */}
             {value === 0 && (
+                <div className="kickingbrass-content">
+                    <Card sx={{ backgroundColor: '#180d25' }} className="card" >
+                        <CardContent>
+                            <h1>THE WORLD OF KICKING BRASS</h1>
+                            <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
+                                <img src={discord} alt="discord" />
+                            </a>
 
-                <Card sx={{ backgroundColor: '#180d25' }} className="card" >
-                    <CardContent>
-                        <h1>THE WORLD OF KICKING BRASS</h1>
-                        <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
-                            <img src={discord} alt="discord" />
-                        </a>
+                            <h2>
+                                Your family is missing,
+                            </h2>
 
-                        <h2>
-                            Your family is missing,
-                        </h2>
+                            <h2>
+                                your village has been ransacked,
+                            </h2>
 
-                        <h2>
-                            your village has been ransacked,
-                        </h2>
+                            <h2>
+                                and hostile forces surround you on all sides.
+                            </h2>
 
-                        <h2>
-                            and hostile forces surround you on all sides.
-                        </h2>
+                            <div className='sprite-row'>
+                                <img src={sprite1} alt="sprite1" className="sprite" />
+                                <img src={sprite3} alt="sprite2" className="sprite" />
+                                <img src={sprite2} alt="sprite3" className="sprite" />
+                                <img src={sprite6} alt="sprite4" className="sprite" />
+                                <img src={sprite5} alt="sprite5" className="sprite" />
+                                <img src={sprite4} alt="sprite6" className="sprite" />
+                            </div>
 
-                        <div className='sprite-row'>
-                            <img src={sprite1} alt="sprite1" className="sprite" />
-                            <img src={sprite3} alt="sprite2" className="sprite" />
-                            <img src={sprite2} alt="sprite3" className="sprite" />
-                            <img src={sprite6} alt="sprite4" className="sprite" />
-                            <img src={sprite5} alt="sprite5" className="sprite" />
-                            <img src={sprite4} alt="sprite6" className="sprite" />
-                        </div>
+                            <p>
+                                King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!</p>
+                            <p>
+                                Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven!
+                            </p>
+                            <p>
 
-                        <p>
-                            King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!</p>
-                        <p>
-                            Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven!
-                        </p>
-                        <p>
+                                Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
+                            </p>
+                            <p>
+                                Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
+                            </p>
 
-                            Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
-                        </p>
-                        <p>
-                            Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
-                        </p>
+                            <div className='sprite-row-flipped'>
+                                <img src={sprite1} alt="sprite1" className="sprite" />
+                                <img src={sprite3} alt="sprite2" className="sprite" />
+                                <img src={sprite2} alt="sprite3" className="sprite" />
+                                <img src={sprite6} alt="sprite4" className="sprite" />
+                                <img src={sprite5} alt="sprite5" className="sprite" />
+                                <img src={sprite4} alt="sprite6" className="sprite" />
+                            </div>
 
-                        <img src={kb_img1} alt="Colosseum" className='img1' />
+                            <h3> THE COLOSSEUM </h3>
 
-                        <h3> THE COLOSSEUM </h3>
+                            <img src={kb_img1} alt="Colosseum" className='img1' />
 
-                        <p>
-                            The gates to King Brasshoven’s colosseum open once again! For centuries only the strongest, bravest, and dumbest warriors from all over the continent have made their way to these sacred grounds in order to prove themselves (and/or die horrifically).
-                            Each year a champion has left their mark on the Empire of Brass and each year more contestants try to do the same.
-                            Face waves upon waves of enemies, each more challenging than the last. Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
-                            Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
-                        </p>
-                    </CardContent>
-                </Card>
-
+                            <p>
+                                The gates to King Brasshoven’s colosseum open once again! For centuries only the strongest, bravest, and dumbest warriors from all over the continent have made their way to these sacred grounds in order to prove themselves (and/or die horrifically).
+                                Each year a champion has left their mark on the Empire of Brass and each year more contestants try to do the same.
+                                Face waves upon waves of enemies, each more challenging than the last. Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
+                                Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
+                            </p>
+                        </CardContent>
+                    </Card>
+                </div>
             )}
 
             {/* controls */}
@@ -187,7 +196,7 @@ export default function KickingBrassContent() {
                                 <Grid item xs={12} md={8}>
                                     <Typography variant="h5" gutterBottom>Inventory</Typography>
                                     <List dense>
-                                        <Typography variant='p' className=''>
+                                        <Typography variant='p'>
                                             Your inventory consists of three sections.
                                             Firstly, containing your trusty Tuba Bell, you have a plus shaped inventory section which holds all passive clothing items called Equipment. There are slots for Headware, Gloves, Chest / back pieces, shoes and trousers, and finally trinkets like necklaces. You can only wear one Equipment of the same typ.
                                             Most Frequently used is your section for Active items. These three item boxes can be seen at all times, and can be activated with one of the item use keys, by default [1] [2] [3]. Items with cooldown will display the ammount of time until they recharge, and consumable wll simply disappear and free the slot.
@@ -252,6 +261,7 @@ export default function KickingBrassContent() {
                                 { name: 'LYRE', description: 'Primary: Shoots [2 connected 8th]...', image: lyre },
                                 { name: 'SNARE', description: 'Primary: Commands all minion units...', image: snare },
                                 { name: 'XYLOPHONE', description: 'Primary: Summons a spooky scary skeleton...', image: xylophone },
+                                // ... add more items as necessary
                             ].map((item, index) => (
                                 <Grid container spacing={2} alignItems="center" key={item.name}>
                                     <Grid item xs={12} md={6} order={index % 2 === 0 ? 1 : 2}>

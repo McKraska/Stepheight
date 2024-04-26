@@ -18,9 +18,15 @@ body {
     color: #a16edd;
 }
 
-.kickingbrass-body h1,
+.kickingbrass-content h1 {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: #a16edd;
+    font-family: 'Fanwood Text', serif;
+}
+
+.kickingbrass-content h3,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -28,7 +34,7 @@ h6 {
     font-family: 'Fanwood Text', serif;
 }
 
-.kickingbrass-body p {
+.kickingbrass-content p {
     color: #a684cd;
     font-size: 16px;
     font-family: 'Fanwood Text', serif;
@@ -73,18 +79,18 @@ h6 {
 }
 
 .card {
-    position: center;
-    max-width: 900px;
+    position: relative;
 }
 
 .glossary-image {
     height: 100px;
     width: auto;
-    padding-top: 50px;
+    padding: 0px;
 }
 
-.sprite-row {
-    margin-bottom: 5%;
+.sprite-row-flipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 @media (min-width: 751px) {
