@@ -18,9 +18,15 @@ body {
     color: #a16edd;
 }
 
-.kickingbrass-content h1,
+.kickingbrass-content h1 {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: #a16edd;
+    font-family: 'Fanwood Text', serif;
+}
+
+.kickingbrass-content h3,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -82,12 +88,12 @@ h6 {
     padding: 0px;
 }
 
-@media (min-width: 751px) {
-    .card {
-        position: relative;
-        max-width: 1000px;
-    }
+.sprite-row-flipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 
+@media (min-width: 751px) {
     .discord-button {
         position: absolute;
         top: 20px;

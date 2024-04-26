@@ -12,9 +12,16 @@ import hearts from '../images/hearts.png';
 
 import lyre from '../images/pickup_lyre.png';
 import snare from '../images/pickup_snare.png';
-import electroloop from '../images/pickup_electro_loop.png';
+// import electroloop from '../images/pickup_electro_loop.png';
 import xylophone from '../images/pickup_xylophone.png';
-import floog from '../images/pickup_fleet.png';
+// import floog from '../images/pickup_fleet.png';
+
+import sprite1 from '../images/goose_walk_right.gif';
+import sprite2 from '../images/gatling_walk_right.gif';
+import sprite3 from '../images/drumen_walk_right.gif';
+import sprite4 from '../images/heavybrass_walk_right.gif';
+import sprite5 from '../images/bb_walk_right.gif';
+import sprite6 from '../images/Michaela_walk_right.gif';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -76,7 +83,7 @@ export default function KickingBrassContent() {
             {/* about */}
             {value === 0 && (
                 <div className="kickingbrass-content">
-                    <Card sx={{ backgroundColor: '#180d25' }} className="card">
+                    <Card sx={{ backgroundColor: '#180d25' }} className="card" >
                         <CardContent>
                             <h1>THE WORLD OF KICKING BRASS</h1>
                             <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
@@ -95,6 +102,15 @@ export default function KickingBrassContent() {
                                 and hostile forces surround you on all sides.
                             </h2>
 
+                            <div className='sprite-row'>
+                                <img src={sprite1} alt="sprite1" className="sprite" />
+                                <img src={sprite3} alt="sprite2" className="sprite" />
+                                <img src={sprite2} alt="sprite3" className="sprite" />
+                                <img src={sprite6} alt="sprite4" className="sprite" />
+                                <img src={sprite5} alt="sprite5" className="sprite" />
+                                <img src={sprite4} alt="sprite6" className="sprite" />
+                            </div>
+
                             <p>
                                 King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!</p>
                             <p>
@@ -108,9 +124,18 @@ export default function KickingBrassContent() {
                                 Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
                             </p>
 
-                            <img src={kb_img1} alt="Colosseum" className='img1' />
+                            <div className='sprite-row-flipped'>
+                                <img src={sprite1} alt="sprite1" className="sprite" />
+                                <img src={sprite3} alt="sprite2" className="sprite" />
+                                <img src={sprite2} alt="sprite3" className="sprite" />
+                                <img src={sprite6} alt="sprite4" className="sprite" />
+                                <img src={sprite5} alt="sprite5" className="sprite" />
+                                <img src={sprite4} alt="sprite6" className="sprite" />
+                            </div>
 
                             <h3> THE COLOSSEUM </h3>
+
+                            <img src={kb_img1} alt="Colosseum" className='img1' />
 
                             <p>
                                 The gates to King Brasshoven’s colosseum open once again! For centuries only the strongest, bravest, and dumbest warriors from all over the continent have made their way to these sacred grounds in order to prove themselves (and/or die horrifically).
@@ -158,7 +183,7 @@ export default function KickingBrassContent() {
                                         alignItems="center"
                                         height="100%"
                                     >
-                                        <img src={controlsGif} className='img1' alt="Controls GIF" style={{ maxWidth: '100%', height: '75%' }} />
+                                        <img src={controlsGif} className='glossary-image' alt="Controls GIF" style={{ maxWidth: '100%', height: '75%' }} />
                                     </Box>
                                 </Grid>
                             </Grid>
@@ -187,7 +212,7 @@ export default function KickingBrassContent() {
                                         alignItems="center"
                                         height="100%"
                                     >
-                                        <img src={inventory} alt="Inventory" style={{ maxWidth: '100%', height: '75%' }} />
+                                        <img src={inventory} alt="Inventory" style={{ maxWidth: '100%', height: '75%' }} className='glossary-image' />
                                     </Box>
                                 </Grid>
                             </Grid>
@@ -216,7 +241,7 @@ export default function KickingBrassContent() {
                                         alignItems="center"
                                         height="100%"
                                     >
-                                        <img src={hearts} alt="hearts" style={{ maxWidth: '100%', height: '75%' }} />
+                                        <img src={hearts} alt="hearts" style={{ maxWidth: '100%', height: '75%' }} className='glossary-image' />
                                     </Box>
                                 </Grid>
                             </Grid>
@@ -232,81 +257,39 @@ export default function KickingBrassContent() {
                         <CardContent>
                             <Typography variant="h5" gutterBottom>INSTRUMENTS</Typography>
 
-                            {/* Lyre Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
-                                    <Typography variant="h6" gutterBottom>LYRE</Typography>
-                                    <Typography paragraph>
-                                        Primary: Shoots [2 connected 8th] in a straight trajectory.
-                                        Secondary: Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.
-                                    </Typography>
+                            {[
+                                { name: 'LYRE', description: 'Primary: Shoots [2 connected 8th]...', image: lyre },
+                                { name: 'SNARE', description: 'Primary: Commands all minion units...', image: snare },
+                                { name: 'XYLOPHONE', description: 'Primary: Summons a spooky scary skeleton...', image: xylophone },
+                                // ... add more items as necessary
+                            ].map((item, index) => (
+                                <Grid container spacing={2} alignItems="center" key={item.name}>
+                                    <Grid item xs={12} md={6} order={index % 2 === 0 ? 1 : 2}>
+                                        <img src={item.image} alt={item.name} className='glossary-image' />
+                                    </Grid>
+                                    <Grid item xs={12} md={6} order={index % 2 === 0 ? 2 : 1}>
+                                        <Typography variant="h6" gutterBottom>{item.name}</Typography>
+                                        <Typography paragraph>{item.description}</Typography>
+                                    </Grid>
                                 </Grid>
-                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
-                                    {/* Place the image URL here */}
-                                    <img src={lyre} alt="Lyre" className='glossary-image' />
-                                </Grid>
-                            </Grid>
-
-                            {/* Snare Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6}>
-                                    {/* Place the image URL here */}
-                                    <img src={snare} alt="Snare" className='glossary-image' />
-                                </Grid>
-                                <Grid item xs={12} md={6}>
-                                    <Typography variant="h6" gutterBottom>SNARE</Typography>
-                                    <Typography paragraph>
-                                        Primary: Commands all minion units to fire.
-                                        Secondary: Rearranges the formation of all minions you own.
-                                        Passive: Summons two sousaphone minions.
-                                    </Typography>
-                                </Grid>
-                            </Grid>
-
-                            {/* Xylophone Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
-                                    <Typography variant="h6" gutterBottom>XYLOPHONE</Typography>
-                                    <Typography paragraph>
-                                        Primary: Summons a spooky scary skeleton.
-                                        Secondary: Detonates all minions you own.
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
-                                    {/* Place the image URL here */}
-                                    <img src={xylophone} alt="Xylophone" className='glossary-image' />
-                                </Grid>
-                            </Grid>
+                            ))}
 
                             <Typography variant="h5" gutterBottom>ITEMS</Typography>
-                            {/* Floog L. Horn Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6}>
-                                    {/* Place the image URL here */}
-                                    <img src={floog} alt="Floog L. Horn" className='glossary-image' />
+                            {[
+                                { name: 'LYRE', description: 'Primary: Shoots [2 connected 8th]...', image: lyre },
+                                { name: 'SNARE', description: 'Primary: Commands all minion units...', image: snare },
+                                { name: 'XYLOPHONE', description: 'Primary: Summons a spooky scary skeleton...', image: xylophone },
+                            ].map((item, index) => (
+                                <Grid container spacing={2} alignItems="center" key={item.name}>
+                                    <Grid item xs={12} md={6} order={index % 2 === 0 ? 1 : 2}>
+                                        <img src={item.image} alt={item.name} className='glossary-image' />
+                                    </Grid>
+                                    <Grid item xs={12} md={6} order={index % 2 === 0 ? 2 : 1}>
+                                        <Typography variant="h6" gutterBottom>{item.name}</Typography>
+                                        <Typography paragraph>{item.description}</Typography>
+                                    </Grid>
                                 </Grid>
-                                <Grid item xs={12} md={6}>
-                                    <Typography variant="h6" gutterBottom>Floog L. Horn</Typography>
-                                    <Typography paragraph>
-                                        Instruments can also be found at this vendor *
-                                    </Typography>
-                                </Grid>
-                            </Grid>
-
-                            {/* Electro Loop Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
-                                    <Typography variant="h6" gutterBottom>ELECTRO LOOP</Typography>
-                                    <Typography paragraph>
-                                        Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage.
-                                        Cooldown: 7 Seconds.
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
-                                    {/* Place the image URL here */}
-                                    <img src={electroloop} alt="Electro Loop" className='glossary-image' />
-                                </Grid>
-                            </Grid>
+                            ))}
                         </CardContent>
                     </Card>
                 </Box>

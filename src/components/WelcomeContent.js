@@ -28,7 +28,7 @@ export default function Welcome() {
         </p>
 
         <a href='/kickingbrass'>
-          <div className='sprite-row'>
+          <div className='welcome-sprite-row'>
             <img src={sprite1} alt="sprite1" className="sprite" />
             <img src={sprite3} alt="sprite2" className="sprite" />
             <img src={sprite2} alt="sprite3" className="sprite" />
@@ -37,6 +37,7 @@ export default function Welcome() {
             <img src={sprite4} alt="sprite6" className="sprite" />
           </div>
         </a>
+
         <h3>
           Our studio is driven by the passion of developing a video game, no matter where we are, who we are, or what our circumstances might be.
         </h3>
