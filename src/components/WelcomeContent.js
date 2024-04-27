@@ -12,8 +12,8 @@ import banner1 from '../images/startup_group.jpg';
 
 export default function Welcome() {
   return (
-    <div class="welcome-section">
-      <div class="welcome-message">
+    <div className="welcome-section">
+      <div className="welcome-message">
         <h1>Stepheight</h1>
 
         <h2>

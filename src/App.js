@@ -11,6 +11,7 @@ import Updates from './pages/Updates';
 function App() {
     return (
         <div className='app'>
+            {console.log('Welcome to Stepheight.com')}
             <Router>
                 <Navbar />
                 <Routes>

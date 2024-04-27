@@ -1,20 +1,19 @@
 /* KickingBrass.css */
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap');
 
 .kickingbrass-content {
-    margin: 20px;
     padding: 20px;
     text-align: center;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Fanwood Text', serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-.kickingbrass-content h1 {
-    color: #333;
+h2 {
+    color: #a16edd;
 }
 
-.kickingbrass-content p {
-    color: #666;
-    font-size: 16px;
+p {
+    color: #a684cd;
 }

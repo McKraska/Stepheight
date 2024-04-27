@@ -8,59 +8,42 @@ import './DownloadsContent.css';
 export default function DownloadsContent() {
     return (
         <div className="downloads-content">
-            <div class="card-container">
-                <div className="card-content">
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
-                        <CardHeader
-                            title="Limited Art test Version 0.1a Windows 64bit"
-                            subheader="To play, extract the Zip and open KB_Art.exe"
-                        />
+            <div className="card-content">
+                <Card className="image-card" sx={{ backgroundColor: '#fffde6' }}>
+                    <CardHeader
+                        title="Limited Art test Version 0.1a Windows 64bit"
+                        subheader="To play, extract the Zip and open KB_Art.exe"
+                    />
 
-                        <CardContent>
-                            <Button
-                                variant="contained"
-                                href="/path-to-your/download1.file"
-                                download="filename1"
-                            >
-                                Download
-                            </Button>
-                        </CardContent>
-                    </Card>
+                    <CardContent>
+                        <Button
+                            variant="contained"
+                            href="/path-to-your/download1.file"
+                            download="filename1"
+                            sx={{ backgroundColor: '#fffde6', '&:hover': { backgroundColor: '#fffde1' } }}
+                        >
+                            Download
+                        </Button>
+                    </CardContent>
+                </Card>
 
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
-                        <CardHeader
-                            title="Limited Art test Version 0.1a Windows 64bit"
-                            subheader="To play, extract the Zip and open KB_Art.exe"
-                        />
+                <Card sx={{ backgroundColor: '#fffde6' }} className="image-card">
+                    <CardHeader
+                        title="Version Alpha 0.06a Windows 64bit"
+                        subheader="To play, extract the Zip and open KickingBrass.exe"
+                    />
 
-                        <CardContent>
-                            <Button
-                                variant="contained"
-                                href="/path-to-your/download1.file"
-                                download="filename1"
-                            >
-                                Download
-                            </Button>
-                        </CardContent>
-                    </Card>
-
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
-                        <CardHeader
-                            title="Limited Art test Version 0.1a Windows 64bit"
-                            subheader="To play, extract the Zip and open KB_Art.exe"
-                        />
-
-                        <CardContent>
-                            <Button
-                                variant="contained"
-                                href="/path-to-your/download1.file"
-                                download="filename1"
-                            >
-                                Download
-                            </Button>
-                        </CardContent>
-                    </Card>
-                </div>
+                    <CardContent>
+                        <Button
+                            variant="contained"
+                            href="/path-to-your/download1.file"
+                            download="filename1"
+                            sx={{ backgroundColor: '#fffde6', '&:hover': { backgroundColor: '#fffde1' } }}
+                        >
+                            Download
+                        </Button>
+                    </CardContent>
+                </Card>
             </div>
         </div>
     );

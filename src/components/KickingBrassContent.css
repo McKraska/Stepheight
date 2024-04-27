@@ -11,7 +11,6 @@ body {
 
 .kickingbrass-content {
     margin: 0px auto;
-    padding: 50px;
     text-align: center;
     font-family: 'Maven Pro', sans-serif;
     max-width: 1000px;
@@ -26,8 +25,7 @@ body {
 }
 
 .kickingbrass-content h3,
-h2,
-h4,
+h2 h4,
 h5,
 h6 {
     color: #a16edd;
@@ -39,6 +37,21 @@ h6 {
     font-size: 16px;
     font-family: 'Fanwood Text', serif;
 }
+
+.dense-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dense-list li {
+    padding: 4px 0;
+}
+
+.dense-list p {
+    margin: 0;
+}
+
 
 .img1 {
     top: 50%;
@@ -88,9 +101,16 @@ h6 {
     padding: 0px;
 }
 
+.sprite-row {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #333;
+}
+
 .sprite-row-flipped {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    margin-bottom: 50px;
+    border-bottom: 1px solid #333;
 }
 
 @media (min-width: 751px) {

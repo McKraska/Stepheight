@@ -13,8 +13,6 @@ import image3 from '../images/startup_oskar.jpg';
 export default function TeamContent() {
     return (
         <div className="team-content">
-
-
             <div className="image-row">
                 {/* SAM */}
                 <Card className="image-card" sx={{ backgroundColor: '#fffde6' }}>
