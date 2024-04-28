@@ -6,7 +6,8 @@
 }
 
 .downloads-content .MuiButton-root {
-    color: #0a0f27;
+    background-color: #051a6f;
+    color: #ffffff;
 }
 
 .image-card {

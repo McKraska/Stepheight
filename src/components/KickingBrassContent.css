@@ -10,10 +10,7 @@ body {
 }
 
 .kickingbrass-content {
-    margin: 0px auto;
-    text-align: center;
     font-family: 'Maven Pro', sans-serif;
-    max-width: 1000px;
     color: #a16edd;
 }
 
@@ -38,20 +35,17 @@ h6 {
     font-family: 'Fanwood Text', serif;
 }
 
+.controls-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 .dense-list {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 }
-
-.dense-list li {
-    padding: 4px 0;
-}
-
-.dense-list p {
-    margin: 0;
-}
-
 
 .img1 {
     top: 50%;
@@ -93,6 +87,12 @@ h6 {
 
 .card {
     position: relative;
+    margin: 20px;
+    background-color: #200044;
+}
+
+.items-card {
+    background-color: rgb(41, 0, 52);
 }
 
 .glossary-image {
@@ -141,7 +141,7 @@ h6 {
 
 @media (max-width: 750px) {
     .kickingbrass-content {
-        padding: 50px;
+        padding: 10px;
     }
 
     .kickingbrass-body {
