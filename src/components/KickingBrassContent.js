@@ -56,10 +56,6 @@ import roger from '../images/gunner_walk_right.gif';
 import tybalt from '../images/melen_walk_right.gif';
 import bill from '../images/saxen_walk_right.gif';
 
-
-
-
-
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 export default function KickingBrassContent() {
@@ -114,7 +110,6 @@ export default function KickingBrassContent() {
                     <Tab label="Fundamentals" />
                     <Tab label="Glossary" />
                 </Tabs>
-                {/* Your other components go here */}
             </ThemeProvider>
 
             {/* about */}
@@ -289,24 +284,24 @@ export default function KickingBrassContent() {
                             <CardContent>
                                 <h3>ENEMIES</h3>
                                 {[
-                                    { name: 'ROGER', description: 'Primary : Shoots [2 connected 8th] in a straight trajectory. Secondary : Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.', image: roger },
-                                    { name: 'TYBALT', description: 'Primary : Commands all minion units to fire. Secondary : Rearranges the formation of all minions you own. Passive : Summons two sousaphone minions.', image: tybalt },
-                                    { name: 'BILL', description: 'Primary: Summons a spooky scary skeleton...', image: bill },
-                                    { name: 'GOOSE', description: 'Primary: Shoots [2 connected 8th]...', image: goose },
-                                    { name: 'GERHARD', description: 'Primary: Commands all minion units...', image: gerhard },
-                                    { name: 'MICHAELA', description: 'Primary: Summons a spooky scary skeleton...', image: michaela },
-                                    { name: 'CLYDE', description: 'Primary: Commands all minion units...', image: clyde },
-                                    { name: 'MIKE (On holiday)', description: 'Primary: Summons a spooky scary skeleton...', image: mike },
-                                    { name: 'GATLING GARY', description: 'Primary: Summons a spooky scary skeleton...', image: gary },
-                                    { name: 'THE BRASSBARIAN', description: 'Primary: Summons a spooky scary skeleton...', image: brassarian },].map((item, index) => (
+                                    { name: 'ROGER', description: 'Shoots [8th] notes at you. Waiting for a promotion.', image: roger },
+                                    { name: 'TYBALT', description: 'Either stands in front of units to protect them or charges at you with a sharpened oboe. The crash cymbal shield blocks damage this unit would take, but can be destroyed, leaving the unit stunned with its guard down.', image: tybalt },
+                                    { name: 'BILL', description: 'Fires a lobbed [4th] projectile that explodes into [8th] when it lands. Tries to predict your movement.', image: bill },
+                                    { name: 'GOOSE', description: 'Honk.', image: goose },
+                                    { name: 'GERHARD', description: 'Fires a lobbed [4th] at the player which when it lands will explode into an enormous slow moving shockwave of [8th].', image: gerhard },
+                                    { name: 'MICHAELA', description: 'The fastest hand in the west. Michaela uses her impressive guitar solo skills to smite those she faces in combat with lightning from above! In her free time she enjoys finding ways to make her heels even pointier.', image: michaela },
+                                    { name: 'CLYDE', description: 'The fastest hat in the west. Clyde once slipped and fell onto a cymbal headfirst and he hasn\'t stopped spinning on it since! While spinning Clyde is immune to projectiles and even reflects them back, his constantly rotating state means that his steering leaves much to be desired. This might even leave you with an opening!', image: clyde },
+                                    { name: 'MIKE (On holiday)', description: 'Creates shockwaves which either cause other nearby enemies to be healed for [1 heart] over 5 seconds, or causes other nearby enemies to immediately attack.', image: mike },
+                                    { name: 'GATLING GARY', description: 'Literally the big guns. Gatling moves slowly and carries an oversized tuba which shoots large groups of projectiles. Each attack pushes him backwards. If he runs into a wall he takes a small amount of damage and is stunned briefly. If desperate, he may feel the need to overcharge his weapon.', image: gary },
+                                    { name: 'THE BRASSBARIAN', description: 'Brings down the lightning. Brassbarian rampages around with a double bass larger than you. He chases you around with leaps, swings and slams, and will rain down more lightning on you as the fight progresses. Although many people come to watch his deadly bass solo, few have the luxury of surviving it.', image: brassarian },].map((item, index) => (
                                         <Card className='items-card' sx={{ mt: 2, mb: 2 }}>
                                             <CardContent>
                                                 <Grid container spacing={2} alignItems="center">
-                                                    <Grid item xs={12} sm={6} md={6} lg={4} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
+                                                    <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
                                                         <img src={item.image} alt={item.name} className='glossary-image' />
                                                     </Grid>
-                                                    <Grid item xs={12} sm={6} md={6} lg={4} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
-                                                        <Typography variant="h6" gutterBottom>{item.name}</Typography>
+                                                    <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
+                                                        <h6>{item.name}</h6>
                                                         <Typography paragraph>{item.description}</Typography>
                                                     </Grid>
                                                 </Grid>
@@ -317,22 +312,22 @@ export default function KickingBrassContent() {
                                 <h3>INSTRUMENTS</h3>
 
                                 {[
-                                    { name: 'LYRE', description: 'Primary: Shoots [2 connected 8th]...', image: lyre },
-                                    { name: 'SNARE', description: 'Primary: Commands all minion units...', image: snare },
-                                    { name: 'XYLOPHONE', description: 'Primary: Summons a spooky scary skeleton...', image: xylophone },
-                                    { name: 'SAXOPHONE', description: 'Primary: Fires a lobbed [2 connected 8th]...', image: saxophone },
-                                    { name: 'TRUMPET', description: 'Primary: Fires a [2 connected 8th] projectile...', image: trumpet },
-                                    { name: 'VIOLIN', description: 'Primary: Swings the bow in melee range...', image: violin },
-                                    { name: 'DOUBLE BASS', description: 'Primary: Swings the bass in an arc...', image: double_bass },
+                                    { name: 'LYRE', description: 'Primary: Shoots [2 connected 8th] in a straight trajectory. Secondary: Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.', image: lyre },
+                                    { name: 'SNARE', description: 'Primary: Commands all minion units to fire. Secondary: Rearranges the formation of all minions you own. Passive: Summons two sousaphone minions.', image: snare },
+                                    { name: 'XYLOPHONE', description: 'Primary: Summons a spooky scary skeleton. Secondary: Detonates all minions you own.', image: xylophone },
+                                    { name: 'SAXOPHONE', description: 'Primary: Fires a lobbed [2 connected 8th]. The value (damage) of the note increases to [quarter] if the attack was charged. Secondary: Lobs a projectile that pulls units towards it. The radius increases if the attack was charged.', image: saxophone },
+                                    { name: 'TRUMPET', description: 'Primary: Fires a [2 connected 8th] projectile and accumulates water. If charged you shoot a [triplet]. Secondary: Releases all accumulated water in a burst of damage and shatters projectiles. The water remains as a puddle which slows enemy units. The more water was accumulated, the stronger the effects of this move are.', image: trumpet },
+                                    { name: 'VIOLIN', description: 'Primary: Swings the bow in melee range. Capable of shattering projectiles. Secondary: Creates [3 connected 8th] projectiles that orbit you. Every second projectile spawns as a ghost projectile that can be shattered, but will not deal damage while orbiting.', image: violin },
+                                    { name: 'DOUBLE BASS', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: double_bass },
                                 ].map((item, index) => (
                                     <Card className='items-card' sx={{ mt: 2, mb: 2 }}>
                                         <CardContent>
                                             <Grid container spacing={2} alignItems="center">
-                                                <Grid item xs={12} sm={6} md={6} lg={4} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
+                                                <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
                                                     <img src={item.image} alt={item.name} className='glossary-image' />
                                                 </Grid>
-                                                <Grid item xs={12} sm={6} md={6} lg={4} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
-                                                    <Typography variant="h6" gutterBottom>{item.name}</Typography>
+                                                <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
+                                                    <h6>{item.name}</h6>
                                                     <Typography paragraph>{item.description}</Typography>
                                                 </Grid>
                                             </Grid>
@@ -341,44 +336,40 @@ export default function KickingBrassContent() {
                                 ))}
 
                                 <h3>ITEMS</h3>
-                                <h4>Floog L. Horn</h4>
+
                                 {[
-                                    { name: 'ELECTRO LOOP', description: 'Active: Channels a beam of light...', image: electro_loop },
-                                    { name: 'FRIGID LOOP', description: 'Active: Hurl a frozen spear...', image: frigid_loop },
-                                    { name: 'CINDER LOOP', description: 'Active: Lobs a fireball...', image: cinder_loop },
-                                    { name: 'SOUL LOOP', description: 'Active: Releases 5 homing souls...', image: soul_loop },
-                                    { name: 'HEALING ALUMENT', description: 'Active: Heals [1 heart]...', image: healing_amulet },
-                                    { name: 'BOTTLED STARLIGHT', description: 'Active: Creates an expanding domain...', image: bottled_starlight },
-                                    { name: 'GOOSE FLUTE', description: 'Active: Command the goose to charge...', image: goose_flute },
-                                    { name: 'RUSTY SHIELD', description: 'Active: Gain [1 glass heart]...', image: rusty_shield },
-                                    { name: 'FLEET FEATHER', description: 'Active: Gain a burst of 100% increased movement speed...', image: fleet_feather },
-
-                                    // Consumables
-                                    { name: 'POTATO', description: 'Active: Halves damage taken...', image: potato },
-                                    { name: 'CHILLI', description: 'Active: Doubles damage dealt and taken...', image: chilli },
-                                    { name: 'SOUP', description: 'Active: Slowly heals [3 hearts]...', image: soup },
-                                    { name: 'COOKIE', description: 'Active: Restores [1 heart]...', image: cookie },
-                                    { name: 'PIZZA', description: 'Active: Restores [1 heart]...', image: pizza },
-                                    { name: 'EGG', description: 'Active: Throws an egg...', image: egg },
-
-                                    // Passive items
-                                    { name: 'SUBSTITUTE DOLL', description: 'Passive: Upon taking lethal damage...', image: substitute_doll },
-                                    { name: 'OVEN MITTENS', description: 'Passive: Every 5 Enemies you defeat...', image: oven_mittens },
-                                    { name: 'GLASS FURNACE', description: 'Passive: Every time you defeat a unit...', image: glass_furnace },
-                                    { name: 'THORN MANTLE', description: 'Passive: Taking damage retaliates...', image: thorn_mantle },
-                                    { name: 'PIGGYBANK', description: 'Passive: If carried through one round...', image: piggybank },
-                                    { name: 'GREED ARMOUR', description: 'Passive: Taking damage will instead...', image: gread_armour },
-                                    { name: 'PLATE ARMOUR', description: 'Passive: Reduces all damage taken...', image: plate_armour },
-                                    { name: 'BALLET SKIRT', description: 'Passive: Jumping makes you perform a pirouette...', image: ballet_skirt },
+                                    { name: 'ELECTRO LOOP', description: 'Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage. Cooldown: 7 Seconds.', image: electro_loop },
+                                    { name: 'FRIGID LOOP', description: 'Active: Hurl a frozen spear in the target direction, piercing enemies for [1] damage and freezing them for 2 seconds. Cooldown: 12 Seconds.', image: frigid_loop },
+                                    { name: 'CINDER LOOP', description: 'Active: Lobs a fireball towards the targeted location, erupting in a fiery explosion when it touches the ground, knocking away nearby enemies and dealing [1.5] damage to them. Cooldown: 6 Seconds.', image: cinder_loop },
+                                    { name: 'SOUL LOOP', description: 'Active: Releases 5 homing souls which chase down nearby enemies, dealing [1] damage and fearing them for 2 seconds, causing them to run away from you. Doesnt have a cooldown but instead recharges by defeating 5 enemies.', image: soul_loop },
+                                    { name: 'HEALING ALUMENT', description: 'Active: Heals [1 heart]. Has a chance to be damaged when used. After being damaged 3 times it will break, disappearing completely. If it is only damaged but not broken it can be repaired at Jerome. Cooldown: 5 Seconds.', image: healing_amulet },
+                                    { name: 'BOTTLED STARLIGHT', description: 'Active: Creates an expanding domain in which stars rain down upon up to 5 enemies every 0.75 seconds. These stars deal [1] damage to whoever they directly strike, and [0.5] damage to anyone near them. Cooldown: 18 Seconds.', image: bottled_starlight },
+                                    { name: 'GOOSE FLUTE', description: 'Active: Command the goose to charge towards the targeted location, shattering projectiles along the way and dealing [1] damage and knocking back enemies it passes through. Passive: An invulnerable goose follows you around, attacking nearby enemies with a lobbed [quarter note] every 3 seconds.', image: goose_flute },
+                                    { name: 'RUSTY SHIELD', description: 'Active: Gain [1 glass heart] for 3 seconds. Cooldown: 8 Seconds.', image: rusty_shield },
+                                    { name: 'FLEET FEATHER', description: 'Active: Gain a burst of 100% increased movement speed, decaying over 3 seconds. Cooldown: 10 Seconds.', image: fleet_feather },
+                                    { name: 'POTATO', description: 'Active: Halves damage taken for 20 seconds. Consumed on use. Does not stack.', image: potato },
+                                    { name: 'CHILLI', description: 'Active: Doubles damage dealt and taken for 15 seconds. Consumed on use. Does not stack.', image: chilli },
+                                    { name: 'SOUP', description: 'Active: Slowly heals [3 hearts] over 15 seconds. Consumed on use. Does not stack.', image: soup },
+                                    { name: 'COOKIE', description: 'Active: Restores [1 heart] on use. Consumed on use.', image: cookie },
+                                    { name: 'PIZZA', description: 'Active: Restores [1 heart] on use. Consumed after using all 8 slices. Cooldown: 11.', image: pizza },
+                                    { name: 'EGG', description: 'Active: Throws an egg at the target location which breaks into [three eighth notes] upon striking the ground. Destroyed on use.', image: egg },
+                                    { name: 'SUBSTITUTE DOLL', description: 'Passive: Upon taking lethal damage will sacrifice itself to fully heal you.', image: substitute_doll },
+                                    { name: 'OVEN MITTENS', description: 'Passive: Every 5 Enemies you defeat create a cookie in your inventory. Cookies created this way have a low chance of spawning as a pizza instead', image: oven_mittens },
+                                    { name: 'GLASS FURNACE', description: 'Passive: Every time you defeat a unit you gain half a glass heart that lasts for 4 seconds.', image: glass_furnace },
+                                    { name: 'THORN MANTLE', description: 'Passive: Taking damage retaliates with a burst of projectiles.', image: thorn_mantle },
+                                    { name: 'PIGGYBANK', description: 'Passive: If carried through one round, explodes in a rain of sheet music (30 sheets).', image: piggybank },
+                                    { name: 'GREED ARMOUR', description: 'Passive: Taking damage will instead drain your sheet music, if possible. You lose 10 sheets per point of [1 heart] damage taken. Half of the money lost will drop onto the floor near you.', image: gread_armour },
+                                    { name: 'PLATE ARMOUR', description: 'Passive: Reduces all damage taken by [quarter heart] to a minimum of [quarter heart].', image: plate_armour },
+                                    { name: 'BALLET SKIRT', description: 'Passive: Jumping makes you perform a pirouette when you land which shoots a spiral of [8th] projectiles around you.', image: ballet_skirt },
                                 ].map((item, index) => (
                                     <Card className='items-card' sx={{ mt: 2, mb: 2 }}>
                                         <CardContent>
                                             <Grid container spacing={2} alignItems="center">
-                                                <Grid item xs={12} sm={6} md={6} lg={4} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
+                                                <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
                                                     <img src={item.image} alt={item.name} className='glossary-image' />
                                                 </Grid>
-                                                <Grid item xs={12} sm={6} md={6} lg={4} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
-                                                    <Typography variant="h6" gutterBottom>{item.name}</Typography>
+                                                <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
+                                                    <h6>{item.name}</h6>
                                                     <Typography paragraph>{item.description}</Typography>
                                                 </Grid>
                                             </Grid>

@@ -1,11 +1,14 @@
 .downloads-content {
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flex;
-    justify-content: center;
+}
+
+.downloads-content h1 {
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .downloads-content .MuiButton-root {
+    font-family: 'Chakra Petch', sans-serif;
     background-color: #051a6f;
     color: #ffffff;
 }
@@ -25,8 +28,5 @@
 }
 
 @media (min-width: 750px) {
-    .image-card {
-        width: 900px;
-        height: auto;
-    }
+    .card-content {}
 }

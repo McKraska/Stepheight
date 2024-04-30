@@ -10,6 +10,7 @@ body {
 }
 
 .kickingbrass-content {
+    /* margin: 0px auto; */
     font-family: 'Maven Pro', sans-serif;
     color: #a16edd;
 }
@@ -22,10 +23,16 @@ body {
 }
 
 .kickingbrass-content h3,
-h2 h4,
-h5,
-h6 {
+h2,
+h4,
+h5 {
     color: #a16edd;
+    font-family: 'Fanwood Text', serif;
+}
+
+.kickingbrass-content h6 {
+    color: #a16edd;
+    font-size: medium;
     font-family: 'Fanwood Text', serif;
 }
 
@@ -88,7 +95,7 @@ h6 {
 .card {
     position: relative;
     margin: 20px;
-    background-color: #200044;
+    padding: auto;
 }
 
 .items-card {
@@ -96,9 +103,9 @@ h6 {
 }
 
 .glossary-image {
-    height: 100px;
-    width: auto;
-    padding: 0px;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
 }
 
 .sprite-row {
@@ -141,7 +148,7 @@ h6 {
 
 @media (max-width: 750px) {
     .kickingbrass-content {
-        padding: 10px;
+        padding: 1px;
     }
 
     .kickingbrass-body {
@@ -152,5 +159,9 @@ h6 {
         position: absolute;
         top: 2px;
         right: 5px;
+    }
+
+    .items-card {
+        background-color: rgb(41, 0, 52) !important;
     }
 }
