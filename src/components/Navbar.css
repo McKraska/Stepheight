@@ -7,7 +7,9 @@
 }
 
 #Nav .MuiAppBar-root {
-    background-color: #fffde6;
+    background-color: #051a6f1c;
+    ;
+    backdrop-filter: blur(5px);
 }
 
 .navbar-logo {
