@@ -47,6 +47,7 @@ export default function Welcome() {
           Our team started doing this in an area where game development is basically unheard of, while also juggling university, side jobs, and a handful of personal challenges.
           We want Stepheight to be a beacon of what is possible, no matter what restrictions one might face.
         </p>
+
       </div>
     </div>
   );

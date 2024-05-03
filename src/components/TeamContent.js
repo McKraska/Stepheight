@@ -10,6 +10,9 @@ import image1 from '../images/startup_sam.jpg';
 import image2 from '../images/startup_peter.jpg';
 import image3 from '../images/startup_oskar.jpg';
 
+import poster from '../images/publi_poster-1.png';
+
+
 export default function TeamContent() {
     return (
         <div className="team-content">
@@ -79,6 +82,8 @@ export default function TeamContent() {
                     </CardContent>
                 </Card>
             </div>
+
+            <img src={poster} alt="poster" className="poster" />
         </div>
     );
 }
