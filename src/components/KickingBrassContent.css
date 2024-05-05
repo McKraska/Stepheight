@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-body {
-    font-family: 'Maven Pro', sans-serif;
+body,
+html {
+    font-family: 'Rubik', sans-serif;
 }
 
 .kickingbrass-body {
@@ -11,7 +13,6 @@ body {
 
 .kickingbrass-content {
     /* margin: 0px auto; */
-    font-family: 'Maven Pro', sans-serif;
     color: #a16edd;
 }
 
@@ -19,7 +20,6 @@ body {
     padding-top: 5%;
     padding-bottom: 2%;
     color: #a16edd;
-    font-family: 'Fanwood Text', serif;
 }
 
 .kickingbrass-content h3,
@@ -27,19 +27,16 @@ h2,
 h4,
 h5 {
     color: #a16edd;
-    font-family: 'Fanwood Text', serif;
 }
 
 .kickingbrass-content h6 {
     color: #a16edd;
     font-size: medium;
-    font-family: 'Fanwood Text', serif;
 }
 
 .kickingbrass-content p {
     color: #a684cd;
     font-size: 16px;
-    font-family: 'Fanwood Text', serif;
 }
 
 .controls-container {
@@ -96,10 +93,11 @@ h5 {
     position: relative;
     margin: 20px;
     padding: auto;
+    background-color: #33333300;
 }
 
 .items-card {
-    background-color: rgb(41, 0, 52);
+    background-color: rgba(47, 255, 0, 0);
 }
 
 .glossary-image {

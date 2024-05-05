@@ -280,7 +280,7 @@ export default function KickingBrassContent() {
             {value === 2 && (
                 <div className="kickingbrass-content">
                     <Box sx={{ margin: '50px' }}>
-                        <Card sx={{ backgroundColor: '#180d25' }} className="card">
+                        <Card sx={{ backgroundColor: '#13001b' }} className="card">
                             <CardContent>
                                 <h3>ENEMIES</h3>
                                 {[
