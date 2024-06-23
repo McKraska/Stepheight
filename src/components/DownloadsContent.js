@@ -8,59 +8,55 @@ import './DownloadsContent.css';
 export default function DownloadsContent() {
     return (
         <div className="downloads-content">
-            <div class="card-container">
-                <div className="card-content">
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
-                        <CardHeader
-                            title="Limited Art test Version 0.1a Windows 64bit"
-                            subheader="To play, extract the Zip and open KB_Art.exe"
-                        />
+            <h1>Downloads</h1>
+            <div className="card-content">
+                <Card className="image-card" sx={{ backgroundColor: '#fffde6' }}>
+                    <CardHeader
+                        title="Limited Art test Version 0.1a Windows 64bit"
+                        subheader="To play, extract the Zip and open KB_Art.exe"
+                        titleTypographyProps={{
+                            sx: { fontFamily: 'Chakra Petch' }
+                        }}
+                        subheaderTypographyProps={{
+                            sx: { fontFamily: 'Chakra Petch' }
+                        }}
+                    />
 
-                        <CardContent>
-                            <Button
-                                variant="contained"
-                                href="/path-to-your/download1.file"
-                                download="filename1"
-                            >
-                                Download
-                            </Button>
-                        </CardContent>
-                    </Card>
+                    <CardContent>
+                        <Button
+                            variant="contained"
+                            href="https://storage.cloud.google.com/stepheight_downloads/KB_Art_01.zip"
+                            download="KB_Art_01"
+                            sx={{ backgroundColor: '#fffde6', '&:hover': { backgroundColor: '#fffde1' } }}
+                        >
+                            Download
+                        </Button>
+                    </CardContent>
+                </Card>
 
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
-                        <CardHeader
-                            title="Limited Art test Version 0.1a Windows 64bit"
-                            subheader="To play, extract the Zip and open KB_Art.exe"
-                        />
+                <Card sx={{ backgroundColor: '#fffde6' }} className="image-card">
+                    <CardHeader
+                        title="Version Alpha 0.06a Windows 64bit"
+                        subheader="To play, extract the Zip and open KickingBrass.exe"
+                        titleTypographyProps={{
+                            sx: { fontFamily: 'Chakra Petch' }
+                        }}
+                        subheaderTypographyProps={{
+                            sx: { fontFamily: 'Chakra Petch' }
+                        }}
+                    />
 
-                        <CardContent>
-                            <Button
-                                variant="contained"
-                                href="/path-to-your/download1.file"
-                                download="filename1"
-                            >
-                                Download
-                            </Button>
-                        </CardContent>
-                    </Card>
-
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#fffde6' }} className="image-card">
-                        <CardHeader
-                            title="Limited Art test Version 0.1a Windows 64bit"
-                            subheader="To play, extract the Zip and open KB_Art.exe"
-                        />
-
-                        <CardContent>
-                            <Button
-                                variant="contained"
-                                href="/path-to-your/download1.file"
-                                download="filename1"
-                            >
-                                Download
-                            </Button>
-                        </CardContent>
-                    </Card>
-                </div>
+                    <CardContent>
+                        <Button
+                            variant="contained"
+                            href="https://storage.cloud.google.com/stepheight_downloads/Kicking_Brass_v006a.zip"
+                            download="Kicking_Brass_v006a"
+                            sx={{ backgroundColor: '#fffde6', '&:hover': { backgroundColor: '#fffde1' } }}
+                        >
+                            Download
+                        </Button>
+                    </CardContent>
+                </Card>
             </div>
         </div>
     );

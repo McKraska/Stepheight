@@ -12,8 +12,8 @@ import banner1 from '../images/startup_group.jpg';
 
 export default function Welcome() {
   return (
-    <div class="welcome-section">
-      <div class="welcome-message">
+    <div className="welcome-section">
+      <div className="welcome-message">
         <h1>Stepheight</h1>
 
         <h2>
@@ -28,7 +28,7 @@ export default function Welcome() {
         </p>
 
         <a href='/kickingbrass'>
-          <div className='sprite-row'>
+          <div className='welcome-sprite-row'>
             <img src={sprite1} alt="sprite1" className="sprite" />
             <img src={sprite3} alt="sprite2" className="sprite" />
             <img src={sprite2} alt="sprite3" className="sprite" />
@@ -37,6 +37,7 @@ export default function Welcome() {
             <img src={sprite4} alt="sprite6" className="sprite" />
           </div>
         </a>
+
         <h3>
           Our studio is driven by the passion of developing a video game, no matter where we are, who we are, or what our circumstances might be.
         </h3>
@@ -47,7 +48,6 @@ export default function Welcome() {
           Our team started doing this in an area where game development is basically unheard of, while also juggling university, side jobs, and a handful of personal challenges.
           We want Stepheight to be a beacon of what is possible, no matter what restrictions one might face.
         </p>
-
       </div>
     </div>
   );

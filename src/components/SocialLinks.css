@@ -1,0 +1,18 @@
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Optional: adds space between icons */
+}
+
+.navbar-icon {
+    width: 40px; /* Adjust size as needed */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-icon:hover {
+    transform: scale(1.1); /* Makes the icon slightly larger on hover */
+    opacity: 0.8; /* Makes the icon slightly transparent on hover */
+}

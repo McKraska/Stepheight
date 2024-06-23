@@ -5,8 +5,7 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import KickingBrass from './pages/KickingBrass';
-import Downloads from './pages/Downloads';
-import Updates from './pages/Updates';
+import AboutUs from './pages/AboutUs';
 
 function App() {
     return (
@@ -16,8 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/kickingbrass" element={<KickingBrass />} />
-                    <Route path="/downloads" element={<Downloads />} />
-                    <Route path="/updates" element={<Updates />} />
+                    <Route path="/aboutus" element={<AboutUs />} />
                 </Routes>
                 <Footer />
             </Router>

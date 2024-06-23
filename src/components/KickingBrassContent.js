@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Typography, List, ListItem, ListItemText, Card, Tabs, Tab, Grid, CardContent, Box } from '@mui/material';
+import { Typography, List, Card, Tabs, Tab, Grid, CardContent, Box } from '@mui/material';
 import './KickingBrassContent.css';
 
 import kb_logo from '../images/kicking_brass_logo.png';
@@ -8,13 +8,53 @@ import kb_banner from '../images/tuba_banner_video.mp4';
 import kb_img1 from '../images/Promo_art_bw.png';
 import controlsGif from '../images/Controls.gif';
 import inventory from '../images/Inventory.png';
-import hearts from '../images/hearts.png';
 
+//ITEMS
+import hearts from '../images/hearts.png';
+import double_bass from '../images/pickup_double_bass.png';
+import frigid_loop from '../images/pickup_ice_loop.png';
+import electro_loop from '../images/pickup_electro_loop.png';
+import cinder_loop from '../images/pickup_fire_loop.png';
+import ballet_skirt from '../images/pickup_ballet.png';
+import chilli from '../images/pickup_chilli.png';
+import cookie from '../images/pickup_cookie.png';
+import egg from '../images/pickup_egg.png';
+import bottled_starlight from '../images/pickup_domain.png';
+import fleet_feather from '../images/pickup_fleet.png';
+import glass_furnace from '../images/pickup_glass_furnace.png';
+import goose_flute from '../images/pickup_goose.png';
+import gread_armour from '../images/pickup_gread_armour.png';
+import healing_amulet from '../images/pickup_healing_amulet.png';
+import oven_mittens from '../images/pickup_mittens.png';
+import piggybank from '../images/pickup_piggy.png';
+import pizza from '../images/pickup_pizza.png';
+import plate_armour from '../images/pickup_plate.png';
+import potato from '../images/pickup_potato.png';
+import rusty_shield from '../images/pickup_rusty_shield.png';
+import saxophone from '../images/pickup_saxophone.png';
+import soul_loop from '../images/pickup_soul_loop.png';
+import soup from '../images/pickup_soup.png';
+import substitute_doll from '../images/pickup_substitute.png';
+import thorn_mantle from '../images/pickup_thornmantle.png';
+import trumpet from '../images/pickup_trumpet.png';
+import violin from '../images/pickup_violin.png';
+
+//INSTRUMENTS
 import lyre from '../images/pickup_lyre.png';
 import snare from '../images/pickup_snare.png';
-import electroloop from '../images/pickup_electro_loop.png';
 import xylophone from '../images/pickup_xylophone.png';
-import floog from '../images/pickup_fleet.png';
+
+// ENEMIES
+import goose from '../images/goose_walk_right.gif';
+import gary from '../images/gatling_walk_right.gif';
+import mike from '../images/drumen_walk_right.gif';
+import gerhard from '../images/heavybrass_walk_right.gif';
+import brassarian from '../images/bb_walk_right.gif';
+import michaela from '../images/Michaela_walk_right.gif';
+import clyde from '../images/Clyde_spin_attack.gif';
+import roger from '../images/gunner_walk_right.gif';
+import tybalt from '../images/melen_walk_right.gif';
+import bill from '../images/saxen_walk_right.gif';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -48,7 +88,7 @@ export default function KickingBrassContent() {
     });
 
     return (
-        <div className='kickingbrass-body'>
+        <div>
             <div className="video-container">
                 <img src={kb_logo} alt="Logo" />
                 <video autoPlay loop muted playsInline>
@@ -58,259 +98,292 @@ export default function KickingBrassContent() {
                 <div className="video-fade"></div>
             </div>
 
-            <ThemeProvider theme={theme}>
-                <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    centered
-                    textColor="primary"
-                    indicatorColor="primary"
-                >
-                    <Tab label="About" />
-                    <Tab label="Fundamentals" />
-                    <Tab label="Glossary" />
-                </Tabs>
-                {/* Your other components go here */}
-            </ThemeProvider>
+            <div className='kickingbrass-body'>
+                <ThemeProvider theme={theme}>
+                    <Tabs
+                        value={value}
+                        onChange={handleChange}
+                        centered
+                        textColor="primary"
+                        indicatorColor="primary"
+                    >
+                        <Tab label="About" />
+                        <Tab label="Fundamentals" />
+                        <Tab label="Glossary" />
+                    </Tabs>
+                </ThemeProvider>
 
-            {/* about */}
-            {value === 0 && (
-                <div className="kickingbrass-content">
-                    <Card sx={{ backgroundColor: '#180d25' }} className="card">
-                        <CardContent>
-                            <h1>THE WORLD OF KICKING BRASS</h1>
-                            <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
-                                <img src={discord} alt="discord" />
-                            </a>
+                {/* about */}
+                {value === 0 && (
+                    <div className="kickingbrass-content">
+                        <Card sx={{ backgroundColor: '#180d25' }} className="card" >
+                            <CardContent>
+                                <h1>THE WORLD OF KICKING BRASS</h1>
 
-                            <h2>
-                                Your family is missing,
-                            </h2>
+                                <a href={discordInviteLink} target="_blank" rel="noopener noreferrer" className="discord-button">
+                                    <img src={discord} alt="discord" />
+                                </a>
 
-                            <h2>
-                                your village has been ransacked,
-                            </h2>
+                                <h2>
+                                    Your family is missing,
+                                </h2>
 
-                            <h2>
-                                and hostile forces surround you on all sides.
-                            </h2>
+                                <h2>
+                                    your village has been ransacked,
+                                </h2>
 
-                            <p>
-                                King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!</p>
-                            <p>
-                                Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven!
-                            </p>
-                            <p>
+                                <h2>
+                                    and hostile forces surround you on all sides.
+                                </h2>
 
-                                Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
-                            </p>
-                            <p>
-                                Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
-                            </p>
+                                <div className='sprite-row'>
+                                    <img src={goose} alt="goose" className="sprite" />
+                                    <img src={mike} alt="mike" className="sprite" />
+                                    <img src={gary} alt="gary" className="sprite" />
+                                    <img src={michaela} alt="michaela" className="sprite" />
+                                    <img src={gerhard} alt="gerhard" className="sprite" />
+                                    <img src={brassarian} alt="brassarian" className="sprite" />
+                                </div>
 
-                            <img src={kb_img1} alt="Colosseum" className='img1' />
+                                <p>
+                                    King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!</p>
+                                <p>
+                                    Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven!
+                                </p>
+                                <p>
 
-                            <h3> THE COLOSSEUM </h3>
+                                    Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
+                                </p>
+                                <p>
+                                    Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
+                                </p>
 
-                            <p>
-                                The gates to King Brasshoven’s colosseum open once again! For centuries only the strongest, bravest, and dumbest warriors from all over the continent have made their way to these sacred grounds in order to prove themselves (and/or die horrifically).
-                                Each year a champion has left their mark on the Empire of Brass and each year more contestants try to do the same.
-                                Face waves upon waves of enemies, each more challenging than the last. Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
-                                Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
-                            </p>
-                        </CardContent>
-                    </Card>
-                </div>
-            )}
+                                <div className='sprite-row-flipped'>
+                                    <img src={goose} alt="goose" className="sprite" />
+                                    <img src={mike} alt="mike" className="sprite" />
+                                    <img src={gary} alt="gary" className="sprite" />
+                                    <img src={michaela} alt="michaela" className="sprite" />
+                                    <img src={gerhard} alt="gerhard" className="sprite" />
+                                    <img src={brassarian} alt="brassarian" className="sprite" />
+                                </div>
 
-            {/* controls */}
-            {value === 1 && (
-                <Box sx={{ margin: '30px' }}>
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
-                        <CardContent>
-                            <Grid container spacing={2}>
-                                <Grid item xs={12} md={8}>
-                                    <Typography variant="h5" gutterBottom color={''}>Controls</Typography>
+                                <h1> THE COLOSSEUM </h1>
+
+                                <img src={kb_img1} alt="Colosseum" className='img1' />
+
+                                <h2>
+                                    The gates to King Brasshoven’s colosseum open once again!
+                                </h2>
+
+                                <h3>
+                                    For centuries only the strongest, bravest, and dumbest warriors from all over the continent have made their way to these sacred grounds in order to prove themselves (and/or die horrifically).
+                                </h3>
+                                <p>
+                                    Each year a champion has left their mark on the Empire of Brass and each year more contestants try to do the same.
+                                    Face waves upon waves of enemies, each more challenging than the last. Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
+                                </p>
+                                <p>
+                                    Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
+                                </p>
+                            </CardContent>
+                        </Card>
+                    </div>
+                )}
+
+                {/* inventory */}
+                {value === 1 && (
+                    <div className="kickingbrass-content">
+                        <Box sx={{ margin: '30px' }}>
+                            <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
+                                <CardContent>
+                                    <h3>Controls</h3>
+                                    <div className="controls-container">
+                                        <ul className="dense-list">
+                                            <li><p>[W] - Move Forward</p></li>
+                                            <li><p>[A] - Move Left</p></li>
+                                            <li><p>[S] - Move Backward</p></li>
+                                            <li><p>[D] - Move Right</p></li>
+                                            <li><p>[Space] - Jump</p></li>
+                                            <li><p>[Cursor] - Aim</p></li>
+                                            <li><p>[Ctrl] - Camera to Cursor</p></li>
+                                            <li><p>[LMB] - Primary Attack</p></li>
+                                            <li><p>[RMB] - Secondary Attack</p></li>
+                                        </ul>
+                                        <ul className="dense-list">
+                                            <li><p>[Scroll Up] - Next Instrument</p></li>
+                                            <li><p>[E] - Next Instrument</p></li>
+                                            <li><p>[Scroll Down] - Prev Instrument</p></li>
+                                            <li><p>[Q] - Prev Instrument</p></li>
+                                            <li><p>[1] [2] [3] - Use Item</p></li>
+                                            <li><p>[Esc] - Toggle Menu</p></li>
+                                            <li><p>[I] - Toggle Inventory</p></li>
+                                            <li><p>[F] - Interact</p></li>
+                                        </ul>
+                                    </div>
+                                    <img src={controlsGif} className='glossary-image' alt="Controls GIF" />
+                                </CardContent>
+
+                            </Card>
+
+                            <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
+                                <CardContent>
+                                    <h3>Inventory</h3>
                                     <List dense>
-                                        <ListItem><ListItemText primary="[W] - Move Forward" /></ListItem>
-                                        <ListItem><ListItemText primary="[A] - Move Left" /></ListItem>
-                                        <ListItem><ListItemText primary="[S] - Move Backward" /></ListItem>
-                                        <ListItem><ListItemText primary="[D] - Move Right" /></ListItem>
-                                        <ListItem><ListItemText primary="[Space] - Jump" /></ListItem>
-                                        <ListItem><ListItemText primary="[Cursor] - Aim" /></ListItem>
-                                        <ListItem><ListItemText primary="[Ctrl] - Camera to Cursor" /></ListItem>
-                                        <ListItem><ListItemText primary="[LMB] - Primary Attack" /></ListItem>
-                                        <ListItem><ListItemText primary="[RMB] - Secondary Attack" /></ListItem>
-                                        <ListItem><ListItemText primary="[Scroll Up] - Next Instrument" /></ListItem>
-                                        <ListItem><ListItemText primary="[E] - Next Instrument" /></ListItem>
-                                        <ListItem><ListItemText primary="[Scroll Down] - Prev Instrument" /></ListItem>
-                                        <ListItem><ListItemText primary="[Q] - Prev Instrument" /></ListItem>
-                                        <ListItem><ListItemText primary="[1] [2] [3] - Use Item" /></ListItem>
-                                        <ListItem><ListItemText primary="[Esc] - Toggle Menu" /></ListItem>
-                                        <ListItem><ListItemText primary="[I] - Toggle Inventory" /></ListItem>
-                                        <ListItem><ListItemText primary="[F] - Interact" /></ListItem>
-                                    </List>
-                                </Grid>
-                                <Grid item xs={12} md={4}>
-                                    <Box
-                                        display="flex"
-                                        justifyContent="center"
-                                        alignItems="center"
-                                        height="100%"
-                                    >
-                                        <img src={controlsGif} className='img1' alt="Controls GIF" style={{ maxWidth: '100%', height: '75%' }} />
-                                    </Box>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Card>
+                                        <p>
+                                            Your inventory is divided into three main sections. The first section is shaped like a plus sign and is reserved for Equipment — these are your passive clothing items such as Headwear, Gloves, Chest/back pieces, Shoes, Trousers, and Trinkets like necklaces. Remember, only one piece of Equipment per type can be worn at a time.
+                                        </p>
 
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
-                        <CardContent>
-                            <Grid container spacing={2}>
-                                <Grid item xs={12} md={8}>
-                                    <Typography variant="h5" gutterBottom>Inventory</Typography>
+                                        <img src={inventory} alt="Inventory" className='glossary-image' />
+
+                                        <p>
+                                            The second section contains your Active items, which are the most frequently used. This section is always visible and includes three item boxes. You can use the items by pressing the default keys [1], [2], or [3]. Active items with cooldowns will show a timer until they're ready again, while consumables will disappear after use, freeing up their slot.
+                                        </p>
+                                        <p>
+                                            The third section holds your Instruments, with space for up to three. To switch between them, use the scroll wheel or the default keys [Q] and [E]. When viewing the full inventory, you can rearrange items by dragging them to a new slot or remove them from your inventory by dragging them out into the surrounding empty space.
+                                        </p>
+
+                                    </List>
+                                </CardContent>
+                            </Card>
+
+                            <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
+                                <CardContent>
+                                    <h3>Dealing Damage</h3>
                                     <List dense>
-                                        <Typography variant='p'>
-                                            Your inventory consists of three sections.
-                                            Firstly, containing your trusty Tuba Bell, you have a plus shaped inventory section which holds all passive clothing items called Equipment. There are slots for Headware, Gloves, Chest / back pieces, shoes and trousers, and finally trinkets like necklaces. You can only wear one Equipment of the same typ.
-                                            Most Frequently used is your section for Active items. These three item boxes can be seen at all times, and can be activated with one of the item use keys, by default [1] [2] [3]. Items with cooldown will display the ammount of time until they recharge, and consumable wll simply disappear and free the slot.
-                                            Finally You will find your instrments in a section of 3 boxes. You can only hold up to three Instruments at once. Cycle between them by default with your scroll wheel, or [Q] [E].
-                                            While in the full inventory view, any contents of the inventory can be dragged around to re-position, or thrown out of your inventoey by dragging it into the empty space around.
-                                        </Typography>
+                                        <p>
+                                            At the start of your journey, you have three hearts. Each enemy hit will cost you one heart, so guard them carefully! To increase your heart count, pick up a max heart. To replenish health, consume items like cookies. However, beware: if you lose all your hearts, you'll be sent back to your last checkpoint, as long as you have extra lives remaining. Run out of extra lives, and you'll have to start over from the beginning of your run.
+                                        </p>
+
+                                        <img src={hearts} alt="hearts" className='glossary-image' />
+                                        <p>
+                                            Sometimes, you might find a [glass heart]. Think of this as a temporary shield; it can take one hit before shattering. If you avoid taking damage, the [glass heart] will still vanish after a brief period. So make good use of it while it lasts!
+                                        </p>
+                                        <p>
+                                            Understand the Notes and Shattering system:
+                                            Enemy projectiles deal varying amounts of damage based on their musical notation. An [8th] note, the smallest projectile, inflicts half a heart of damage. These can be linked together by a beam, forming [2-8ths] or [3-8ths]. When hit by connected notes, the damage you take is cumulative of the number of [8th] notes connected. A [4th] note will damage one heart, a [half] note takes away two hearts, and a [whole] note will deplete four hearts.
+                                        </p>
+                                        <p>
+                                            Projectiles follow different paths based on their originating instrument. While the lyre and trumpet fire in straight lines, the saxophone arcs its shots, and the violin's notes orbit around. Some weapons don't emit projectiles, offering unique strategies to discover.
+                                        </p>
+                                        <p>
+                                            Shattering is a defensive technique allowing you to break projectiles. When shattered, they reverse direction and split into two, each inflicting half the original damage. For instance, shatter a [half] note to get two [4th] notes. Shatter connected [8th] notes, and they'll break into individual notes. However, [ghost notes]—like those from a violin—won't cause damage unless shattered. Upon impact with a shattered [ghost note], it transforms into damaging [8th] notes.
+                                        </p>
+
                                     </List>
-                                </Grid>
-                                <Grid item xs={12} md={4}>
-                                    <Box
-                                        display="flex"
-                                        justifyContent="center"
-                                        alignItems="center"
-                                        height="100%"
-                                    >
-                                        <img src={inventory} alt="Inventory" style={{ maxWidth: '100%', height: '75%' }} />
-                                    </Box>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Card>
+                                </CardContent>
+                            </Card>
+                        </Box>
+                    </div>
+                )}
 
-                    <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
-                        <CardContent>
-                            <Grid container spacing={2}>
-                                <Grid item xs={12} md={8}>
-                                    <Typography variant="h5" gutterBottom>Dealing Damage</Typography>
-                                    <List dense>
-                                        <Typography variant='p'>
-                                            You start with 3 hearts. Getting hit by enemies will drain your hearts so try not to lose them! You can gain more hearts by picking up a max heart. You can also restore missing health by using consumables such as the cookie.
-                                            If you do end up losing all your health, you will get to retry from your last checkpoint for each extra life you have. I’m afraid that you’ll have to restart your run if you lose all your lives.
-                                            In addition to normal hearts you may at times come across items that give you [glass heart]. [glass heart] is like an extra [heart] you get, however it only blocks one hit and disappears afterward. If you don’t take damage the [glass heart] will disappear after a short time.
-                                            Notes and Shattering :
-                                            Lob shots and Ghost shots Enemy projectiles deal damage based on their musical value. [8th] - the smallest projectile type, deals [half heart] of damage. These may be connected by a beam [2-8ths]/[3-8ths]. Getting hit by connected notes deals as much damage equal to the number of [8th] in the group . [4th] - Deals [heart] of damage [half] - Deals [2 hearts] of damage [whole] - Deals [4 hearts] of damage Projectile Trajectory: Notes can be shot in different trajectories depending on which instrument they come from. Most projectiles are linear (such as the lyre and trumpet) but others may be lobbed projectiles that fly in an arc (such as the saxophone), or orbiting projectiles (such as the violin produces). Some weapons don’t produce projectiles at all, but we’ll let you figure that out. Shattering: Projectiles can be shattered with certain weapons or items. When a projectile shatters it reverses its trajectory and splits into two projectiles that deal half as much damage each. For example, shattering a [half] would produce [two 4th]. Shattering an [8th] usually destroys the projectile, unless connected by a beam: [2-8th]/[3-8th]. Shattering a group of connected 8ths splits them into individual notes instead. [Ghost note], such as the ones that the violin produces, cannot deal damage unless shattered. If an enemy contacts a [ghost note] the note will simply pass through. If shattered, the [ghost note] turns into regular [8th]s and deal damage normally.
-                                        </Typography>
-                                    </List>
-                                </Grid>
-                                <Grid item xs={12} md={4}>
-                                    <Box
-                                        display="flex"
-                                        justifyContent="center"
-                                        alignItems="center"
-                                        height="100%"
-                                    >
-                                        <img src={hearts} alt="hearts" style={{ maxWidth: '100%', height: '75%' }} />
-                                    </Box>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Card>
-                </Box>
-            )}
 
-            {/* glossary */}
-            {value === 2 && (
-                <Box sx={{ margin: '50px' }}>
-                    <Card sx={{ backgroundColor: '#180d25' }} className="card">
-                        <CardContent>
-                            <Typography variant="h5" gutterBottom>INSTRUMENTS</Typography>
+                {/* glossary */}
+                {value === 2 && (
+                    <div className="kickingbrass-content">
+                        <Box sx={{ margin: '50px' }}>
+                            <Card sx={{ backgroundColor: '#180d25' }} className="card">
+                                <CardContent>
+                                    <h3>ENEMIES</h3>
+                                    {[
+                                        { name: 'ROGER', description: 'Shoots [8th] notes at you. Waiting for a promotion.', image: roger },
+                                        { name: 'TYBALT', description: 'Either stands in front of units to protect them or charges at you with a sharpened oboe. The crash cymbal shield blocks damage this unit would take, but can be destroyed, leaving the unit stunned with its guard down.', image: tybalt },
+                                        { name: 'BILL', description: 'Fires a lobbed [4th] projectile that explodes into [8th] when it lands. Tries to predict your movement.', image: bill },
+                                        { name: 'GOOSE', description: 'Honk.', image: goose },
+                                        { name: 'GERHARD', description: 'Fires a lobbed [4th] at the player which when it lands will explode into an enormous slow moving shockwave of [8th].', image: gerhard },
+                                        { name: 'MICHAELA', description: 'The fastest hand in the west. Michaela uses her impressive guitar solo skills to smite those she faces in combat with lightning from above! In her free time she enjoys finding ways to make her heels even pointier.', image: michaela },
+                                        { name: 'CLYDE', description: 'The fastest hat in the west. Clyde once slipped and fell onto a cymbal headfirst and he hasn\'t stopped spinning on it since! While spinning Clyde is immune to projectiles and even reflects them back, his constantly rotating state means that his steering leaves much to be desired. This might even leave you with an opening!', image: clyde },
+                                        { name: 'MIKE (On holiday)', description: 'Creates shockwaves which either cause other nearby enemies to be healed for [1 heart] over 5 seconds, or causes other nearby enemies to immediately attack.', image: mike },
+                                        { name: 'GATLING GARY', description: 'Literally the big guns. Gatling moves slowly and carries an oversized tuba which shoots large groups of projectiles. Each attack pushes him backwards. If he runs into a wall he takes a small amount of damage and is stunned briefly. If desperate, he may feel the need to overcharge his weapon.', image: gary },
+                                        { name: 'THE BRASSBARIAN', description: 'Brings down the lightning. Brassbarian rampages around with a double bass larger than you. He chases you around with leaps, swings and slams, and will rain down more lightning on you as the fight progresses. Although many people come to watch his deadly bass solo, few have the luxury of surviving it.', image: brassarian },].map((item, index) => (
+                                            <Card className='items-card' sx={{ mt: 2, mb: 2 }}>
+                                                <CardContent>
+                                                    <Grid container spacing={2} alignItems="center">
+                                                        <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
+                                                            <img src={item.image} alt={item.name} className='glossary-image' />
+                                                        </Grid>
+                                                        <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
+                                                            <h6>{item.name}</h6>
+                                                            <Typography paragraph>{item.description}</Typography>
+                                                        </Grid>
+                                                    </Grid>
+                                                </CardContent>
+                                            </Card>
+                                        ))}
 
-                            {/* Lyre Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
-                                    <Typography variant="h6" gutterBottom>LYRE</Typography>
-                                    <Typography paragraph>
-                                        Primary: Shoots [2 connected 8th] in a straight trajectory.
-                                        Secondary: Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
-                                    {/* Place the image URL here */}
-                                    <img src={lyre} alt="Lyre" className='glossary-image' />
-                                </Grid>
-                            </Grid>
+                                    <h3>INSTRUMENTS</h3>
 
-                            {/* Snare Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6}>
-                                    {/* Place the image URL here */}
-                                    <img src={snare} alt="Snare" className='glossary-image' />
-                                </Grid>
-                                <Grid item xs={12} md={6}>
-                                    <Typography variant="h6" gutterBottom>SNARE</Typography>
-                                    <Typography paragraph>
-                                        Primary: Commands all minion units to fire.
-                                        Secondary: Rearranges the formation of all minions you own.
-                                        Passive: Summons two sousaphone minions.
-                                    </Typography>
-                                </Grid>
-                            </Grid>
+                                    {[
+                                        { name: 'LYRE', description: 'Primary: Shoots [2 connected 8th] in a straight trajectory. Secondary: Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.', image: lyre },
+                                        { name: 'SNARE', description: 'Primary: Commands all minion units to fire. Secondary: Rearranges the formation of all minions you own. Passive: Summons two sousaphone minions.', image: snare },
+                                        { name: 'XYLOPHONE', description: 'Primary: Summons a spooky scary skeleton. Secondary: Detonates all minions you own.', image: xylophone },
+                                        { name: 'SAXOPHONE', description: 'Primary: Fires a lobbed [2 connected 8th]. The value (damage) of the note increases to [quarter] if the attack was charged. Secondary: Lobs a projectile that pulls units towards it. The radius increases if the attack was charged.', image: saxophone },
+                                        { name: 'TRUMPET', description: 'Primary: Fires a [2 connected 8th] projectile and accumulates water. If charged you shoot a [triplet]. Secondary: Releases all accumulated water in a burst of damage and shatters projectiles. The water remains as a puddle which slows enemy units. The more water was accumulated, the stronger the effects of this move are.', image: trumpet },
+                                        { name: 'VIOLIN', description: 'Primary: Swings the bow in melee range. Capable of shattering projectiles. Secondary: Creates [3 connected 8th] projectiles that orbit you. Every second projectile spawns as a ghost projectile that can be shattered, but will not deal damage while orbiting.', image: violin },
+                                        { name: 'DOUBLE BASS', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: double_bass },
+                                    ].map((item, index) => (
+                                        <Card className='items-card' sx={{ mt: 2, mb: 2 }}>
+                                            <CardContent>
+                                                <Grid container spacing={2} alignItems="center">
+                                                    <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
+                                                        <img src={item.image} alt={item.name} className='glossary-image' />
+                                                    </Grid>
+                                                    <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
+                                                        <h6>{item.name}</h6>
+                                                        <Typography paragraph>{item.description}</Typography>
+                                                    </Grid>
+                                                </Grid>
+                                            </CardContent>
+                                        </Card>
+                                    ))}
 
-                            {/* Xylophone Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
-                                    <Typography variant="h6" gutterBottom>XYLOPHONE</Typography>
-                                    <Typography paragraph>
-                                        Primary: Summons a spooky scary skeleton.
-                                        Secondary: Detonates all minions you own.
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
-                                    {/* Place the image URL here */}
-                                    <img src={xylophone} alt="Xylophone" className='glossary-image' />
-                                </Grid>
-                            </Grid>
+                                    <h3>ITEMS</h3>
 
-                            <Typography variant="h5" gutterBottom>ITEMS</Typography>
-                            {/* Floog L. Horn Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6}>
-                                    {/* Place the image URL here */}
-                                    <img src={floog} alt="Floog L. Horn" className='glossary-image' />
-                                </Grid>
-                                <Grid item xs={12} md={6}>
-                                    <Typography variant="h6" gutterBottom>Floog L. Horn</Typography>
-                                    <Typography paragraph>
-                                        Instruments can also be found at this vendor *
-                                    </Typography>
-                                </Grid>
-                            </Grid>
-
-                            {/* Electro Loop Section */}
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
-                                    <Typography variant="h6" gutterBottom>ELECTRO LOOP</Typography>
-                                    <Typography paragraph>
-                                        Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage.
-                                        Cooldown: 7 Seconds.
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
-                                    {/* Place the image URL here */}
-                                    <img src={electroloop} alt="Electro Loop" className='glossary-image' />
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Card>
-                </Box>
-            )}
+                                    {[
+                                        { name: 'ELECTRO LOOP', description: 'Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage. Cooldown: 7 Seconds.', image: electro_loop },
+                                        { name: 'FRIGID LOOP', description: 'Active: Hurl a frozen spear in the target direction, piercing enemies for [1] damage and freezing them for 2 seconds. Cooldown: 12 Seconds.', image: frigid_loop },
+                                        { name: 'CINDER LOOP', description: 'Active: Lobs a fireball towards the targeted location, erupting in a fiery explosion when it touches the ground, knocking away nearby enemies and dealing [1.5] damage to them. Cooldown: 6 Seconds.', image: cinder_loop },
+                                        { name: 'SOUL LOOP', description: 'Active: Releases 5 homing souls which chase down nearby enemies, dealing [1] damage and fearing them for 2 seconds, causing them to run away from you. Doesnt have a cooldown but instead recharges by defeating 5 enemies.', image: soul_loop },
+                                        { name: 'HEALING ALUMENT', description: 'Active: Heals [1 heart]. Has a chance to be damaged when used. After being damaged 3 times it will break, disappearing completely. If it is only damaged but not broken it can be repaired at Jerome. Cooldown: 5 Seconds.', image: healing_amulet },
+                                        { name: 'BOTTLED STARLIGHT', description: 'Active: Creates an expanding domain in which stars rain down upon up to 5 enemies every 0.75 seconds. These stars deal [1] damage to whoever they directly strike, and [0.5] damage to anyone near them. Cooldown: 18 Seconds.', image: bottled_starlight },
+                                        { name: 'GOOSE FLUTE', description: 'Active: Command the goose to charge towards the targeted location, shattering projectiles along the way and dealing [1] damage and knocking back enemies it passes through. Passive: An invulnerable goose follows you around, attacking nearby enemies with a lobbed [quarter note] every 3 seconds.', image: goose_flute },
+                                        { name: 'RUSTY SHIELD', description: 'Active: Gain [1 glass heart] for 3 seconds. Cooldown: 8 Seconds.', image: rusty_shield },
+                                        { name: 'FLEET FEATHER', description: 'Active: Gain a burst of 100% increased movement speed, decaying over 3 seconds. Cooldown: 10 Seconds.', image: fleet_feather },
+                                        { name: 'POTATO', description: 'Active: Halves damage taken for 20 seconds. Consumed on use. Does not stack.', image: potato },
+                                        { name: 'CHILLI', description: 'Active: Doubles damage dealt and taken for 15 seconds. Consumed on use. Does not stack.', image: chilli },
+                                        { name: 'SOUP', description: 'Active: Slowly heals [3 hearts] over 15 seconds. Consumed on use. Does not stack.', image: soup },
+                                        { name: 'COOKIE', description: 'Active: Restores [1 heart] on use. Consumed on use.', image: cookie },
+                                        { name: 'PIZZA', description: 'Active: Restores [1 heart] on use. Consumed after using all 8 slices. Cooldown: 11.', image: pizza },
+                                        { name: 'EGG', description: 'Active: Throws an egg at the target location which breaks into [three eighth notes] upon striking the ground. Destroyed on use.', image: egg },
+                                        { name: 'SUBSTITUTE DOLL', description: 'Passive: Upon taking lethal damage will sacrifice itself to fully heal you.', image: substitute_doll },
+                                        { name: 'OVEN MITTENS', description: 'Passive: Every 5 Enemies you defeat create a cookie in your inventory. Cookies created this way have a low chance of spawning as a pizza instead', image: oven_mittens },
+                                        { name: 'GLASS FURNACE', description: 'Passive: Every time you defeat a unit you gain half a glass heart that lasts for 4 seconds.', image: glass_furnace },
+                                        { name: 'THORN MANTLE', description: 'Passive: Taking damage retaliates with a burst of projectiles.', image: thorn_mantle },
+                                        { name: 'PIGGYBANK', description: 'Passive: If carried through one round, explodes in a rain of sheet music (30 sheets).', image: piggybank },
+                                        { name: 'GREED ARMOUR', description: 'Passive: Taking damage will instead drain your sheet music, if possible. You lose 10 sheets per point of [1 heart] damage taken. Half of the money lost will drop onto the floor near you.', image: gread_armour },
+                                        { name: 'PLATE ARMOUR', description: 'Passive: Reduces all damage taken by [quarter heart] to a minimum of [quarter heart].', image: plate_armour },
+                                        { name: 'BALLET SKIRT', description: 'Passive: Jumping makes you perform a pirouette when you land which shoots a spiral of [8th] projectiles around you.', image: ballet_skirt },
+                                    ].map((item, index) => (
+                                        <Card className='items-card' sx={{ mt: 2, mb: 2 }}>
+                                            <CardContent>
+                                                <Grid container spacing={2} alignItems="center">
+                                                    <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
+                                                        <img src={item.image} alt={item.name} className='glossary-image' />
+                                                    </Grid>
+                                                    <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
+                                                        <h6>{item.name}</h6>
+                                                        <Typography paragraph>{item.description}</Typography>
+                                                    </Grid>
+                                                </Grid>
+                                            </CardContent>
+                                        </Card>
+                                    ))}
+                                </CardContent>
+                            </Card>
+                        </Box>
+                    </div >
+                )
+                }
+            </div >
         </div>
     );
 }
