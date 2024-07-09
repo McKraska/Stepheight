@@ -9,6 +9,7 @@ const Footer = () => {
     return (
         <div>
             <SocialLinks />
+            
             <footer className="footer">
                 <div className="footer-icons">
                     <a href="https://www.youtube.com/channel/..." target="_blank" rel="noopener noreferrer">
