@@ -5,7 +5,7 @@ import KickingBrassContent from '../components/KickingBrassContent'
 
 export default function KickingBrass() {
     return (
-        <div>
+        <div className="kickingbrass-page">
             <KickingBrassContent />
         </div>
     );

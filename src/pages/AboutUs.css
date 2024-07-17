@@ -1,0 +1,46 @@
+/* AboutUs.css */
+
+.aboutus-content {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aboutus-content>div {
+    margin-bottom: 20px;
+}
+
+.aboutus-content h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.aboutus-content p {
+    font-size: 1em;
+    color: #666;
+}
+
+.aboutus-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .aboutus-content {
+        padding: 10px;
+    }
+
+    .aboutus-content h1 {
+        font-size: 1.5em;
+    }
+
+    .aboutus-content p {
+        font-size: 0.9em;
+    }
+}

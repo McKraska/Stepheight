@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Typography, List, Card, Tabs, Tab, Grid, CardContent, Box } from '@mui/material';
 import './KickingBrassContent.css';
 
+import Button from '@mui/material/Button';
+import CardHeader from '@mui/material/CardHeader';
+
 import kb_logo from '../images/kicking_brass_logo.png';
 import discord from '../images/discord.png';
 import kb_banner from '../images/tuba_banner_video.mp4';
@@ -108,12 +111,13 @@ export default function KickingBrassContent() {
                         indicatorColor="primary"
                     >
                         <Tab label="About" />
-                        <Tab label="Fundamentals" />
+                        <Tab label="Download" />
+                        <Tab label="Tutorial" />
                         <Tab label="Glossary" />
                     </Tabs>
                 </ThemeProvider>
 
-                {/* about */}
+                {/* About */}
                 {value === 0 && (
                     <div className="kickingbrass-content">
                         <Card sx={{ backgroundColor: '#180d25' }} className="card" >
@@ -190,8 +194,47 @@ export default function KickingBrassContent() {
                     </div>
                 )}
 
-                {/* inventory */}
+                {/* Download */}
                 {value === 1 && (
+                    <div>
+                        <Card className="image-card" sx={{ backgroundColor: '#fffde6' }}>
+                            <CardHeader
+                                title="Limited Art test Version 0.1a Windows 64bit"
+                                subheader="To play, extract the Zip and open KB_Art.exe"
+                            />
+
+                            <CardContent>
+                                <Button
+                                    variant="contained"
+                                    href="https://storage.cloud.google.com/stepheight_downloads/KB_Art_01.zip"
+                                    download="KB_Art_01"
+                                >
+                                    Download
+                                </Button>
+                            </CardContent>
+                        </Card>
+
+                        <Card sx={{ backgroundColor: '#fffde6' }} className="image-card">
+                            <CardHeader
+                                title="Version Alpha 0.06a Windows 64bit"
+                                subheader="To play, extract the Zip and open KickingBrass.exe"
+                            />
+
+                            <CardContent>
+                                <Button
+                                    variant="contained"
+                                    href="https://storage.cloud.google.com/stepheight_downloads/Kicking_Brass_v006a.zip"
+                                    download="Kicking_Brass_v006a"
+                                >
+                                    Download
+                                </Button>
+                            </CardContent>
+                        </Card>
+                    </div>
+                )}
+
+                {/* Tutorial */}
+                {value === 2 && (
                     <div className="kickingbrass-content">
                         <Box sx={{ margin: '30px' }}>
                             <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
@@ -277,8 +320,8 @@ export default function KickingBrassContent() {
                 )}
 
 
-                {/* glossary */}
-                {value === 2 && (
+                {/* Glossary */}
+                {value === 3 && (
                     <div className="kickingbrass-content">
                         <Box sx={{ margin: '50px' }}>
                             <Card sx={{ backgroundColor: '#180d25' }} className="card">

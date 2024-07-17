@@ -6,10 +6,6 @@
     width: 100%;
 }
 
-#Nav .MuiAppBar-root {
-    background-color: #fffde6;
-}
-
 .navbar-logo {
     width: 80px;
     height: auto;
@@ -19,6 +15,22 @@
     width: 30px;
     height: auto;
     padding-left: 50px;
+}
+
+.navbar-default .MuiContainer-maxWidthXl {
+    background-color: #fffde6;
+}
+
+.navbar-default .MuiButton-root {
+    color: #051a6f;
+}
+
+.navbar-kickingbrass .MuiContainer-maxWidthXl {
+    background-color: #1b0c2e !important;
+}
+
+.navbar-kickingbrass .MuiButton-root {
+    color: #ffe690 !important;
 }
 
 #Nav .MuiToolbar-root {
@@ -76,13 +88,30 @@
     top: 20px;
 }
 
+.navbar-kickingbrass {
+    background-color: #1b0c2e;
+}
+
+.navbar-kickingbrass .navbar-logo {
+    filter: invert(100%);
+}
+
+.navbar-kickingbrass .MuiButton-root,
+.navbar-kickingbrass .nav-toggle-label span {
+    color: #fffde6;
+}
+
+.navbar-kickingbrass .nav-toggle-label span {
+    background: #ffe690;
+}
+
 @media (max-width: 750px) {
     .navbar-logo {
         width: 50px;
         height: auto;
     }
 
-    .navbar-icon {
+    .nav-toggle {
         display: none;
     }
 

@@ -1,15 +1,16 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
 import Home from './pages/Home';
 import KickingBrass from './pages/KickingBrass';
 import AboutUs from './pages/AboutUs';
 
 function App() {
     return (
-        <div className='app'>
+        <ThemeProvider>
             <Router>
                 <Navbar />
                 <Routes>
@@ -19,7 +20,7 @@ function App() {
                 </Routes>
                 <Footer />
             </Router>
-        </div>
+        </ThemeProvider>
     );
 }
 

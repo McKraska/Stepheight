@@ -10,6 +10,12 @@
     font-style: normal;
 }
 
+.kickingbrass-page {
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+}
+
 .kickingbrass-content h1 {
     color: #333;
 }

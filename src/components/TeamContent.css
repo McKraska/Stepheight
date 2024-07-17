@@ -1,62 +1,67 @@
-/* Team.css */
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400&display=swap');
+/* TeamContent.css */
+
+.team-card {
+    padding: 20px;
+    background-color: #fffde6;
+}
 
 .team-content {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    font-family: 'Maven Pro', sans-serif;
-}
-
-.team-content h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    color: #333;
-}
-
-.team-content p {
-    color: #666;
-    font-size: 16px;
-}
-
-.image-card {
-    margin: 10px;
-    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-row {
     display: flex;
-    justify-content: center;
-    gap: 1px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.team-content {
-    padding: 8px;
-    padding-bottom: 50px;
+.image-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #fffde6;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.image {
-    max-width: 100%;
-    height: auto;
-    max-height: 200px;
-    display: block;
+.poster-card {
+    padding: 20px;
+    background-color: #fffde6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .poster {
-    max-width: 200px;
-    max-height: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-@media (max-width: 750px) {
-    .image-row {
-        display: contents;
-        justify-content: center;
-        align-items: center;
+.pronouns {
+    margin-bottom: 10px;
+    color: #757575;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+    .team-content {
+        margin-top: 50px;
     }
 
-    .image-card {
-        margin: 10px;
-        max-width: 600px;
+    .team-card {
+        padding: 40px;
+    }
+
+    .poster-card {
+        padding: 40px;
     }
 }
