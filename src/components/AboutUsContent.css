@@ -1,9 +1,6 @@
-/* AboutUsContent.css */
-
 .aboutus-content {
     padding: 20px;
     padding-top: 100px;
-    /* Adjust this value as needed to clear the navbar */
     text-align: center;
     background-color: #f8f8f8;
 }
@@ -26,7 +23,6 @@
     color: #555;
     line-height: 1.6;
     max-width: 600px;
-    /* Set a maximum width for the text content */
     margin-left: auto;
     margin-right: auto;
 }
@@ -34,7 +30,6 @@
 .banner {
     width: 100%;
     max-width: 800px;
-    /* Adjust this value as needed */
     height: auto;
     margin: 20px auto;
     display: block;
@@ -42,18 +37,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Media queries for desktop version */
 @media (min-width: 1024px) {
     .aboutus-content {
         padding-top: 150px;
-        /* Increase spacing at the top for desktop */
     }
 
     .aboutus-content h1,
     .aboutus-content h3,
     .aboutus-content p {
         max-width: 800px;
-        /* Set a larger maximum width for text content on desktop */
         margin-left: auto;
         margin-right: auto;
     }

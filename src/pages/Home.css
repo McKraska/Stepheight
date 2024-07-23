@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .home-body {
     background-color: #fffde6;
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .home-content {
     text-align: center;
-    font-family: 'Maven Pro', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
     max-width: 100%;
 }
 

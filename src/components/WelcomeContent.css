@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .welcome-sprite-row {
     margin-top: 50px;
@@ -11,7 +10,7 @@
     margin: auto;
     padding: 20px;
     text-align: center;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     max-width: 600px;
@@ -20,33 +19,51 @@
 .welcome-message h1 {
     padding-top: 300px;
     color: #333;
-    font-family: 'Chakra Petch', sans-serif;
+    font-size: 65px;
+    font-weight: 600;
 }
 
 .welcome-message h2,
 .welcome-message h3 {
     padding-bottom: 5%;
     color: #333;
-    font-family: 'Chakra Petch', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 .welcome-message p {
     padding-top: 5%;
     color: #666;
     font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 750px) {
     .welcome-message h1 {
-        padding-top: 100px;
+        padding-top: 45%;
+        /* Adjusted to use a percentage */
+        font-size: 50px;
     }
 
     .welcome-section {
-        padding-top: 100px;
+        padding-top: 10%;
+        /* Applying percentage padding at the top */
     }
 
     .sprite-row {
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .welcome-message h2,
+    .welcome-message h3 {
+        font-size: 20px;
+        /* Appropriate font size for mobile */
+    }
+
+    .welcome-message p {
+        font-size: 14px;
+        /* Adjusted font size for paragraph text on mobile */
     }
 }

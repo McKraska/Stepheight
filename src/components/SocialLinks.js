@@ -1,11 +1,15 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import twitter_logo from '../images/twitter_icon.png';
 import youtube_logo from '../images/youtube_icon.png';
-import './SocialLinks.css'
+import './SocialLinks.css';
 
 export default function SocialLinks() {
+    const location = useLocation();
+    const isKickingBrassPage = location.pathname === '/kickingbrass';
+
     return (
-        <div className="social-links">
+        <div className={`social-links ${isKickingBrassPage ? 'kicking-brass-theme' : ''}`}>
             <a href="https://twitter.com/StepheightGames" target="_blank" rel="noopener noreferrer">
                 <img src={twitter_logo} alt="Twitter Logo" className="navbar-icon" />
             </a>

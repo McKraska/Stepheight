@@ -1,21 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 body {
-    font-family: 'Maven Pro', sans-serif;
-    background-color: #13001b !important;
+    font-family: 'Rubik', sans-serif;
+    background-color: #13001b;
+    margin: 0;
+}
+
+.MuiCardContent-root {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .kickingbrass-body {
-    background-color: #13001b;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background-color: #470061;
 }
 
 .kickingbrass-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: #a16edd;
     width: 100%;
@@ -23,31 +34,56 @@ body {
     padding: 20px;
 }
 
-.kickingbrass-content h1 {
-    padding-top: 5%;
-    padding-bottom: 2%;
-    color: #a16edd;
-    font-family: 'Fanwood Text', serif;
-}
-
-.kickingbrass-content h3,
+.kickingbrass-content h1,
 h2,
+h3,
 h4,
-h5 {
+h5,
+h6 {
     color: #a16edd;
-    font-family: 'Fanwood Text', serif;
+    font-family: 'Montserrat', serif;
 }
 
-.kickingbrass-content h6 {
-    color: #a16edd;
-    font-size: medium;
-    font-family: 'Fanwood Text', serif;
+.kb-logo {}
+
+.kickingbrass-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 .kickingbrass-content p {
     color: #a684cd;
     font-size: 16px;
-    font-family: 'Fanwood Text', serif;
+    font-family: 'Montserrat', serif;
+}
+
+.kickingbrass-box {
+    background-color: #180d25;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.kickingbrass-card {
+    margin-bottom: 16px;
+    background-color: #180d25;
+    color: #ffe690;
+    border-bottom: 1px solid #2e1548;
+}
+
+.kickingbrass-button {
+    background-color: #a16edd;
+    color: #ffffff;
+}
+
+.kickingbrass-button:hover {
+    background-color: #9254aa;
+}
+
+.kickingbrass-cardheader {
+    padding-bottom: 8px;
+    color: #ffe690;
 }
 
 .controls-container {
@@ -63,8 +99,6 @@ h5 {
 }
 
 .img1 {
-    top: 50%;
-    left: 50%;
     max-width: 100%;
     max-height: 100%;
     image-rendering: pixelated;
@@ -73,28 +107,21 @@ h5 {
 .video-container {
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 300px;
+    margin-top: 120px;
 }
 
-.video-container img {
+.video-container img,
+video {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
-    max-width: 200%;
-    max-height: 200%;
-    image-rendering: pixelated;
-}
-
-.video-container video {
+    z-index: 2;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
     object-fit: cover;
+    image-rendering: pixelated;
 }
 
 .links {
@@ -102,17 +129,13 @@ h5 {
     justify-content: center;
 }
 
-.card {
-    position: relative;
+.card,
+.items-card {
+    background-color: rgb(41, 0, 52);
     margin: 20px;
     padding: auto;
     max-width: 800px;
-}
-
-.items-card {
-    background-color: rgb(41, 0, 52);
     image-rendering: pixelated;
-
 }
 
 .glossary-image {
@@ -120,21 +143,58 @@ h5 {
     height: 200px;
     object-fit: contain;
     image-rendering: pixelated;
-
 }
 
-.sprite-row {
+.sprite-row,
+.sprite-row-flipped {
     margin-bottom: 50px;
     border-bottom: 1px solid #333;
-    image-rendering: pixelated;
-
-}
-
-.sprite-row-flipped {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    margin-bottom: 50px;
-    border-bottom: 1px solid #333;
+}
+
+.image-card {
+    background-color: #180d25;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.image-card h2,
+.image-card h3 {
+    color: #a16edd;
+    /* Consistent color theme for headers */
+}
+
+.image-card Button {
+    background-color: #a16edd;
+    /* Button color matching the theme */
+    color: #fff;
+    /* White text on button */
+    margin-top: 20px;
+
+    /* Space above button */
+    &:hover {
+        background-color: #9254aa;
+        /* Darker on hover for feedback */
+    }
+}
+
+.image-card .MuiCardHeader-root {
+    border-bottom: 1px solid #2e1548;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.image-card .MuiCardHeader-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.image-card .MuiCardHeader-subheader {
+    font-size: 16px;
+    color: #ccc;
 }
 
 @media (min-width: 751px) {
@@ -143,42 +203,20 @@ h5 {
         top: 20px;
         right: 50px;
     }
-
-    .video-container {
-        position: relative;
-        width: 100%;
-        height: 300px;
-    }
-
-    .video-container video {
-        height: 300px;
-    }
-
-    .kickingbrass-body {
-        padding-top: 100px;
-    }
-
-    .kickingbrass-content {
-        padding: 50px;
-    }
 }
 
 @media (max-width: 750px) {
-    .kickingbrass-content {
-        padding: 1px;
+    .kickingbrass-body {
+        padding-top: 120px;
     }
 
-    .kickingbrass-body {
-        padding-top: 80px;
+    .kickingbrass-content {
+        padding: 10px;
     }
 
     .discord-button {
         position: absolute;
         top: 2px;
         right: 5px;
-    }
-
-    .items-card {
-        background-color: rgb(41, 0, 52) !important;
     }
 }
