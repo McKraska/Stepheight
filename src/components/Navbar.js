@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import zIndex from '@mui/material/styles/zIndex';
 
 const pages = ['KICKING_BRASS', 'ABOUT_US'];
 
@@ -16,7 +17,7 @@ export default function Navbar() {
 
   return (
     <div id='Nav'>
-      <AppBar position="fixed" className={isKickingBrassPage ? 'navbar-kickingbrass' : 'navbar-default'}>
+      <AppBar position="fixed" elevation={0} className={isKickingBrassPage ? 'navbar-kickingbrass' : 'navbar-default'}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Link to="/">
