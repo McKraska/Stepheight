@@ -10,7 +10,7 @@
 }
 
 .navbar-icon {
-    width: 40px;
+    width: 50px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -19,14 +19,8 @@
     opacity: 0.8;
 }
 
-.kicking-brass-theme {
-    background-color: #1b0c2e;
-    /* Dark background for contrast */
-}
-
 .kicking-brass-theme .navbar-icon {
     filter: invert(1);
-    /* Makes icons white for better contrast on dark bg */
 }
 
 @media (max-width: 768px) {

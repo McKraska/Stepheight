@@ -15,10 +15,10 @@ const Footer = () => {
             <footer className={`footer ${isKickingBrassPage ? 'footer-kickingbrass' : ''}`}>
                 <div className="footer-icons">
                     <a href="https://www.youtube.com/channel/..." target="_blank" rel="noopener noreferrer">
-                        <img src={youtube_logo} alt="YouTube Logo" className="footer-icon" />
+                        <img src={youtube_logo} alt="YouTube Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
                     </a>
                     <a href="https://twitter.com/StepheightGames" target="_blank" rel="noopener noreferrer">
-                        <img src={twitter_logo} alt="Twitter Logo" className="footer-icon" />
+                        <img src={twitter_logo} alt="Twitter Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
                     </a>
                 </div>
                 <div className="footer-text-content">
