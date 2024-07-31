@@ -130,7 +130,7 @@
     .nav-toggle-label {
         display: block;
         position: absolute;
-        top: 30px;
+        top: 35%;
         right: 10px;
         z-index: 2;
     }
