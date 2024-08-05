@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom';
 import './Footer.css';
 import twitter_logo from '../images/twitter_icon.png';
 import youtube_logo from '../images/youtube_icon.png';
+import discord_logo from '../images/discord.png';
+
 import SocialLinks from './SocialLinks';
 
 const Footer = () => {
@@ -19,6 +21,9 @@ const Footer = () => {
                     </a>
                     <a href="https://twitter.com/StepheightGames" target="_blank" rel="noopener noreferrer">
                         <img src={twitter_logo} alt="Twitter Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
+                    </a>
+                    <a href="https://discord.com/invite/fbngXskVkW" target="_blank" rel="noopener noreferrer">
+                        <img src={discord_logo} alt="discord Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
                     </a>
                 </div>
                 <div className="footer-text-content">

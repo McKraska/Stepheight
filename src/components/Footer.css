@@ -4,6 +4,18 @@
     margin-right: 20px;
 }
 
+.footer a {
+    color: #0a0079;
+}
+
+.footer-kickingbrass a {
+    color: #ffe690;
+}
+
+.navbar-icon {
+    color: aqua !important;
+}
+
 .footer {
     display: flex;
     flex-direction: row;
