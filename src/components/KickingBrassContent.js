@@ -58,34 +58,12 @@ import roger from '../images/gunner_walk_right.gif';
 import tybalt from '../images/melen_walk_right.gif';
 import bill from '../images/saxen_walk_right.gif';
 
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-
 export default function KickingBrassContent() {
     const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-
-    const theme = createTheme({
-        palette: {
-            primary: {
-                main: '#a16edd',
-            },
-        },
-        typography: {
-            fontFamily: "'Maven Pro', sans-serif",
-        },
-        components: {
-            MuiTab: {
-                styleOverrides: {
-                    root: {
-                        color: '#a16edd',
-                    },
-                },
-            },
-        },
-    });
 
     return (
         <div>
@@ -97,27 +75,28 @@ export default function KickingBrassContent() {
                 </video>
             </div>
 
-            <ThemeProvider theme={theme}>
-                <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    centered
-                    textColor="primary"
-                    indicatorColor="primary"
-                >
-                    <Tab label="About" />
-                    <Tab label="Download" />
-                    <Tab label="Tutorial" />
-                    <Tab label="Glossary" />
-                </Tabs>
+            <Tabs
+                value={value}
+                onChange={handleChange}
+                centered
+                TabIndicatorProps={{
+                    style: {
+                        backgroundColor: "#a16edd"
+                    }
+                }}
+            >
+                <Tab label="About" />
+                <Tab label="Download" />
+                <Tab label="Tutorial" />
+                <Tab label="Glossary" />
+            </Tabs>
 
-                <Box sx={{ width: '100%', p: 3 }}>
-                    {value === 0 && <AboutTab />}
-                    {value === 1 && <DownloadTab />}
-                    {value === 2 && <TutorialTab />}
-                    {value === 3 && <GlossaryTab />}
-                </Box>
-            </ThemeProvider>
+            <Box sx={{ width: '100%', p: 3 }}>
+                {value === 0 && <AboutTab />}
+                {value === 1 && <DownloadTab />}
+                {value === 2 && <TutorialTab />}
+                {value === 3 && <GlossaryTab />}
+            </Box>
         </div>
     );
 }
@@ -144,12 +123,15 @@ function AboutTab() {
                 <p>
                     King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!
                 </p>
+
                 <p>
                     Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven!
                 </p>
+
                 <p>
                     Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
                 </p>
+
                 <p>
                     Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
                 </p>
@@ -164,16 +146,27 @@ function AboutTab() {
                 </div>
 
                 <h1>THE COLOSSEUM</h1>
+
                 <img src={kb_img1} alt="Colosseum" className='img1' />
 
                 <h2>The gates to King Brasshoven’s colosseum open once again!</h2>
+
                 <h3>
                     For centuries only the strongest, bravest, and dumbest warriors from all over the continent have made their way to these sacred grounds in order to prove themselves (and/or die horrifically).
                 </h3>
+
                 <p>
                     Each year a champion has left their mark on the Empire of Brass and each year more contestants try to do the same.
-                    Face waves upon waves of enemies, each more challenging than the last. Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
                 </p>
+
+                <p>
+                    Face waves upon waves of enemies, each more challenging than the last.
+                </p>
+
+                <p>
+                    Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
+                </p>
+
                 <p>
                     Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
                 </p>
@@ -184,13 +177,13 @@ function AboutTab() {
 
 function DownloadTab() {
     const bucketName = "stepheight_downloads";
-
     const urlKB_Art_01 = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/KB_Art_01.zip?alt=media`;
     const urlKicking_Brass_v006a = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/Kicking_Brass_v006a.zip?alt=media`;
 
     return (
-        <div>
-            <Card className="card" sx={{ backgroundColor: '#180d25', boxShadow: 0 }}>
+        <Card sx={{ backgroundColor: '#180d25', boxShadow: 0, padding: '20px' }} className="card">
+            <h2>DOWNLOADS</h2>
+            <Card className="card" sx={{ backgroundColor: '#201230', boxShadow: 0, marginBottom: '20px' }}>
                 <CardHeader
                     title="Limited Art test Version 0.1a Windows 64bit"
                     subheader="To play, extract the Zip and open KB_Art.exe"
@@ -207,7 +200,7 @@ function DownloadTab() {
                 </CardContent>
             </Card>
 
-            <Card className="card" sx={{ backgroundColor: '#180d25', boxShadow: 0 }}>
+            <Card className="download-card" sx={{ backgroundColor: '#201230', boxShadow: 0 }}>
                 <CardHeader
                     title="Version Alpha 0.06a Windows 64bit"
                     subheader="To play, extract the Zip and open KickingBrass.exe"
@@ -223,16 +216,16 @@ function DownloadTab() {
                     </Button>
                 </CardContent>
             </Card>
-        </div>
+        </Card>
     );
 }
 
 function TutorialTab() {
     return (
-        <div>
-            <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
+        <Card sx={{ backgroundColor: '#180d25', boxShadow: 0, padding: '20px' }} className="card">
+            <h2>CONTROLS</h2>
+            <Card sx={{ backgroundColor: '#201230', boxShadow: 0 }} className="card">
                 <CardContent>
-                    <h3>Controls</h3>
                     <div className="controls-container">
                         <ul className="dense-list">
                             <li><p>[W] - Move Forward</p></li>
@@ -260,10 +253,10 @@ function TutorialTab() {
                 </CardContent>
 
             </Card>
-
-            <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
+            <h2>INVENTORY</h2>
+            <Card sx={{ backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }} className="card">
                 <CardContent>
-                    <h3>Inventory</h3>
+
                     <List dense>
                         <p>
                             Your inventory is divided into three main sections. The first section is shaped like a plus sign and is reserved for Equipment — these are your passive clothing items such as Headwear, Gloves, Chest/back pieces, Shoes, Trousers, and Trinkets like necklaces. Remember, only one piece of Equipment per type can be worn at a time.
@@ -282,9 +275,10 @@ function TutorialTab() {
                 </CardContent>
             </Card>
 
-            <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25', boxShadow: 0 }} className="card">
+            <h2>DEALING DAMAGE</h2>
+            <Card sx={{ marginBottom: '20px', backgroundColor: '#201230', boxShadow: 0 }} className="card">
                 <CardContent>
-                    <h3>Dealing Damage</h3>
+
                     <List dense>
                         <p>
                             At the start of your journey, you have three hearts. Each enemy hit will cost you one heart, so guard them carefully! To increase your heart count, pick up a max heart. To replenish health, consume items like cookies. However, beware: if you lose all your hearts, you'll be sent back to your last checkpoint, as long as you have extra lives remaining. Run out of extra lives, and you'll have to start over from the beginning of your run.
@@ -307,15 +301,15 @@ function TutorialTab() {
                     </List>
                 </CardContent>
             </Card>
-        </div>
+        </Card>
     );
 }
 
 function GlossaryTab() {
     return (
         <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
+            <h2>ENEMIES</h2>
             <CardContent>
-                <h3>ENEMIES</h3>
                 {[
                     { name: 'ROGER', description: 'Shoots [8th] notes at you. Waiting for a promotion.', image: roger },
                     { name: 'TYBALT', description: 'Either stands in front of units to protect them or charges at you with a sharpened oboe. The crash cymbal shield blocks damage this unit would take, but can be destroyed, leaving the unit stunned with its guard down.', image: tybalt },
@@ -326,15 +320,15 @@ function GlossaryTab() {
                     { name: 'CLYDE', description: 'The fastest hat in the west. Clyde once slipped and fell onto a cymbal headfirst and he hasn\'t stopped spinning on it since! While spinning Clyde is immune to projectiles and even reflects them back, his constantly rotating state means that his steering leaves much to be desired. This might even leave you with an opening!', image: clyde },
                     { name: 'MIKE (On holiday)', description: 'Creates shockwaves which either cause other nearby enemies to be healed for [1 heart] over 5 seconds, or causes other nearby enemies to immediately attack.', image: mike },
                     { name: 'GATLING GARY', description: 'Literally the big guns. Gatling moves slowly and carries an oversized tuba which shoots large groups of projectiles. Each attack pushes him backwards. If he runs into a wall he takes a small amount of damage and is stunned briefly. If desperate, he may feel the need to overcharge his weapon.', image: gary },
-                    { name: 'THE BRASSBARIAN', description: 'Brings down the lightning. Brassbarian rampages around with a double bass larger than you. He chases you around with leaps, swings and slams, and will rain down more lightning on you as the fight progresses. Although many people come to watch his deadly bass solo, few have the luxury of surviving it.', image: brassarian },].map((item, index) => (
-                        <Card className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#180d25' }}>
+                    { name: 'THE BRASSBARIAN', description: 'Brings down the lightning. Brassbarian rampages around with a double bass larger than you. He chases you around with leaps, swings and slams, and will rain down more lightning on you as the fight progresses. Although many people come to watch his deadly bass solo, few have the luxury of surviving it.', image: brassarian }].map((item, index) => (
+                        <Card key={item.name + index} className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }}>
                             <CardContent>
                                 <Grid container spacing={2} alignItems="center">
                                     <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
                                         <img src={item.image} alt={item.name} className='glossary-image' />
                                     </Grid>
                                     <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
-                                        <h6>{item.name}</h6>
+                                        <h3>{item.name}</h3>
                                         <Typography paragraph>{item.description}</Typography>
                                     </Grid>
                                 </Grid>
@@ -342,7 +336,7 @@ function GlossaryTab() {
                         </Card>
                     ))}
 
-                <h3>INSTRUMENTS</h3>
+                <h2>INSTRUMENTS</h2>
 
                 {[
                     { name: 'LYRE', description: 'Primary: Shoots [2 connected 8th] in a straight trajectory. Secondary: Shoots 5 [2 connected 8th] in sequence, in alternating directions and slows the player. Individual enemies can’t get hit more than once by each sequence.', image: lyre },
@@ -353,14 +347,14 @@ function GlossaryTab() {
                     { name: 'VIOLIN', description: 'Primary: Swings the bow in melee range. Capable of shattering projectiles. Secondary: Creates [3 connected 8th] projectiles that orbit you. Every second projectile spawns as a ghost projectile that can be shattered, but will not deal damage while orbiting.', image: violin },
                     { name: 'DOUBLE BASS', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: double_bass },
                 ].map((item, index) => (
-                    <Card className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#180d25', boxShadow: 0 }}>
+                    <Card key={item.name + index} className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }}>
                         <CardContent>
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
                                     <img src={item.image} alt={item.name} className='glossary-image' />
                                 </Grid>
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
-                                    <h6>{item.name}</h6>
+                                    <h3>{item.name}</h3>
                                     <Typography paragraph>{item.description}</Typography>
                                 </Grid>
                             </Grid>
@@ -368,7 +362,7 @@ function GlossaryTab() {
                     </Card>
                 ))}
 
-                <h3>ITEMS</h3>
+                <h2>ITEMS</h2>
 
                 {[
                     { name: 'ELECTRO LOOP', description: 'Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage. Cooldown: 7 Seconds.', image: electro_loop },
@@ -395,14 +389,14 @@ function GlossaryTab() {
                     { name: 'PLATE ARMOUR', description: 'Passive: Reduces all damage taken by [quarter heart] to a minimum of [quarter heart].', image: plate_armour },
                     { name: 'BALLET SKIRT', description: 'Passive: Jumping makes you perform a pirouette when you land which shoots a spiral of [8th] projectiles around you.', image: ballet_skirt },
                 ].map((item, index) => (
-                    <Card className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#180d25', boxShadow: 0 }}>
+                    <Card key={item.name + index} className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }}>
                         <CardContent>
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
                                     <img src={item.image} alt={item.name} className='glossary-image' />
                                 </Grid>
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
-                                    <h6>{item.name}</h6>
+                                    <h3>{item.name}</h3>
                                     <Typography paragraph>{item.description}</Typography>
                                 </Grid>
                             </Grid>

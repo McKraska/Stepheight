@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
+
 p {
-    color: #6216b9;
+    text-align: left;
+    max-width: 500px;
+    color: #a16edd;
+}
+
+.MuiTab-root {
+    color: #a16edd !important;
 }
 
 body {
@@ -12,7 +19,7 @@ body {
 }
 
 .MuiCardContent-root {
-    color: #8d16b9;
+    color: #a16edd;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -43,8 +50,13 @@ h3,
 h4,
 h5,
 h6 {
+    max-width: 500px;
     color: #a16edd;
-    font-family: 'Montserrat', serif;
+}
+
+.card h2 {
+    max-width: none;
+    color: #a16edd !important;
 }
 
 .kb-logo {
@@ -54,13 +66,12 @@ h6 {
 
 .kickingbrass-content h1 {
     font-size: 36px;
-    font-weight: 700;
     margin-top: 5%;
     margin-bottom: 2%;
 }
 
 .kickingbrass-content p {
-    color: #a684cd;
+    color: #a16edd;
     font-size: 16px;
     font-family: 'Montserrat', serif;
 }
@@ -72,18 +83,16 @@ h6 {
 }
 
 .kickingbrass-card {
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
     background-color: #6a1b9a;
     color: #ffe690;
 }
 
-
 .kickingbrass-button {
-    background-color: #a16edd;
-    color: #ffffff;
+    background-color: #a16edd !important;
+    color: #2b1742 !important;
     font-family: 'Montserrat', serif;
     font-size: 16px;
-    font-weight: bold;
     text-transform: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -98,13 +107,13 @@ h6 {
 
 .kickingbrass-cardheader {
     padding-bottom: 8px;
-    color: #ffe690;
+    color: #a16edd;
     font-family: 'Montserrat', serif;
 }
 
-.MuiCardHeader-subheader {
+.kickingbrass-content .MuiCardHeader-subheader {
     padding-bottom: 8px;
-    color: #ffe690;
+    color: #a16edd !important;
     font-family: 'Montserrat', serif;
 }
 
@@ -154,8 +163,13 @@ video {
 .card,
 .items-card {
     background-color: rgb(41, 0, 52);
-    margin: 20px;
-    padding: auto;
+    width: 100%;
+    max-width: 800px;
+    image-rendering: pixelated;
+}
+
+.download-card {
+    background-color: rgb(41, 0, 52);
     width: 100%;
     max-width: 800px;
     image-rendering: pixelated;
@@ -190,18 +204,13 @@ video {
 }
 
 .image-card Button {
-    background-color: #6216b9;
-    color: #b413a9;
+    background-color: #a16edd;
+    color: #a16edd;
     margin-top: 20px;
 
     &:hover {
         background-color: #9254aa;
     }
-}
-
-.image-card .MuiCardHeader-root {
-    padding-bottom: 16px;
-    margin-bottom: 16px;
 }
 
 .image-card .MuiCardHeader-title {
@@ -244,6 +253,6 @@ video {
         margin: 20px;
         padding: auto;
         width: 100%;
-        min-width: 300px;
+        min-width: 150px;
     }
 }

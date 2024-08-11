@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 .welcome-sprite-row {
     margin-top: 50px;
     margin-bottom: 200px;
@@ -10,17 +8,19 @@
     margin: auto;
     padding: 20px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     max-width: 600px;
+}
+
+.welcome-section .h3 {
+    text-align: center !important;
+    max-width: none !important;
 }
 
 .welcome-message h1 {
     padding-top: 300px;
     color: #333;
     font-size: 65px;
-    font-weight: 600;
 }
 
 .welcome-message h2,
@@ -28,42 +28,29 @@
     padding-bottom: 5%;
     color: #333;
     font-size: 28px;
-    font-weight: 500;
+    max-width: none;
 }
 
 .welcome-message p {
     padding-top: 5%;
     color: #666;
     font-size: 16px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    max-width: none;
 }
 
 @media (max-width: 750px) {
     .welcome-message h1 {
         padding-top: 45%;
-        /* Adjusted to use a percentage */
         font-size: 50px;
     }
 
     .welcome-section {
         padding-top: 10%;
-        /* Applying percentage padding at the top */
     }
 
     .sprite-row {
         margin-top: 10%;
         margin-bottom: 10%;
-    }
-
-    .welcome-message h2,
-    .welcome-message h3 {
-        font-size: 20px;
-        /* Appropriate font size for mobile */
-    }
-
-    .welcome-message p {
-        font-size: 14px;
-        /* Adjusted font size for paragraph text on mobile */
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import twitter_logo from '../images/twitter_icon.png';
 import youtube_logo from '../images/youtube_icon.png';
-import discord_logo from '../images/discord.png';
+import discord_logo from '../images/discord_icon.png';
 
 import './SocialLinks.css';
 

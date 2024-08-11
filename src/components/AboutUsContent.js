@@ -16,6 +16,10 @@ export default function AboutUsContent() {
 
             <p>
                 Our team started doing this in an area where game development is basically unheard of, while also juggling university, side jobs, and a handful of personal challenges.
+
+            </p>
+
+            <p>
                 We want Stepheight to be a beacon of what is possible, no matter what restrictions one might face.
             </p>
         </div>

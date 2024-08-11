@@ -1,6 +1,14 @@
+.aboutus-container {
+    max-width: 800px;
+}
+
+.MuiCardHeader-subheader {
+    color: #7d7d7d !important;
+    font-family: 'Montserrat', serif;
+}
+
 .team-card {
-    padding: 20px;
-    background-color: #fffde6;
+    background-color: rgba(248, 248, 248, 1) !important;
 }
 
 .team-content {
@@ -14,14 +22,15 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    background-color: none;
 }
 
 .image-card {
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
     max-width: 300px;
-    background-color: #d8d6c2;
-    margin: 10px;
+    background-color: #d8d6c2 !important;
+    padding: none !important;
 }
 
 .poster-card {
@@ -33,18 +42,18 @@
 
 .poster {
     max-width: 400px;
+    margin-top: 80px;
 }
 
 .pronouns {
-    margin-bottom: 10px;
     color: #757575;
 }
 
-.bold-text {
-    font-weight: bold;
-}
 
 @media (min-width: 768px) {
+    .MuiPaper-root .team-card {
+        max-width: 1000px;
+    }
 
     .h1,
     .h2,
@@ -68,12 +77,16 @@
         max-width: 400px;
     }
 
-    .team-content {
-        margin-top: 50px;
-    }
-
     .team-card {
         padding: 40px;
+    }
+
+    .image-card {
+        flex: 1;
+        min-width: 300px;
+        max-width: 400px;
+        background-color: #d8d6c2 !important;
+        padding: none !important;
     }
 
     .poster-card {
