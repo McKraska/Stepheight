@@ -44,12 +44,6 @@ p {
 }
 
 @media (min-width: 751px) {
-    .discord-button {
-        position: absolute;
-        top: 20px;
-        right: 50px;
-    }
-
     .aboutus-content {
         padding-top: 100px;
     }

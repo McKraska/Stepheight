@@ -123,9 +123,8 @@ export default function KickingBrassContent() {
 }
 
 function AboutTab() {
-
     return (
-        <Card sx={{ backgroundColor: '#180d25' }} className="card">
+        <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
             <CardContent>
                 <h1>THE WORLD OF KICKING BRASS</h1>
 
@@ -184,7 +183,6 @@ function AboutTab() {
 }
 
 function DownloadTab() {
-    // Define your bucket name
     const bucketName = "stepheight_downloads";
 
     const urlKB_Art_01 = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/KB_Art_01.zip?alt=media`;
@@ -192,12 +190,11 @@ function DownloadTab() {
 
     return (
         <div>
-            <Card className="card" sx={{ backgroundColor: '#180d25' }}>
+            <Card className="card" sx={{ backgroundColor: '#180d25', boxShadow: 0 }}>
                 <CardHeader
                     title="Limited Art test Version 0.1a Windows 64bit"
                     subheader="To play, extract the Zip and open KB_Art.exe"
                     className="kickingbrass-cardheader"
-                    subheaderTypographyProps={{ className: 'kickingbrass-card-subheader' }}
                 />
                 <CardContent>
                     <Button
@@ -210,12 +207,11 @@ function DownloadTab() {
                 </CardContent>
             </Card>
 
-            <Card className="card" sx={{ backgroundColor: '#180d25' }}>
+            <Card className="card" sx={{ backgroundColor: '#180d25', boxShadow: 0 }}>
                 <CardHeader
                     title="Version Alpha 0.06a Windows 64bit"
                     subheader="To play, extract the Zip and open KickingBrass.exe"
                     className="kickingbrass-cardheader"
-                    subheaderTypographyProps={{ className: 'kickingbrass-card-subheader' }}
                 />
                 <CardContent>
                     <Button
@@ -234,7 +230,7 @@ function DownloadTab() {
 function TutorialTab() {
     return (
         <div>
-            <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
+            <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
                 <CardContent>
                     <h3>Controls</h3>
                     <div className="controls-container">
@@ -265,7 +261,7 @@ function TutorialTab() {
 
             </Card>
 
-            <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
+            <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
                 <CardContent>
                     <h3>Inventory</h3>
                     <List dense>
@@ -286,7 +282,7 @@ function TutorialTab() {
                 </CardContent>
             </Card>
 
-            <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25' }} className="card">
+            <Card sx={{ marginBottom: '20px', backgroundColor: '#180d25', boxShadow: 0 }} className="card">
                 <CardContent>
                     <h3>Dealing Damage</h3>
                     <List dense>
@@ -317,7 +313,7 @@ function TutorialTab() {
 
 function GlossaryTab() {
     return (
-        <Card sx={{ backgroundColor: '#180d25' }} className="card">
+        <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
             <CardContent>
                 <h3>ENEMIES</h3>
                 {[
@@ -357,7 +353,7 @@ function GlossaryTab() {
                     { name: 'VIOLIN', description: 'Primary: Swings the bow in melee range. Capable of shattering projectiles. Secondary: Creates [3 connected 8th] projectiles that orbit you. Every second projectile spawns as a ghost projectile that can be shattered, but will not deal damage while orbiting.', image: violin },
                     { name: 'DOUBLE BASS', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: double_bass },
                 ].map((item, index) => (
-                    <Card className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#180d25' }}>
+                    <Card className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#180d25', boxShadow: 0 }}>
                         <CardContent>
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
@@ -399,7 +395,7 @@ function GlossaryTab() {
                     { name: 'PLATE ARMOUR', description: 'Passive: Reduces all damage taken by [quarter heart] to a minimum of [quarter heart].', image: plate_armour },
                     { name: 'BALLET SKIRT', description: 'Passive: Jumping makes you perform a pirouette when you land which shoots a spiral of [8th] projectiles around you.', image: ballet_skirt },
                 ].map((item, index) => (
-                    <Card className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#180d25' }}>
+                    <Card className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#180d25', boxShadow: 0 }}>
                         <CardContent>
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>

@@ -35,7 +35,6 @@ body {
     color: #a16edd;
     width: 100%;
     max-width: 800px;
-    padding: 20px;
 }
 
 .kickingbrass-content h1,
@@ -215,13 +214,7 @@ video {
     color: #ccc;
 }
 
-@media (min-width: 751px) {
-    .discord-button {
-        position: absolute;
-        top: 20px;
-        right: 50px;
-    }
-}
+@media (min-width: 751px) {}
 
 @media (max-width: 750px) {
     .MuiCardContent-root {
@@ -230,13 +223,6 @@ video {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10px;
-        max-width: 90%;
-        margin: auto;
-    }
-
-    .kickingbrass-body {
-        padding-top: 10px;
     }
 
     .kickingbrass-card {
@@ -251,12 +237,6 @@ video {
         margin-top: 75px;
         margin-bottom: 0px;
         height: 250px;
-    }
-
-    .discord-button {
-        position: absolute;
-        top: 2px;
-        right: 5px;
     }
 
     .items-card {

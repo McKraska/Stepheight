@@ -12,10 +12,6 @@
     color: #ffe690;
 }
 
-.navbar-icon {
-    color: aqua !important;
-}
-
 .footer {
     display: flex;
     flex-direction: row;

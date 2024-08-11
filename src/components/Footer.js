@@ -23,7 +23,7 @@ const Footer = () => {
                         <img src={twitter_logo} alt="Twitter Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
                     </a>
                     <a href="https://discord.com/invite/fbngXskVkW" target="_blank" rel="noopener noreferrer">
-                        <img src={discord_logo} alt="discord Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
+                        <img src={discord_logo} alt="Discord Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
                     </a>
                 </div>
                 <div className="footer-text-content">

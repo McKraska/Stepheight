@@ -14,11 +14,11 @@ import poster from '../images/publi_poster-1.png';
 
 export default function TeamContent() {
     return (<div>
-        <Card className="team-card">
+        <Card className="team-card" sx={{ boxShadow: 0 }}>
             <div className="team-content">
                 <div className="image-row">
                     {/* SAM */}
-                    <Card className="image-card">
+                    <Card className="image-card" sx={{ boxShadow: 0 }}>
                         <CardHeader
                             title="Sam Flentje"
                             subheader="@CheatinSloth"
@@ -30,17 +30,17 @@ export default function TeamContent() {
                             image={image1}
                         />
                         <CardContent>
-                            <Typography variant="body2" color="text.secondary" className="pronouns">
+                            <Typography>
                                 Pronouns: Any/All
                             </Typography>
-                            <Typography variant="body1" color="text.primary" className="bold-text">
+                            <Typography>
                                 Composer, Sound Designer and Worldbuilder
                             </Typography>
                         </CardContent>
                     </Card>
 
                     {/* PETER */}
-                    <Card className="image-card">
+                    <Card className="image-card" sx={{ boxShadow: 0 }}>
                         <CardHeader
                             title="Peter Dunn"
                             subheader="@PeteTheN00b"
@@ -62,7 +62,7 @@ export default function TeamContent() {
                     </Card>
 
                     {/* OSKAR */}
-                    <Card className="image-card">
+                    <Card className="image-card" sx={{ boxShadow: 0 }}>
                         <CardHeader
                             title="Oskar Kraska McKone"
                             subheader="@McK"
@@ -86,7 +86,7 @@ export default function TeamContent() {
             </div>
         </Card>
 
-        <Card className="poster-card" >
+        <Card className="poster-card" sx={{ boxShadow: 0 }} >
             <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
                     <CardContent>

@@ -1,12 +1,13 @@
 .aboutus-content {
-    width: 100%;
+    text-align: center;
+    max-width: 100%;
     height: auto;
     padding: 20px;
     background-color: #f9f9f9;
-}
-
-.aboutus-content>div {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .aboutus-content h1 {
@@ -17,13 +18,6 @@
 .aboutus-content p {
     font-size: 1em;
     color: #666;
-}
-
-.aboutus-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 @media (max-width: 768px) {
