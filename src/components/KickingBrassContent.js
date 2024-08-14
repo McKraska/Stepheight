@@ -66,7 +66,9 @@ export default function KickingBrassContent() {
     };
 
     return (
-        <div>
+        <div className='kb-canvas'>
+
+
             <div className="video-container">
                 <img src={kb_logo} alt="Logo" className='kb-logo' />
                 <video autoPlay loop muted playsInline>

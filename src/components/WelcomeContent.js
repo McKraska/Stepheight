@@ -1,41 +1,54 @@
 import React from 'react';
 import './WelcomeContent.css';
 
-import sprite1 from '../images/goose_walk_right.gif';
-import sprite2 from '../images/gatling_walk_right.gif';
-import sprite3 from '../images/drumen_walk_right.gif';
-import sprite4 from '../images/heavybrass_walk_right.gif';
-import sprite5 from '../images/bb_walk_right.gif';
-import sprite6 from '../images/Michaela_walk_right.gif';
+import MainPoster from '../images/Main_Poster.avif';
+import BannerIMG from '../images/Wimmel_Banner_Faded.avif';
+import GroupPhoto from '../images/Group_photo.avif';
+import Garymodel from '../images/Body_Gatling.glb';
+import { colors } from '@mui/material';
 
 export default function Welcome() {
   return (
-    <div className="welcome-section">
-      <div className="welcome-message">
-        <h1>Stepheight</h1>
+    <div className='welcome-canvas'>
 
-        <h2>
-          What we stand for:
-          <i>
-            “Stepheight is the natural outcome of a desire to make video games”
-          </i>
-        </h2>
+      <div className='Banner'>
+        <img src={BannerIMG}></img>
+        <h1>STEPHEIGHT</h1>
+      </div>
 
-        <p>
-          - is what Oskar once said when asked to describe our group and why we do what we do.
-        </p>
+      <div className="welcome-section">
+
+        <div className="welcome-message">
+          <h2>
+            <i>
+              the natural outcome of a desire to make video games
+            </i>
+          </h2>
+
+        </div>
 
         <a href='/kickingbrass'>
-          <div className='welcome-sprite-row'>
-            <img src={sprite1} alt="sprite1" className="sprite" />
-            <img src={sprite3} alt="sprite2" className="sprite" />
-            <img src={sprite2} alt="sprite3" className="sprite" />
-            <img src={sprite6} alt="sprite4" className="sprite" />
-            <img src={sprite5} alt="sprite5" className="sprite" />
-            <img src={sprite4} alt="sprite6" className="sprite" />
+          <div>
+            <img src={MainPoster} alt="Hero Poster"></img>
           </div>
+          <b> KICKING BRASS </b>
         </a>
+
       </div>
-    </div>
+
+      <div className="welcome-section">
+        <a href='/aboutus'>
+          <div>
+            <img src={GroupPhoto} alt="Team"></img>
+          </div>
+          <b> ABOUT US </b>
+        </a>
+
+      </div>
+
+
+
+
+    </div >
   );
 }

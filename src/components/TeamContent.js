@@ -57,7 +57,7 @@ export default function TeamContent() {
                                     Pronouns: Any/All
                                 </Typography>
                                 <Typography variant="body1" color="text.primary">
-                                    Programmer
+                                    Programmer, Game Designer
                                 </Typography>
                             </CardContent>
                         </Card>

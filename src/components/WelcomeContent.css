@@ -1,15 +1,52 @@
-.welcome-sprite-row {
-    margin-top: 50px;
-    margin-bottom: 200px;
-}
-
 .welcome-section {
-    padding-top: 100px;
     margin: auto;
     padding: 20px;
     text-align: center;
     font-style: normal;
-    max-width: 600px;
+    max-width: 900px;
+    padding-bottom: 100px;
+}
+
+.welcome-canvas a {
+    text-decoration: none;
+    color: #051a6f;
+}
+
+.welcome-section img {
+    width: 100%;
+    transition: transform .2s;
+}
+
+.welcome-section img:hover {
+    transform: scale(1.05);
+}
+
+.Banner {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100%;
+    max-width: 100%;
+    height: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+.Banner img {
+    width: 100%;
+}
+
+.Banner h1 {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 55%);
+    text-align: center;
+    color: #051a6f;
+    font-size: 7vw;
+    font-weight: bold;
+    margin: 0;
 }
 
 .welcome-section .h3 {
@@ -17,23 +54,27 @@
     max-width: none !important;
 }
 
-.welcome-message h1 {
-    padding-top: 300px;
-    color: #333;
-    font-size: 65px;
+.welcome-message {
+    max-width: 60%;
+    padding-left: 20%;
+    padding-bottom: 80px;
 }
+
 
 .welcome-message h2,
 .welcome-message h3 {
-    padding-bottom: 5%;
-    color: #333;
-    font-size: 28px;
+    color: #051a6f;
+    font-size: 20px;
     max-width: none;
+}
+
+.welcome-message h2 i {
+    color: #051a6f;
 }
 
 .welcome-message p {
     padding-top: 5%;
-    color: #666;
+    color: #051a6f;
     font-size: 16px;
     text-align: center;
     max-width: none;
