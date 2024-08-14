@@ -13,8 +13,9 @@ export default function Welcome() {
     <div className='welcome-canvas'>
 
       <Banner
-        imageSrc1="/path/to/your/first/image.jpg"
+        imageSrc1={BannerIMG}
         imageSrc2="/path/to/your/second/image.jpg"
+        bannerText={"STEPHEIGHT"}
       />
 
       <div className="welcome-section">
