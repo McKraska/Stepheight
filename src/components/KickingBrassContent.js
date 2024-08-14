@@ -6,8 +6,8 @@ import './KickingBrassContent.css';
 import Button from '@mui/material/Button';
 import CardHeader from '@mui/material/CardHeader';
 
-import kb_logo from '../images/kicking_brass_logo.png';
-import kb_banner from '../images/menu.png';
+import kb_logo from '../images/logo_KB.avif';
+import kb_banner from '../images/KB_Banner_Faded.avif';
 import kb_img1 from '../images/Promo_art_bw.png';
 import controlsGif from '../images/Controls.gif';
 import inventory from '../images/Inventory.png';
@@ -68,12 +68,12 @@ export default function KickingBrassContent() {
 
     return (
         <div className='kb-canvas'>
-            <div className="video-container">
-                <Banner
-                    imageSrc1={kb_banner}
-                    imageSrc2={kb_logo}
-                />
-            </div>
+
+            <Banner
+                imageSrc1={kb_banner}
+                imageSrc2={kb_logo}
+            />
+
 
             <Tabs
                 value={value}

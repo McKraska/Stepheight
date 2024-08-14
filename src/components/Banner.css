@@ -1,17 +1,37 @@
 .Banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100%;
+    max-width: 100%;
+    height: fit-content;
+    margin: auto;
+    position: relative;
 }
 
-.Banner img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
+.Banner .BannerIMG1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.Banner img:last-child {
-    margin-right: 0;
+.Banner .BannerIMG2 {
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.Banner h1 {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 55%);
+    text-align: center;
+    color: #051a6f;
+    font-size: 7vw;
+    font-weight: bold;
+    margin: 0;
 }
