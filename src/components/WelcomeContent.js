@@ -14,7 +14,6 @@ export default function Welcome() {
 
       <Banner
         imageSrc1={BannerIMG}
-        imageSrc2="/path/to/your/second/image.jpg"
         bannerText={"STEPHEIGHT"}
       />
 
