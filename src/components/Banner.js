@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Define the Banner component accepting props for two images
 function Banner({ imageSrc1, imageSrc2, bannerText }) {
     return (
         <div className='Banner'>

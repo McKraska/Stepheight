@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Banner from './Banner'
 import { Typography, List, Card, Tabs, Tab, Grid, CardContent, Box } from '@mui/material';
 import './KickingBrassContent.css';
 
@@ -6,7 +7,7 @@ import Button from '@mui/material/Button';
 import CardHeader from '@mui/material/CardHeader';
 
 import kb_logo from '../images/kicking_brass_logo.png';
-import kb_banner from '../images/tuba_banner_video.mp4';
+import kb_banner from '../images/menu.png';
 import kb_img1 from '../images/Promo_art_bw.png';
 import controlsGif from '../images/Controls.gif';
 import inventory from '../images/Inventory.png';
@@ -67,14 +68,11 @@ export default function KickingBrassContent() {
 
     return (
         <div className='kb-canvas'>
-
-
             <div className="video-container">
-                <img src={kb_logo} alt="Logo" className='kb-logo' />
-                <video autoPlay loop muted playsInline>
-                    <source src={kb_banner} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                <Banner
+                    imageSrc1={kb_banner}
+                    imageSrc2={kb_logo}
+                />
             </div>
 
             <Tabs
