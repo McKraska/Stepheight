@@ -1,4 +1,5 @@
 import React from 'react';
+import Banner from './Banner'
 import './WelcomeContent.css';
 
 import MainPoster from '../images/Main_Poster.avif';
@@ -11,10 +12,10 @@ export default function Welcome() {
   return (
     <div className='welcome-canvas'>
 
-      <div className='Banner'>
-        <img src={BannerIMG}></img>
-        <h1>STEPHEIGHT</h1>
-      </div>
+      <Banner
+        imageSrc1="/path/to/your/first/image.jpg"
+        imageSrc2="/path/to/your/second/image.jpg"
+      />
 
       <div className="welcome-section">
 

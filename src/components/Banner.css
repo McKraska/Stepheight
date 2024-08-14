@@ -1,0 +1,17 @@
+.Banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.Banner img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.Banner img:last-child {
+    margin-right: 0;
+}
