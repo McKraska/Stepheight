@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <div id='Nav'>
-      <AppBar position="fixed" elevation={0} className={isKickingBrassPage ? 'navbar-kickingbrass' : 'navbar-default'}>
+      <AppBar position="fixed" elevation={0} sx={{ bgcolor: "transparent" }} className={isKickingBrassPage ? 'navbar-kickingbrass' : 'navbar-default'}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Link to="/">

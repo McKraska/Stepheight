@@ -10,8 +10,6 @@
 
 .navbar-logo {
     width: 80px;
-    height: auto;
-    padding-top: 10px;
 }
 
 .navbar-icon {
@@ -21,7 +19,7 @@
 }
 
 .navbar-default .MuiContainer-maxWidthXl {
-    background-color: #fffde6;
+    background-color: #fffde6be !important;
 }
 
 .navbar-default .MuiButton-root {
@@ -29,7 +27,7 @@
 }
 
 .navbar-kickingbrass .MuiContainer-maxWidthXl {
-    background-color: #1b0c2e !important;
+    background-color: #1b0c2eca !important;
 }
 
 .navbar-kickingbrass .MuiButton-root {
@@ -92,7 +90,7 @@
 }
 
 .navbar-kickingbrass {
-    background-color: #1b0c2e;
+    background-color: #1b0c2ec1 !important;
 }
 
 .navbar-kickingbrass .navbar-logo {

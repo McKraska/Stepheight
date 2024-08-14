@@ -30,7 +30,7 @@ const Footer = () => {
                     © {new Date().getFullYear()} Stepheight. All rights reserved.
                 </div>
                 <div className="footer-text-content">
-                    <a href="https://be.contentful.com/login/" className="footer-link admin-link" target="_blank" rel="noopener noreferrer">Admin</a>
+
                     <a href="../documents/ImpressumStepheight.pdf" target="_blank" rel="noopener noreferrer">Impressum</a>
                 </div>
             </footer>
