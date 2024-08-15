@@ -13,6 +13,14 @@ p {
     color: #a16edd !important;
 }
 
+.kb-canvas {
+    width: 100%;
+}
+
+.MuiTabs-scroller {
+    margin-top: 20%;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     background-color: #13001b;
