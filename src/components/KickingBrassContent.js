@@ -68,7 +68,6 @@ export default function KickingBrassContent() {
 
     return (
         <div className='kb-canvas'>
-
             <Banner
                 imageSrc1={kb_banner}
                 imageSrc2={kb_logo}

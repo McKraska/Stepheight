@@ -4,11 +4,11 @@
 .kickingbrass-page {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: fit-content;
+    min-height: 100vh;
     text-align: center;
 }
-
 
 .kickingbrass-content {
     margin: 20px;

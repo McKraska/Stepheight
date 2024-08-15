@@ -41,9 +41,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #a16edd;
+    justify-content: center;
+    /* This will vertically center everything in the div */
     width: 100%;
     max-width: 800px;
+    margin: auto;
+    /* Centers the div horizontally within its parent */
+    padding: 20px;
 }
 
 .kickingbrass-content h1,
@@ -64,6 +68,17 @@ h6 {
 .kb-logo {
     max-width: 200px;
     max-height: 200px;
+}
+
+.kb-canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Full height to ensure centering works vertically */
+    width: 100%;
+    /* Full width to ensure centering works horizontally */
 }
 
 .kickingbrass-content h1 {
@@ -142,12 +157,27 @@ h6 {
     justify-content: center;
 }
 
-.card,
-.items-card {
-    background-color: rgb(41, 0, 52);
-    width: 100%;
+.card {
+    width: auto;
+    /* Allows the card to adjust its width based on its content */
     max-width: 800px;
-    image-rendering: pixelated;
+    /* Keeps the card from becoming too wide */
+    padding: 20px;
+    /* Adds padding inside the card */
+    margin: 20px auto;
+    /* Ensures it remains centered horizontally */
+    background-color: #180d25;
+    /* Background color of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for better visibility */
+    display: inline-flex;
+    /* Makes the card only as wide as its content plus padding */
+    flex-direction: column;
+    /* Aligns children elements in a column */
+    align-items: center;
+    /* Centers the items horizontally */
+    justify-content: center;
+    /* Centers the items vertically if there is extra space */
 }
 
 .download-card {
