@@ -9,7 +9,6 @@ p {
 }
 
 .MuiTab-root {
-
     color: #a16edd !important;
 }
 
@@ -34,6 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .kickingbrass-body {
@@ -58,7 +58,11 @@ body {
     padding: 20px;
 }
 
-.kickingbrass-content h1,
+.MuiPaper-root {
+    background-color: red;
+} 
+
+.card h1,
 h2,
 h3,
 h4,

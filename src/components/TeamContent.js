@@ -87,7 +87,7 @@ export default function TeamContent() {
                 </div>
             </Card>
 
-            <Card className="poster-card" sx={{ boxShadow: 0 }} >
+            <Card className="poster-card" sx={{ boxShadow: 0, backgroundColor: '#fffde6'}} >
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
                         <CardContent>

@@ -12,40 +12,71 @@ import kb_img1 from '../images/Promo_art_bw.png';
 import controlsGif from '../images/Controls.gif';
 import inventory from '../images/Inventory.png';
 
-//ITEMS
+//Items
+import amplifier from '../images/Items/Item_Amplifier.avif';
 import hearts from '../images/hearts.png';
-import double_bass from '../images/pickup_double_bass.png';
-import frigid_loop from '../images/pickup_ice_loop.png';
-import electro_loop from '../images/pickup_electro_loop.png';
-import cinder_loop from '../images/pickup_fire_loop.png';
-import ballet_skirt from '../images/pickup_ballet.png';
-import chilli from '../images/pickup_chilli.png';
-import cookie from '../images/pickup_cookie.png';
-import egg from '../images/pickup_egg.png';
-import bottled_starlight from '../images/pickup_domain.png';
-import fleet_feather from '../images/pickup_fleet.png';
-import glass_furnace from '../images/pickup_glass_furnace.png';
-import goose_flute from '../images/pickup_goose.png';
-import gread_armour from '../images/pickup_gread_armour.png';
-import healing_amulet from '../images/pickup_healing_amulet.png';
-import oven_mittens from '../images/pickup_mittens.png';
-import piggybank from '../images/pickup_piggy.png';
-import pizza from '../images/pickup_pizza.png';
-import plate_armour from '../images/pickup_plate.png';
-import potato from '../images/pickup_potato.png';
-import rusty_shield from '../images/pickup_rusty_shield.png';
-import saxophone from '../images/pickup_saxophone.png';
-import soul_loop from '../images/pickup_soul_loop.png';
-import soup from '../images/pickup_soup.png';
-import substitute_doll from '../images/pickup_substitute.png';
-import thorn_mantle from '../images/pickup_thornmantle.png';
-import trumpet from '../images/pickup_trumpet.png';
-import violin from '../images/pickup_violin.png';
+import frigid_loop from '../images/Items/Item_Frigid_Loop.avif';
+import electro_loop from '../images/Items/Item_Lightning_Loop.avif';
+import cinder_loop from '../images/Items/Item_Cinder_Loop.avif';
+import ballet_skirt from '../images/Items/Item_Tutu.avif';
+import chilli from '../images/Items/Item_Chilli.avif';
+import cookie from '../images/Items/Item_Cookie.avif';
+import egg from '../images/Items/Item_Egg.avif';
+import bottled_starlight from '../images/Items/Item_Bottled_Starlight.avif';
+import fleet_feather from '../images/Items/Item_Fleet_Feather.avif';
+import Heart_Marver from '../images/Items/Item_Heart_Marver.avif';
+import gread_armour from '../images/Items/Item_Greed_Armour.avif';
+import healing_amulet from '../images/Items/Item_Heart_Amulet.avif';
+import oven_mittens from '../images/Items/Item_Oven_Mittens.avif';
+import piggybank from '../images/Items/Item_Piggybank.avif';
+import plate_armour from '../images/Items/Item_Plate_Armour.avif';
+import potato from '../images/Items/Item_Potato.avif';
+import rusty_shield from '../images/Items/Item_Fragil_Shield.avif';
+import soul_loop from '../images/Items/Item_Soul_Loop.avif';
+import soup from '../images/Items/Item_Soup.avif';
+import substitute_doll from '../images/Items/Item_Substitute_Doll.avif';
+import thorn_mantle from '../images/Items/Item_Thorn_Mantle.avif';
+import bottles_tornado from '../images/Items/Item_Bottled_Tornado.avif';
+import berserk_gloves from '../images/Items/Item_Berserk_Gloves.avif';
+import berserk_potion from '../images/Items/Item_Berserk_Potion.avif';
+import boxing_gloves from '../images/Items/Item_Boxing_Gloves.avif';
+import Cake from '../images/Items/Item_Cake.avif';
+import Call_Bell from '../images/Items/Item_Call_Bell.avif';
+import Christmas_Ball from '../images/Items/Item_Christmas_Ball.avif';
+import Egg_Basket from '../images/Items/Item_Egg_Basket.avif';
+import Fire_walkers from '../images/Items/Item_FireWalkers.avif';
+import Fluffy_Robes from '../images/Items/Item_Fluffy_Robes.avif';
+import Fragile_Sword from '../images/Items/Item_Fragile_Sword.avif';
+import glue from '../images/Items/Item_Glue.avif';
+import Gold_Ring from '../images/Items/Item_Boxing_Gloves.avif';
+import Gusty_Loop from '../images/Items/Item_Gusty_Loop.avif';
+import Health_potion from '../images/Items/Item_Health_Potion.avif';
+import Leap_lord from '../images/Items/Item_Leap_Lords.avif';
+import Leather_tunic from '../images/Items/Item_Leather_Tunic.avif';
+import Metronome from '../images/Items/Item_Metronome.avif';
+import Noteburst_gloves from '../images/Items/Item_Noteburst_Gloves.avif';
+import patient_gloves from '../images/Items/Item_Patient_Gloves.avif';
+import repulsor from '../images/Items/Item_Repulsor.avif';
+import sliding_socks from '../images/Items/Item_Sliding_Socks.avif';
+import Song_Slingers from '../images/Items/Item_Song_Slingers.avif';
+import Sprinting_Shoes from '../images/Items/Item_Sprinting_Shoes.avif';
+import Stereo_Shirt from '../images/Items/Item_Stereo_Shirt.avif';
+import Stone_Loop from '../images/Items/Item_Stone_Loop.avif';
+import Tumbling_boots from '../images/Items/Item_Tumbling_Boots.avif';
+import Capacitor from '../images/Items/Item_Unstable_Capacitor.avif';
+import Void_Baton from '../images/Items/Item_Void_Baton.avif';
+
 
 //INSTRUMENTS
-import lyre from '../images/pickup_lyre.png';
-import snare from '../images/pickup_snare.png';
-import xylophone from '../images/pickup_xylophone.png';
+import lyre from '../images/Instruments/Instrument_Lyre.avif';
+import snare from '../images/Instruments/Instrument_Snare.avif';
+import xylophone from '../images/Instruments/Instrument_Xylophone.avif';
+import Double_Bass from '../images/Instruments/Instrument_Double_Bass.avif';
+import E_Bass from '../images/Instruments/Instrument_E_Bass.avif';
+import Lotus_Flute from '../images/Instruments/Instrument_Lotus_Flute.avif';
+import saxophone from '../images/Instruments/Instrument_Saxophone.avif';
+import Trumpet from '../images/Instruments/Instrument_Trumpet.avif';
+import violin from '../images/Instruments/Instrument_Violin.avif';
 
 // ENEMIES
 import goose from '../images/goose_walk_right.gif';
@@ -102,22 +133,13 @@ export default function KickingBrassContent() {
 
 function AboutTab() {
     return (
-        <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
+        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0,}} className="card">
             <CardContent>
                 <h1>THE WORLD OF KICKING BRASS</h1>
 
                 <h2>Your family is missing,</h2>
                 <h2>your village has been ransacked,</h2>
                 <h2>and hostile forces surround you on all sides.</h2>
-
-                <div className='sprite-row'>
-                    <img src={goose} alt="goose" className="sprite" />
-                    <img src={mike} alt="mike" className="sprite" />
-                    <img src={gary} alt="gary" className="sprite" />
-                    <img src={michaela} alt="michaela" className="sprite" />
-                    <img src={gerhard} alt="gerhard" className="sprite" />
-                    <img src={brassarian} alt="brassarian" className="sprite" />
-                </div>
 
                 <p>
                     King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!
@@ -128,21 +150,12 @@ function AboutTab() {
                 </p>
 
                 <p>
-                    Pick up different instruments and stock up on useful items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
+                    Pick up different instruments and stock up on useful Items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
                 </p>
 
                 <p>
                     Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
                 </p>
-
-                <div className='sprite-row-flipped'>
-                    <img src={goose} alt="goose" className="sprite" />
-                    <img src={mike} alt="mike" className="sprite" />
-                    <img src={gary} alt="gary" className="sprite" />
-                    <img src={michaela} alt="michaela" className="sprite" />
-                    <img src={gerhard} alt="gerhard" className="sprite" />
-                    <img src={brassarian} alt="brassarian" className="sprite" />
-                </div>
 
                 <h1>THE COLOSSEUM</h1>
 
@@ -180,12 +193,12 @@ function DownloadTab() {
     const urlKicking_Brass_v006a = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/Kicking_Brass_v006a.zip?alt=media`;
 
     return (
-        <Card sx={{ backgroundColor: '#180d25', boxShadow: 0, padding: '20px' }} className="card">
-            <h2>DOWNLOADS</h2>
+        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, padding: '20px' }} className="card">
+            <h1>DOWNLOADS</h1>
             <Card className="card" sx={{ backgroundColor: '#201230', boxShadow: 0, marginBottom: '20px' }}>
                 <CardHeader
-                    title="Limited Art test Version 0.1a Windows 64bit"
-                    subheader="To play, extract the Zip and open KB_Art.exe"
+                    title="Kicking Brass 0.1a"
+                    subheader="To play, extract the Zip and open KickingBrass.exe"
                     className="kickingbrass-cardheader"
                 />
                 <CardContent>
@@ -221,8 +234,8 @@ function DownloadTab() {
 
 function TutorialTab() {
     return (
-        <Card sx={{ backgroundColor: '#180d25', boxShadow: 0, padding: '20px' }} className="card">
-            <h2>CONTROLS</h2>
+        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, padding: '20px' }} className="card">
+            <h1>CONTROLS</h1>
             <Card sx={{ backgroundColor: '#201230', boxShadow: 0 }} className="card">
                 <CardContent>
                     <div className="controls-container">
@@ -231,7 +244,9 @@ function TutorialTab() {
                             <li><p>[A] - Move Left</p></li>
                             <li><p>[S] - Move Backward</p></li>
                             <li><p>[D] - Move Right</p></li>
-                            <li><p>[Space] - Jump</p></li>
+                            <li><p>[Space] - Jump Up and Down</p></li>
+                            <li><p>[Space + Directional Input] - Jump Roll in direction</p></li>
+                            <li><p>[Double tap Directional Input] - Short Slide in direction</p></li>
                             <li><p>[Cursor] - Aim</p></li>
                             <li><p>[Ctrl] - Camera to Cursor</p></li>
                             <li><p>[LMB] - Primary Attack</p></li>
@@ -252,35 +267,35 @@ function TutorialTab() {
                 </CardContent>
 
             </Card>
-            <h2>INVENTORY</h2>
+            <h1>INVENTORY</h1>
             <Card sx={{ backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }} className="card">
                 <CardContent>
 
                     <List dense>
                         <p>
-                            Your inventory is divided into three main sections. The first section is shaped like a plus sign and is reserved for Equipment — these are your passive clothing items such as Headwear, Gloves, Chest/back pieces, Shoes, Trousers, and Trinkets like necklaces. Remember, only one piece of Equipment per type can be worn at a time.
+                            Your inventory is divided into three main sections. The first section is shaped like a plus sign and is reserved for Equipment — these are your passive clothing Items such as Headwear, Gloves, Chest/back pieces, Shoes, Trousers, and Trinkets like necklaces. Remember, only one piece of Equipment per type can be worn at a time.
                         </p>
 
                         <img src={inventory} alt="Inventory" className='glossary-image' />
 
                         <p>
-                            The second section contains your Active items, which are the most frequently used. This section is always visible and includes three item boxes. You can use the items by pressing the default keys [1], [2], or [3]. Active items with cooldowns will show a timer until they're ready again, while consumables will disappear after use, freeing up their slot.
+                            The second section contains your Active Items, which are the most frequently used. This section is always visible and includes three item boxes. You can use the Items by pressing the default keys [1], [2], or [3]. Active Items with cooldowns will show a timer until they're ready again, while consumables will disappear after use, freeing up their slot.
                         </p>
                         <p>
-                            The third section holds your Instruments, with space for up to three. To switch between them, use the scroll wheel or the default keys [Q] and [E]. When viewing the full inventory, you can rearrange items by dragging them to a new slot or remove them from your inventory by dragging them out into the surrounding empty space.
+                            The third section holds your Instruments, with space for up to three. To switch between them, use the scroll wheel or the default keys [Q] and [E]. When viewing the full inventory, you can rearrange Items by dragging them to a new slot or remove them from your inventory by dragging them out into the surrounding empty space.
                         </p>
 
                     </List>
                 </CardContent>
             </Card>
 
-            <h2>DEALING DAMAGE</h2>
-            <Card sx={{ marginBottom: '20px', backgroundColor: '#201230', boxShadow: 0 }} className="card">
+            <h1>DEALING DAMAGE</h1>
+            <Card sx={{ marginBottom: '20px', backgroundColor: '#ffffff00', boxShadow: 0 }} className="card">
                 <CardContent>
 
                     <List dense>
                         <p>
-                            At the start of your journey, you have three hearts. Each enemy hit will cost you one heart, so guard them carefully! To increase your heart count, pick up a max heart. To replenish health, consume items like cookies. However, beware: if you lose all your hearts, you'll be sent back to your last checkpoint, as long as you have extra lives remaining. Run out of extra lives, and you'll have to start over from the beginning of your run.
+                            At the start of your journey, you have three hearts. Each enemy hit will cost you one heart, so guard them carefully! To increase your heart count, pick up a max heart. To replenish health, consume Items like cookies. However, beware: if you lose all your hearts, you'll be sent back to your last checkpoint, as long as you have extra lives remaining. Run out of extra lives, and you'll have to start over from the beginning of your run.
                         </p>
 
                         <img src={hearts} alt="hearts" className='glossary-image' />
@@ -304,10 +319,12 @@ function TutorialTab() {
     );
 }
 
+
 function GlossaryTab() {
     return (
-        <Card sx={{ backgroundColor: '#180d25', boxShadow: 0 }} className="card">
-            <h2>ENEMIES</h2>
+        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0 }} className="card">
+            
+            <h1>ENEMIES</h1>
             <CardContent>
                 {[
                     { name: 'ROGER', description: 'Shoots [8th] notes at you. Waiting for a promotion.', image: roger },
@@ -320,7 +337,7 @@ function GlossaryTab() {
                     { name: 'MIKE (On holiday)', description: 'Creates shockwaves which either cause other nearby enemies to be healed for [1 heart] over 5 seconds, or causes other nearby enemies to immediately attack.', image: mike },
                     { name: 'GATLING GARY', description: 'Literally the big guns. Gatling moves slowly and carries an oversized tuba which shoots large groups of projectiles. Each attack pushes him backwards. If he runs into a wall he takes a small amount of damage and is stunned briefly. If desperate, he may feel the need to overcharge his weapon.', image: gary },
                     { name: 'THE BRASSBARIAN', description: 'Brings down the lightning. Brassbarian rampages around with a double bass larger than you. He chases you around with leaps, swings and slams, and will rain down more lightning on you as the fight progresses. Although many people come to watch his deadly bass solo, few have the luxury of surviving it.', image: brassarian }].map((item, index) => (
-                        <Card key={item.name + index} className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }}>
+                        <Card key={item.name + index} className='Items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px', width: '100%' }}>
                             <CardContent>
                                 <Grid container spacing={2} alignItems="center">
                                     <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
@@ -334,7 +351,7 @@ function GlossaryTab() {
                             </CardContent>
                         </Card>
                     ))}
-
+                
                 <h2>INSTRUMENTS</h2>
 
                 {[
@@ -342,11 +359,13 @@ function GlossaryTab() {
                     { name: 'SNARE', description: 'Primary: Commands all minion units to fire. Secondary: Rearranges the formation of all minions you own. Passive: Summons two sousaphone minions.', image: snare },
                     { name: 'XYLOPHONE', description: 'Primary: Summons a spooky scary skeleton. Secondary: Detonates all minions you own.', image: xylophone },
                     { name: 'SAXOPHONE', description: 'Primary: Fires a lobbed [2 connected 8th]. The value (damage) of the note increases to [quarter] if the attack was charged. Secondary: Lobs a projectile that pulls units towards it. The radius increases if the attack was charged.', image: saxophone },
-                    { name: 'TRUMPET', description: 'Primary: Fires a [2 connected 8th] projectile and accumulates water. If charged you shoot a [triplet]. Secondary: Releases all accumulated water in a burst of damage and shatters projectiles. The water remains as a puddle which slows enemy units. The more water was accumulated, the stronger the effects of this move are.', image: trumpet },
+                    { name: 'TRUMPET', description: 'Primary: Fires a [2 connected 8th] projectile and accumulates water. If charged you shoot a [triplet]. Secondary: Releases all accumulated water in a burst of damage and shatters projectiles. The water remains as a puddle which slows enemy units. The more water was accumulated, the stronger the effects of this move are.', image: Trumpet },
                     { name: 'VIOLIN', description: 'Primary: Swings the bow in melee range. Capable of shattering projectiles. Secondary: Creates [3 connected 8th] projectiles that orbit you. Every second projectile spawns as a ghost projectile that can be shattered, but will not deal damage while orbiting.', image: violin },
-                    { name: 'DOUBLE BASS', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: double_bass },
+                    { name: 'DOUBLE BASS', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: Double_Bass },
+                    { name: 'ELECTRIC BASS', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: E_Bass },
+                    { name: 'LOTUS FLUTE', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: Lotus_Flute },
                 ].map((item, index) => (
-                    <Card key={item.name + index} className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }}>
+                    <Card key={item.name + index} className='Items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px', width: '100%' }}>
                         <CardContent>
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
@@ -361,34 +380,65 @@ function GlossaryTab() {
                     </Card>
                 ))}
 
-                <h2>ITEMS</h2>
+                <h1>Items</h1>
 
                 {[
-                    { name: 'ELECTRO LOOP', description: 'Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage. Cooldown: 7 Seconds.', image: electro_loop },
-                    { name: 'FRIGID LOOP', description: 'Active: Hurl a frozen spear in the target direction, piercing enemies for [1] damage and freezing them for 2 seconds. Cooldown: 12 Seconds.', image: frigid_loop },
-                    { name: 'CINDER LOOP', description: 'Active: Lobs a fireball towards the targeted location, erupting in a fiery explosion when it touches the ground, knocking away nearby enemies and dealing [1.5] damage to them. Cooldown: 6 Seconds.', image: cinder_loop },
-                    { name: 'SOUL LOOP', description: 'Active: Releases 5 homing souls which chase down nearby enemies, dealing [1] damage and fearing them for 2 seconds, causing them to run away from you. Doesnt have a cooldown but instead recharges by defeating 5 enemies.', image: soul_loop },
-                    { name: 'HEALING ALUMENT', description: 'Active: Heals [1 heart]. Has a chance to be damaged when used. After being damaged 3 times it will break, disappearing completely. If it is only damaged but not broken it can be repaired at Jerome. Cooldown: 5 Seconds.', image: healing_amulet },
-                    { name: 'BOTTLED STARLIGHT', description: 'Active: Creates an expanding domain in which stars rain down upon up to 5 enemies every 0.75 seconds. These stars deal [1] damage to whoever they directly strike, and [0.5] damage to anyone near them. Cooldown: 18 Seconds.', image: bottled_starlight },
-                    { name: 'GOOSE FLUTE', description: 'Active: Command the goose to charge towards the targeted location, shattering projectiles along the way and dealing [1] damage and knocking back enemies it passes through. Passive: An invulnerable goose follows you around, attacking nearby enemies with a lobbed [quarter note] every 3 seconds.', image: goose_flute },
-                    { name: 'RUSTY SHIELD', description: 'Active: Gain [1 glass heart] for 3 seconds. Cooldown: 8 Seconds.', image: rusty_shield },
-                    { name: 'FLEET FEATHER', description: 'Active: Gain a burst of 100% increased movement speed, decaying over 3 seconds. Cooldown: 10 Seconds.', image: fleet_feather },
-                    { name: 'POTATO', description: 'Active: Halves damage taken for 20 seconds. Consumed on use. Does not stack.', image: potato },
-                    { name: 'CHILLI', description: 'Active: Doubles damage dealt and taken for 15 seconds. Consumed on use. Does not stack.', image: chilli },
-                    { name: 'SOUP', description: 'Active: Slowly heals [3 hearts] over 15 seconds. Consumed on use. Does not stack.', image: soup },
-                    { name: 'COOKIE', description: 'Active: Restores [1 heart] on use. Consumed on use.', image: cookie },
-                    { name: 'PIZZA', description: 'Active: Restores [1 heart] on use. Consumed after using all 8 slices. Cooldown: 11.', image: pizza },
-                    { name: 'EGG', description: 'Active: Throws an egg at the target location which breaks into [three eighth notes] upon striking the ground. Destroyed on use.', image: egg },
-                    { name: 'SUBSTITUTE DOLL', description: 'Passive: Upon taking lethal damage will sacrifice itself to fully heal you.', image: substitute_doll },
-                    { name: 'OVEN MITTENS', description: 'Passive: Every 5 Enemies you defeat create a cookie in your inventory. Cookies created this way have a low chance of spawning as a pizza instead', image: oven_mittens },
-                    { name: 'GLASS FURNACE', description: 'Passive: Every time you defeat a unit you gain half a glass heart that lasts for 4 seconds.', image: glass_furnace },
-                    { name: 'THORN MANTLE', description: 'Passive: Taking damage retaliates with a burst of projectiles.', image: thorn_mantle },
-                    { name: 'PIGGYBANK', description: 'Passive: If carried through one round, explodes in a rain of sheet music (30 sheets).', image: piggybank },
-                    { name: 'GREED ARMOUR', description: 'Passive: Taking damage will instead drain your sheet music, if possible. You lose 10 sheets per point of [1 heart] damage taken. Half of the money lost will drop onto the floor near you.', image: gread_armour },
-                    { name: 'PLATE ARMOUR', description: 'Passive: Reduces all damage taken by [quarter heart] to a minimum of [quarter heart].', image: plate_armour },
+                    
+                    { name: 'AMPLIFIER', description: '', image: amplifier },
                     { name: 'BALLET SKIRT', description: 'Passive: Jumping makes you perform a pirouette when you land which shoots a spiral of [8th] projectiles around you.', image: ballet_skirt },
+                    { name: 'BERSERK GLOVES', description: '', image: berserk_gloves },
+                    { name: 'BERSERK POTION', description: '', image: berserk_potion },
+                    { name: 'BOTTLED STARLIGHT', description: 'Active: Creates an expanding domain in which stars rain down upon up to 5 enemies every 0.75 seconds. These stars deal [1] damage to whoever they directly strike, and [0.5] damage to anyone near them. Cooldown: 18 Seconds.', image: bottled_starlight },
+                    { name: 'BOXING GLOVES', description: 'Active: Creates an expanding domain in which stars rain down upon up to 5 enemies every 0.75 seconds. These stars deal [1] damage to whoever they directly strike, and [0.5] damage to anyone near them. Cooldown: 18 Seconds.', image: boxing_gloves },
+                    { name: 'BOTTLED TORNADO', description: '', image: bottles_tornado},
+                    { name: 'CAKE', description: '', image: Cake },
+                    { name: 'CALL BELL', description: '', image: Call_Bell },
+                    { name: 'CHILLI', description: 'Active: Doubles damage dealt and taken for 15 seconds. Consumed on use. Does not stack.', image: chilli },
+                    { name: 'CLYDEMAS ORNAMENT', description: '', image: Christmas_Ball },
+                    { name: 'CINDER LOOP', description: 'Active: Lobs a fireball towards the targeted location, erupting in a fiery explosion when it touches the ground, knocking away nearby enemies and dealing [1.5] damage to them. Cooldown: 6 Seconds.', image: cinder_loop },
+                    { name: 'COOKIE', description: 'Active: Restores [1 heart] on use. Consumed on use.', image: cookie },
+                    { name: 'EGG BASKET', description: '', image: Egg_Basket },
+                    { name: 'EGG', description: '', image: egg },
+                    { name: 'FIRE WALKERS', description: '', image: Fire_walkers},
+                    { name: 'FLEET FEATHER', description: 'Active: Gain a burst of 100% increased movement speed, decaying over 3 seconds. Cooldown: 10 Seconds.', image: fleet_feather },
+                    { name: 'FLIFFY', description: '', image: Fluffy_Robes },
+                    { name: 'FRIGID LOOP', description: 'Active: Hurl a frozen spear in the target direction, piercing enemies for [1] damage and freezing them for 2 seconds. Cooldown: 12 Seconds.', image: frigid_loop },
+                    { name: 'GOLD RING', description: '', image: Gold_Ring},
+                    { name: 'FRAGILE SWORD', description: '', image: Fragile_Sword},
+                    { name: 'GREED ARMOUR', description: 'Passive: Taking damage will instead drain your sheet music, if possible. You lose 10 sheets per point of [1 heart] damage taken. Half of the money lost will drop onto the floor near you.', image: gread_armour },
+                    { name: 'GUSTY LOOP', description: '', image: Gusty_Loop },
+                    { name: 'HEALTH POTION', description: '', image: Health_potion },
+                    { name: 'HEALING ALUMENT', description: 'Active: Heals [1 heart]. Has a chance to be damaged when used. After being damaged 3 times it will break, disappearing completely. If it is only damaged but not broken it can be repaired at Jerome. Cooldown: 5 Seconds.', image: healing_amulet },
+                    { name: 'HEART SHAPED MARVER', description: '', image: Heart_Marver },
+                    { name: 'LEAP LORDS', description: '', image: Leap_lord},
+                    { name: 'LEATHER TUNIC', description: '', image: Leather_tunic },
+                    { name: 'ELECTRO LOOP', description: 'Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage. Cooldown: 7 Seconds.', image: electro_loop },
+                    { name: 'METRONOME', description: '', image: Metronome },
+                    { name: 'NOTEBURST GLOVES', description: '', image: Noteburst_gloves },
+                    { name: 'OVEN MITTENS', description: 'Passive: Every 5 Enemies you defeat create a cookie in your inventory. Cookies created this way have a low chance of spawning as a pizza instead', image: oven_mittens },
+                    { name: 'PATIENT GLOVES', description: '', image: patient_gloves },
+                    { name: 'PIGGYBANK', description: 'Passive: If carried through one round, explodes in a rain of sheet music (30 sheets).', image: piggybank },
+                    { name: 'POTATO', description: 'Active: Halves damage taken for 20 seconds. Consumed on use. Does not stack.', image: potato },
+                    { name: 'PLATE ARMOUR', description: 'Passive: Reduces all damage taken by [quarter heart] to a minimum of [quarter heart].', image: plate_armour },
+                    { name: 'REPULSOR', description: '', image: repulsor},
+                    { name: 'RUSTY SHIELD', description: 'Active: Gain [1 glass heart] for 3 seconds. Cooldown: 8 Seconds.', image: rusty_shield },
+                    { name: 'SLIDING SOCKS', description: '', image: sliding_socks},
+                    { name: 'SONG SLINGERS', description: '', image: Song_Slingers},
+                    { name: 'SOUL LOOP', description: 'Active: Releases 5 homing souls which chase down nearby enemies, dealing [1] damage and fearing them for 2 seconds, causing them to run away from you. Doesnt have a cooldown but instead recharges by defeating 5 enemies.', image: Stone_Loop },
+                    { name: 'SOUP', description: 'Active: Slowly heals [3 hearts] over 15 seconds. Consumed on use. Does not stack.', image: soup },
+                    { name: 'SPRINTING SHOES', description: '', image: Sprinting_Shoes},
+                    { name: 'STEREO SHIRT', description: '', image: Stereo_Shirt},
+                    { name: 'STONE LOOP', description: 'Active: Releases 5 homing souls which chase down nearby enemies, dealing [1] damage and fearing them for 2 seconds, causing them to run away from you. Doesnt have a cooldown but instead recharges by defeating 5 enemies.', image: soul_loop },
+                    { name: 'SUBSTITUTE DOLL', description: 'Passive: Upon taking lethal damage will sacrifice itself to fully heal you.', image: substitute_doll },
+                    { name: 'THORN MANTLE', description: 'Passive: Taking damage retaliates with a burst of projectiles.', image: thorn_mantle },
+                    { name: 'TUMBLING BOOTS', description: '', image: Tumbling_boots},
+                    { name: 'UNSTABLE CAPACITOR', description: '', image: Capacitor},
+                    { name: 'VOID BATON', description: '', image: Void_Baton},
+                    { name: 'YAMAGUCHI GLUE', description: '', image: glue },
+
+
                 ].map((item, index) => (
-                    <Card key={item.name + index} className='items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }}>
+                    <Card key={item.name + index} className='Items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px', width: '100%' }}>
                         <CardContent>
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
