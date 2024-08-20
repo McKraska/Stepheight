@@ -59,7 +59,7 @@ body {
 }
 
 .MuiPaper-root {
-    background-color: red;
+    background-color: #ffffff00 !important; 
 } 
 
 .card h1,
@@ -120,7 +120,6 @@ h6 {
 .kickingbrass-button {
     background-color: #a16edd !important;
     color: #2b1742 !important;
-    font-family: 'Montserrat', serif;
     font-size: 16px;
     text-transform: none;
     padding: 10px 20px;

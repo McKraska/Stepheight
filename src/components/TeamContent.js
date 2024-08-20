@@ -95,13 +95,9 @@ export default function TeamContent() {
                                 ESF Sponsored
                             </Typography>
                             <Typography variant="body1" color="text.secondary">
-                                We are proud to announce that our studio’s founding and ongoing initiatives have garnered the support of the Free State of Thuringia. This endorsement is not just a nod to our potential but comes with co-financing from the prestigious European Social Fund (ESF Plus), emphasizing the significance of our mission.
+                            One of our first and greatest achievements was acquiring funding from the Thüringer Zentrum für Existenzgründungen und Unternehmertum (ThEx). After a successful pitch, we received one year’s worth of funding for our preproduction, allowing us to drop side jobs and focus entirely on developing Kicking Brass. Excited by the energy and support we were able to instill in the jury, we’re optimistic about the future for Kicking Brass and Stepheight.
                             </Typography>
-                            <Typography variant="body1" color="text.secondary">
-                                At Stepheight Studio, we are committed to pushing the boundaries of game development by integrating community-driven processes. Our projects are not just about creating games; they are about crafting experiences that resonate with our players and contribute to the fabric of the gaming community.
-                            </Typography>
-                            <Typography variant="body1" color="text.secondary">
-                                This support from both the Free State of Thuringia and the ESF Plus is a testament to our vision of becoming a cornerstone of innovation and creativity in the digital arts. Through this partnership, we are poised to bring more exciting projects to life, ensuring that every game we develop is an adventure that our community can partake in.                        </Typography>
+                
                         </CardContent>
                     </Grid>
                     <Grid item xs={12} md={6}>

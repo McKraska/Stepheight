@@ -23,7 +23,7 @@ export default function Welcome() {
         <div className="welcome-message">
           <h2>
             <i>
-              the natural outcome of a desire to make video games
+            Creating innovative games, one step at a time!
             </i>
           </h2>
 

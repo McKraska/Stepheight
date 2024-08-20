@@ -9,19 +9,15 @@ export default function AboutUsContent() {
             <h1>About Us</h1>
 
             <h3>
-                Our studio is driven by the passion of developing a video game, no matter where we are, who we are, or what our circumstances might be.
+            Three indie devs, setting out to create innovative games, hand in hand with their community!
             </h3>
 
             <img src={banner1} alt="banner" className="banner" />
 
             <p>
-                Our team started doing this in an area where game development is basically unheard of, while also juggling university, side jobs, and a handful of personal challenges.
-
+            Forming for what was originally a university project, Stepheight is one of a handful of developers trying to make games in Thuringia. Driven by an eagerness to create games in a region where very few people have tried so far, we seek to show that anybody can make games anywhere, regardless of background or location. Our dedication stems from our desire to build a community, locally but also online. We hope to cultivate an active following that wants to interact with us and help make our games be the best it can be.
             </p>
 
-            <p>
-                We want Stepheight to be a beacon of what is possible, no matter what restrictions one might face.
-            </p>
         </div>
     );
 }

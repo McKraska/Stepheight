@@ -137,25 +137,14 @@ function AboutTab() {
             <CardContent>
                 <h1>THE WORLD OF KICKING BRASS</h1>
 
-                <h2>Your family is missing,</h2>
-                <h2>your village has been ransacked,</h2>
-                <h2>and hostile forces surround you on all sides.</h2>
+                <h2>You awaken with no memory of your past, there’s a talking tuba on your head and it wants you to fight!</h2>
 
                 <p>
-                    King Brasshoven’s troops march upon the land you once called home and you’re the only one who can beat them back!
+                Drawing on the Tuba Knight memes, Kicking Brass is set in a world where music dictates everyday life. Tools, weapons, clothing and everyday objects are replaced by instruments, whose music is intrinsically magical. Each family of instruments has unique abilities and shapes the way their users live. The Emperor Brasshoven of the Brass Empire, however, has begun pitting warriors and citizens against each other in his arena for his amusement.
+                Somehow Gurdy, a teen with no memory of their past has been taken for the arena and now sports a talking tuba on their head. Not all bad though, this tuba seems to have granted Gurdy the ability to play any instrument as well as evade defeat, at least briefly! It is up to Gurdy to fight their way to the top of the arena and free themselves from this strange limbo.
                 </p>
 
-                <p>
-                    Armed with a magical tuba that just won’t let you die; you fight your way through hordes of soldiers to get revenge on Brasshoven!
-                </p>
-
-                <p>
-                    Pick up different instruments and stock up on useful Items to create a unique playstyle each run. Perhaps you’ll even meet some friendly faces along the way?
-                </p>
-
-                <p>
-                    Kicking Brass is a 2.5D, bullet-hell, roguelike where music holds enormous power and will be the only tool in your survival. Test your mettle NOW in the endless Colosseum mode and later in an official story!
-                </p>
+                
 
                 <h1>THE COLOSSEUM</h1>
 
@@ -168,20 +157,10 @@ function AboutTab() {
                 </h3>
 
                 <p>
-                    Each year a champion has left their mark on the Empire of Brass and each year more contestants try to do the same.
+                Inspired by the Tuba Knight memes, this third-person bullet hell roguelike places you in an arena where music is your only defense. Shoot your way through wave after wave of trumpet-wielding enemies and weird, whimsical bosses. With over 50 instruments and items to choose from, your options are endless!
+                The magical tuba on your head can save you a few times but fail too often and you start over. Collect gear, upgrade it, and master your instruments to prove your dominance over the other arena contestants. Every 10th wave you must face a former champion of the Arena, such as Gatling Gary: an experimental amalgamation of instruments and steampunk tech. Shopkeepers Floog, Elvo, Melven and Jerome are there to supply you with fresh gear to improve your odds.
                 </p>
 
-                <p>
-                    Face waves upon waves of enemies, each more challenging than the last.
-                </p>
-
-                <p>
-                    Luckily a few totally trustworthy vendors are at your side, ready to supply you with weapons and equipment. So far very few have made it to the top.
-                </p>
-
-                <p>
-                    Now it is your turn to pick up a trumpet and prove your mettle or meet a fate like the rest.
-                </p>
             </CardContent>
         </Card>
     );
@@ -191,6 +170,7 @@ function DownloadTab() {
     const bucketName = "stepheight_downloads";
     const urlKB_Art_01 = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/KB_Art_01.zip?alt=media`;
     const urlKicking_Brass_v006a = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/Kicking_Brass_v006a.zip?alt=media`;
+    const urlKB_Steam = `https://store.steampowered.com/app/2657210/Kicking_Brass/`;
 
     return (
         <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, padding: '20px' }} className="card">
@@ -201,21 +181,32 @@ function DownloadTab() {
                     subheader="To play, extract the Zip and open KickingBrass.exe"
                     className="kickingbrass-cardheader"
                 />
-                <CardContent>
+                <CardContent sx={{ boxShadow: 0,}}>
                     <Button
                         className="kickingbrass-button"
                         href={urlKB_Art_01}
                         download="KB_Art_01"
+                        sx={{ boxShadow: 0,}}
                     >
-                        Download
+                        WEB DOWNLOAD
                     </Button>
+                    <h3>OR</h3>
+                    <Button
+                        className="kickingbrass-button"
+                        href={urlKB_Steam}
+                        download="KB_Art_01"
+                        sx={{ boxShadow: 0,}}
+                    >
+                        STEAM PAGE
+                    </Button>
+                    
                 </CardContent>
             </Card>
 
-            <Card className="download-card" sx={{ backgroundColor: '#201230', boxShadow: 0 }}>
+            <Card className="card" sx={{ backgroundColor: '#201230', boxShadow: 0 }}>
                 <CardHeader
-                    title="Version Alpha 0.06a Windows 64bit"
-                    subheader="To play, extract the Zip and open KickingBrass.exe"
+                    title="KB Archive"
+                    subheader="Old versions of the game for nostalgia sake"
                     className="kickingbrass-cardheader"
                 />
                 <CardContent>
@@ -234,7 +225,7 @@ function DownloadTab() {
 
 function TutorialTab() {
     return (
-        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, padding: '20px' }} className="card">
+        <Card sx={{ backgroundColor: '#201230', boxShadow: 0, padding: '20px', width: '100%' }} className="card">
             <h1>CONTROLS</h1>
             <Card sx={{ backgroundColor: '#201230', boxShadow: 0 }} className="card">
                 <CardContent>
@@ -268,7 +259,7 @@ function TutorialTab() {
 
             </Card>
             <h1>INVENTORY</h1>
-            <Card sx={{ backgroundColor: '#201230', boxShadow: 0, marginTop: '20px' }} className="card">
+            <Card sx={{ backgroundColor: '#201230', boxShadow: 0, marginTop: '20px', width: '100%' }} className="card">
                 <CardContent>
 
                     <List dense>
@@ -290,7 +281,7 @@ function TutorialTab() {
             </Card>
 
             <h1>DEALING DAMAGE</h1>
-            <Card sx={{ marginBottom: '20px', backgroundColor: '#ffffff00', boxShadow: 0 }} className="card">
+            <Card sx={{ marginBottom: '20px', backgroundColor: '#201230', boxShadow: 0, width: '100%' }} className="card">
                 <CardContent>
 
                     <List dense>
@@ -319,14 +310,7 @@ function TutorialTab() {
     );
 }
 
-
-function GlossaryTab() {
-    return (
-        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0 }} className="card">
-            
-            <h1>ENEMIES</h1>
-            <CardContent>
-                {[
+/* {[
                     { name: 'ROGER', description: 'Shoots [8th] notes at you. Waiting for a promotion.', image: roger },
                     { name: 'TYBALT', description: 'Either stands in front of units to protect them or charges at you with a sharpened oboe. The crash cymbal shield blocks damage this unit would take, but can be destroyed, leaving the unit stunned with its guard down.', image: tybalt },
                     { name: 'BILL', description: 'Fires a lobbed [4th] projectile that explodes into [8th] when it lands. Tries to predict your movement.', image: bill },
@@ -350,8 +334,14 @@ function GlossaryTab() {
                                 </Grid>
                             </CardContent>
                         </Card>
-                    ))}
-                
+                    ))} */
+
+function GlossaryTab() {
+    return (
+        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0 }} className="card">
+            <CardContent>
+               
+            <h1> Glossary under construction, lol -Oskar</h1>
                 <h2>INSTRUMENTS</h2>
 
                 {[
@@ -365,7 +355,7 @@ function GlossaryTab() {
                     { name: 'ELECTRIC BASS', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: E_Bass },
                     { name: 'LOTUS FLUTE', description: 'Primary: Swings the bass in an arc in front of you. Cancel jumping to slam the ground below your current position. Damage increases depending on the height you start the slam from. Secondary: Leap forward and into the air.', image: Lotus_Flute },
                 ].map((item, index) => (
-                    <Card key={item.name + index} className='Items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px', width: '100%' }}>
+                    <Card key={item.name + index} className='Items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px', width: '100%', paddingLeft: '5%', paddingRight: '5%' }}>
                         <CardContent>
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
@@ -438,7 +428,7 @@ function GlossaryTab() {
 
 
                 ].map((item, index) => (
-                    <Card key={item.name + index} className='Items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px', width: '100%' }}>
+                    <Card key={item.name + index} className='Items-card' sx={{ mt: 2, mb: 2, backgroundColor: '#201230', boxShadow: 0, marginTop: '20px', width: '100%', paddingLeft: '5%', paddingRight: '5%' }}>
                         <CardContent>
                             <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={12} sm={6} md={6} lg={6} order={{ xs: 1, md: index % 2 === 0 ? 1 : 2 }}>
