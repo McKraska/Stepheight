@@ -3,7 +3,8 @@ import './Impressum.css';
 
 const Impressum = () => {
     return (
-        <div className="impressum-container">
+        <div className='impressum-canvas'>
+            <div className="impressum-container">
             <h1>Impressum</h1>
             <h2>Stepheight UG (Haftungsbeschränkt) i.G.</h2>
             <p><strong>Address:</strong> Helmholtzstr. 15, 99423 Weimar</p>
@@ -15,6 +16,9 @@ const Impressum = () => {
             <h3>Disclaimer</h3>
             <p>Despite careful content control, we do not assume any liability for the content of external links. The content of linked pages is the sole responsibility of their operators.</p>
         </div>
+
+        </div>
+        
     );
 };
 
