@@ -30,8 +30,7 @@ const Footer = () => {
                     © {new Date().getFullYear()} Stepheight. All rights reserved.
                 </div>
                 <div className="footer-text-content">
-
-                    <a href="../documents/ImpressumStepheight.pdf" target="_blank" rel="noopener noreferrer">Impressum</a>
+                    <a href="/impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
                 </div>
             </footer>
         </div>

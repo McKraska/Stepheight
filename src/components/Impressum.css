@@ -1,0 +1,32 @@
+.impressum-container {
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    max-width: 800px;
+    background-color: #460062;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.impressum-container h1,
+.impressum-container h2,
+.impressum-container h3 {
+    color: #5a5a5a;
+}
+
+.impressum-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.impressum-container a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.impressum-container a:hover {
+    text-decoration: underline;
+}
