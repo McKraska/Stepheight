@@ -8,6 +8,7 @@ import BannerIMG from '../images/Wimmel_Banner_Faded.avif';
 import GroupPhoto from '../images/Group_photo.avif';
 import Garymodel from '../images/Body_Gatling.glb';
 import { colors } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function Welcome() {
   return (
@@ -23,7 +24,7 @@ export default function Welcome() {
         <div className="welcome-message">
           <h2>
             <i>
-            Creating innovative games, one step at a time!
+              Creating innovative games, one step at a time!
             </i>
           </h2>
 
@@ -39,13 +40,12 @@ export default function Welcome() {
       </div>
 
       <div className="welcome-section">
-        <a href='/aboutus'>
+        <Link to='/aboutus' style={{ textDecoration: 'none' }}>
           <div>
             <img src={GroupPhoto} alt="Team"></img>
           </div>
           <b> ABOUT US </b>
-        </a>
-
+        </Link>
       </div>
 
 
