@@ -209,7 +209,9 @@ function DownloadTab() {
     const bucketName = "stepheight_downloads";
     const urlKB_Art_01 = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/KB_Art_01.zip?alt=media`;
     const urlKicking_Brass_v006a = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/Kicking_Brass_v006a.zip?alt=media`;
+    const urlKB_A_01a = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/KB_A_01a.zip?alt=media`;
     const urlKB_Steam = `https://store.steampowered.com/app/2657210/Kicking_Brass/`;
+    const urlKB_Archive = `https://drive.google.com/drive/u/1/folders/1Wz8C1hsxhlx0hPawPY-jWRFrns9XTt5-`; 
 
     return (
         <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, padding: '20px' }} className="card">
@@ -223,8 +225,8 @@ function DownloadTab() {
                 <CardContent sx={{ boxShadow: 0, }}>
                     <Button
                         className="kickingbrass-button"
-                        href={urlKB_Art_01}
-                        download="KB_Art_01"
+                        href={urlKB_A_01a}
+                        download="KB_A_01a"
                         sx={{ boxShadow: 0, }}
                     >
                         WEB DOWNLOAD
@@ -233,7 +235,7 @@ function DownloadTab() {
                     <Button
                         className="kickingbrass-button"
                         href={urlKB_Steam}
-                        download="KB_Art_01"
+                        download="KB_Steam"
                         sx={{ boxShadow: 0, }}
                     >
                         STEAM PAGE
@@ -251,8 +253,8 @@ function DownloadTab() {
                 <CardContent>
                     <Button
                         className="kickingbrass-button"
-                        href={urlKicking_Brass_v006a}
-                        download="Kicking_Brass_v006a"
+                        href={urlKB_Archive}
+                        download="KB_Archive"
                     >
                         Download
                     </Button>
