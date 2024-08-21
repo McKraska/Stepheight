@@ -266,7 +266,9 @@ function TutorialTab() {
     return (
         <Card sx={{ backgroundColor: '#201230', boxShadow: 0, padding: '20px', width: '100%' }} className="card">
             <h1>CONTROLS</h1>
-            <Card sx={{ backgroundColor: '#201230', boxShadow: 0 }} className="card">
+            <Card sx={{
+                backgroundColor: '#201230', boxShadow: 0
+            }} className="card">
                 <CardContent>
                     <div className="controls-container">
                         <ul className="dense-list">
@@ -275,12 +277,17 @@ function TutorialTab() {
                             <li><p>[S] - Move Backward</p></li>
                             <li><p>[D] - Move Right</p></li>
                             <li><p>[Space] - Jump Up and Down</p></li>
-                            <li><p>[Space + Directional Input] - Jump Roll in direction</p></li>
                             <li><p>[Double tap Directional Input] - Short Slide in direction</p></li>
+                        </ul>
+                        <ul className="dense-list">
                             <li><p>[Cursor] - Aim</p></li>
                             <li><p>[Ctrl] - Camera to Cursor</p></li>
                             <li><p>[LMB] - Primary Attack</p></li>
                             <li><p>[RMB] - Secondary Attack</p></li>
+                            <li><p>[I] - Toggle Inventory</p></li>
+                            <li><p>[Space + Directional Input] - Jump Roll in direction</p></li>
+
+                            <li><p>[F] - Interact</p></li>
                         </ul>
                         <ul className="dense-list">
                             <li><p>[Scroll Up] - Next Instrument</p></li>
@@ -289,8 +296,7 @@ function TutorialTab() {
                             <li><p>[Q] - Prev Instrument</p></li>
                             <li><p>[1] [2] [3] - Use Item</p></li>
                             <li><p>[Esc] - Toggle Menu</p></li>
-                            <li><p>[I] - Toggle Inventory</p></li>
-                            <li><p>[F] - Interact</p></li>
+
                         </ul>
                     </div>
                     <img src={controlsGif} className='glossary-image' alt="Controls GIF" />
