@@ -213,25 +213,8 @@ function DownloadTab() {
     const urlKB_Steam = `https://store.steampowered.com/app/2657210/Kicking_Brass/`;
     const urlKB_Archive = `https://drive.google.com/drive/u/1/folders/1Wz8C1hsxhlx0hPawPY-jWRFrns9XTt5-`; 
 
-    return (
-        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, padding: '20px' }} className="card">
-            <h1>DOWNLOADS</h1>
-            <Card className="card" sx={{ backgroundColor: '#201230', boxShadow: 0, marginBottom: '20px' }}>
-                <CardHeader
-                    title="Kicking Brass 0.1a"
-                    subheader="To play, extract the Zip and open KickingBrass.exe"
-                    className="kickingbrass-cardheader"
-                />
-                <CardContent sx={{ boxShadow: 0, }}>
-                    <Button
-                        className="kickingbrass-button"
-                        href={urlKB_A_01a}
-                        download="KB_A_01a"
-                        sx={{ boxShadow: 0, }}
-                    >
-                        WEB DOWNLOAD
-                    </Button>
-                    <h3>OR</h3>
+    /*
+        <h3>OR</h3>
                     <Button
                         className="kickingbrass-button"
                         href={urlKB_Steam}
@@ -239,7 +222,30 @@ function DownloadTab() {
                         sx={{ boxShadow: 0, }}
                     >
                         STEAM PAGE
+                    </Button> */
+
+    return (
+        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, padding: '20px' }} className="card">
+            <h1>DOWNLOADS</h1>
+            <Card className="card" sx={{ backgroundColor: '#201230', boxShadow: 0, marginBottom: '20px' }}>
+                <CardHeader
+                    title="Kicking Brass 0.1a"
+                    subheader=""
+                    className="kickingbrass-cardheader"
+                />
+                <CardContent sx={{ boxShadow: 0, }}>
+                <iframe src="https://store.steampowered.com/widget/2657210/" frameborder="0" width="646" height="190"></iframe>
+                    <h3>OR</h3>
+                <Button
+                        className="kickingbrass-button"
+                        href={urlKB_A_01a}
+                        download="KB_A_01a"
+                        sx={{ boxShadow: 0, }}
+                    >
+                        WEB DOWNLOAD
                     </Button>
+                    <h3>To play, exstract und run "kicking_brass.exe"</h3>
+                    
 
                 </CardContent>
             </Card>

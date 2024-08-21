@@ -12,6 +12,8 @@ const Footer = () => {
     const location = useLocation();
     const isKickingBrassPage = location.pathname === '/kickingbrass';
 
+    /**        */
+
     return (
         <div>
             <SocialLinks />
@@ -36,6 +38,9 @@ const Footer = () => {
                 <div className="footer-text-content">
                     <a href="/impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
                 </div>
+         
+
+           
             </footer >
         </div >
     );

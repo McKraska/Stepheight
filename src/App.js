@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import KickingBrass from './pages/KickingBrass';
 import AboutUs from './pages/AboutUs';
-import Impressum from './components/Impressum';
+import Impressum from './pages/Impressum';
 
 function App() {
     return (
