@@ -133,18 +133,35 @@ export default function KickingBrassContent() {
 
 function AboutTab() {
     return (
-        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0,}} className="card">
+        <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, }} className="card">
             <CardContent>
                 <h1>THE WORLD OF KICKING BRASS</h1>
 
                 <h2>You awaken with no memory of your past, there’s a talking tuba on your head and it wants you to fight!</h2>
 
                 <p>
-                Drawing on the Tuba Knight memes, Kicking Brass is set in a world where music dictates everyday life. Tools, weapons, clothing and everyday objects are replaced by instruments, whose music is intrinsically magical. Each family of instruments has unique abilities and shapes the way their users live. The Emperor Brasshoven of the Brass Empire, however, has begun pitting warriors and citizens against each other in his arena for his amusement.
-                Somehow Gurdy, a teen with no memory of their past has been taken for the arena and now sports a talking tuba on their head. Not all bad though, this tuba seems to have granted Gurdy the ability to play any instrument as well as evade defeat, at least briefly! It is up to Gurdy to fight their way to the top of the arena and free themselves from this strange limbo.
+                    Drawing on the Tuba Knight memes, Kicking Brass is set in a world where music dictates everyday life.
                 </p>
 
-                
+                <p>
+                    Tools, weapons, clothing and everyday objects are replaced by instruments, whose music is intrinsically magical.
+
+                </p>
+
+                <p>
+                    Each family of instruments has unique abilities and shapes the way their users live. The Emperor Brasshoven of the Brass Empire, however, has begun pitting warriors and citizens against each other in his arena for his amusement.
+                </p>
+
+                <p>
+                    Somehow Gurdy, a teen with no memory of their past has been taken for the arena and now sports a talking tuba on their head. Not all bad though, this tuba seems to have granted Gurdy the ability to play any instrument as well as evade defeat, at least briefly!
+
+                </p>
+
+                <p>
+                    It is up to Gurdy to fight their way to the top of the arena and free themselves from this strange limbo.
+                </p>
+
+
 
                 <h1>THE COLOSSEUM</h1>
 
@@ -157,8 +174,30 @@ function AboutTab() {
                 </h3>
 
                 <p>
-                Inspired by the Tuba Knight memes, this third-person bullet hell roguelike places you in an arena where music is your only defense. Shoot your way through wave after wave of trumpet-wielding enemies and weird, whimsical bosses. With over 50 instruments and items to choose from, your options are endless!
-                The magical tuba on your head can save you a few times but fail too often and you start over. Collect gear, upgrade it, and master your instruments to prove your dominance over the other arena contestants. Every 10th wave you must face a former champion of the Arena, such as Gatling Gary: an experimental amalgamation of instruments and steampunk tech. Shopkeepers Floog, Elvo, Melven and Jerome are there to supply you with fresh gear to improve your odds.
+                    Inspired by the Tuba Knight memes, this third-person bullet hell roguelike places you in an arena where music is your only defense.
+                </p>
+
+                <p>
+                    Shoot your way through wave after wave of trumpet-wielding enemies and weird, whimsical bosses. With over 50 instruments and items to choose from, your options are endless!
+                </p>
+
+                <p>
+                    The magical tuba on your head can save you a few times but fail too often and you start over.
+
+                </p>
+
+                <p>
+                    Collect gear, upgrade it, and master your instruments to prove your dominance over the other arena contestants.
+
+                </p>
+
+                <p>
+                    Every 10th wave you must face a former champion of the Arena, such as Gatling Gary: an experimental amalgamation of instruments and steampunk tech.
+
+                </p>
+
+                <p>
+                    Shopkeepers Floog, Elvo, Melven and Jerome are there to supply you with fresh gear to improve your odds.
                 </p>
 
             </CardContent>
@@ -181,12 +220,12 @@ function DownloadTab() {
                     subheader="To play, extract the Zip and open KickingBrass.exe"
                     className="kickingbrass-cardheader"
                 />
-                <CardContent sx={{ boxShadow: 0,}}>
+                <CardContent sx={{ boxShadow: 0, }}>
                     <Button
                         className="kickingbrass-button"
                         href={urlKB_Art_01}
                         download="KB_Art_01"
-                        sx={{ boxShadow: 0,}}
+                        sx={{ boxShadow: 0, }}
                     >
                         WEB DOWNLOAD
                     </Button>
@@ -195,11 +234,11 @@ function DownloadTab() {
                         className="kickingbrass-button"
                         href={urlKB_Steam}
                         download="KB_Art_01"
-                        sx={{ boxShadow: 0,}}
+                        sx={{ boxShadow: 0, }}
                     >
                         STEAM PAGE
                     </Button>
-                    
+
                 </CardContent>
             </Card>
 
@@ -340,8 +379,8 @@ function GlossaryTab() {
     return (
         <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0 }} className="card">
             <CardContent>
-               
-            <h1> Glossary under construction, lol -Oskar</h1>
+
+                <h1> Glossary under construction, lol -Oskar</h1>
                 <h2>INSTRUMENTS</h2>
 
                 {[
@@ -373,14 +412,14 @@ function GlossaryTab() {
                 <h1>Items</h1>
 
                 {[
-                    
+
                     { name: 'AMPLIFIER', description: '', image: amplifier },
                     { name: 'BALLET SKIRT', description: 'Passive: Jumping makes you perform a pirouette when you land which shoots a spiral of [8th] projectiles around you.', image: ballet_skirt },
                     { name: 'BERSERK GLOVES', description: '', image: berserk_gloves },
                     { name: 'BERSERK POTION', description: '', image: berserk_potion },
                     { name: 'BOTTLED STARLIGHT', description: 'Active: Creates an expanding domain in which stars rain down upon up to 5 enemies every 0.75 seconds. These stars deal [1] damage to whoever they directly strike, and [0.5] damage to anyone near them. Cooldown: 18 Seconds.', image: bottled_starlight },
                     { name: 'BOXING GLOVES', description: 'Active: Creates an expanding domain in which stars rain down upon up to 5 enemies every 0.75 seconds. These stars deal [1] damage to whoever they directly strike, and [0.5] damage to anyone near them. Cooldown: 18 Seconds.', image: boxing_gloves },
-                    { name: 'BOTTLED TORNADO', description: '', image: bottles_tornado},
+                    { name: 'BOTTLED TORNADO', description: '', image: bottles_tornado },
                     { name: 'CAKE', description: '', image: Cake },
                     { name: 'CALL BELL', description: '', image: Call_Bell },
                     { name: 'CHILLI', description: 'Active: Doubles damage dealt and taken for 15 seconds. Consumed on use. Does not stack.', image: chilli },
@@ -389,18 +428,18 @@ function GlossaryTab() {
                     { name: 'COOKIE', description: 'Active: Restores [1 heart] on use. Consumed on use.', image: cookie },
                     { name: 'EGG BASKET', description: '', image: Egg_Basket },
                     { name: 'EGG', description: '', image: egg },
-                    { name: 'FIRE WALKERS', description: '', image: Fire_walkers},
+                    { name: 'FIRE WALKERS', description: '', image: Fire_walkers },
                     { name: 'FLEET FEATHER', description: 'Active: Gain a burst of 100% increased movement speed, decaying over 3 seconds. Cooldown: 10 Seconds.', image: fleet_feather },
                     { name: 'FLIFFY', description: '', image: Fluffy_Robes },
                     { name: 'FRIGID LOOP', description: 'Active: Hurl a frozen spear in the target direction, piercing enemies for [1] damage and freezing them for 2 seconds. Cooldown: 12 Seconds.', image: frigid_loop },
-                    { name: 'GOLD RING', description: '', image: Gold_Ring},
-                    { name: 'FRAGILE SWORD', description: '', image: Fragile_Sword},
+                    { name: 'GOLD RING', description: '', image: Gold_Ring },
+                    { name: 'FRAGILE SWORD', description: '', image: Fragile_Sword },
                     { name: 'GREED ARMOUR', description: 'Passive: Taking damage will instead drain your sheet music, if possible. You lose 10 sheets per point of [1 heart] damage taken. Half of the money lost will drop onto the floor near you.', image: gread_armour },
                     { name: 'GUSTY LOOP', description: '', image: Gusty_Loop },
                     { name: 'HEALTH POTION', description: '', image: Health_potion },
                     { name: 'HEALING ALUMENT', description: 'Active: Heals [1 heart]. Has a chance to be damaged when used. After being damaged 3 times it will break, disappearing completely. If it is only damaged but not broken it can be repaired at Jerome. Cooldown: 5 Seconds.', image: healing_amulet },
                     { name: 'HEART SHAPED MARVER', description: '', image: Heart_Marver },
-                    { name: 'LEAP LORDS', description: '', image: Leap_lord},
+                    { name: 'LEAP LORDS', description: '', image: Leap_lord },
                     { name: 'LEATHER TUNIC', description: '', image: Leather_tunic },
                     { name: 'ELECTRO LOOP', description: 'Active: Channels a beam of light which follows your cursor. After 1 second it strikes the ground, dealing [1] damage. Cooldown: 7 Seconds.', image: electro_loop },
                     { name: 'METRONOME', description: '', image: Metronome },
@@ -410,20 +449,20 @@ function GlossaryTab() {
                     { name: 'PIGGYBANK', description: 'Passive: If carried through one round, explodes in a rain of sheet music (30 sheets).', image: piggybank },
                     { name: 'POTATO', description: 'Active: Halves damage taken for 20 seconds. Consumed on use. Does not stack.', image: potato },
                     { name: 'PLATE ARMOUR', description: 'Passive: Reduces all damage taken by [quarter heart] to a minimum of [quarter heart].', image: plate_armour },
-                    { name: 'REPULSOR', description: '', image: repulsor},
+                    { name: 'REPULSOR', description: '', image: repulsor },
                     { name: 'RUSTY SHIELD', description: 'Active: Gain [1 glass heart] for 3 seconds. Cooldown: 8 Seconds.', image: rusty_shield },
-                    { name: 'SLIDING SOCKS', description: '', image: sliding_socks},
-                    { name: 'SONG SLINGERS', description: '', image: Song_Slingers},
+                    { name: 'SLIDING SOCKS', description: '', image: sliding_socks },
+                    { name: 'SONG SLINGERS', description: '', image: Song_Slingers },
                     { name: 'SOUL LOOP', description: 'Active: Releases 5 homing souls which chase down nearby enemies, dealing [1] damage and fearing them for 2 seconds, causing them to run away from you. Doesnt have a cooldown but instead recharges by defeating 5 enemies.', image: Stone_Loop },
                     { name: 'SOUP', description: 'Active: Slowly heals [3 hearts] over 15 seconds. Consumed on use. Does not stack.', image: soup },
-                    { name: 'SPRINTING SHOES', description: '', image: Sprinting_Shoes},
-                    { name: 'STEREO SHIRT', description: '', image: Stereo_Shirt},
+                    { name: 'SPRINTING SHOES', description: '', image: Sprinting_Shoes },
+                    { name: 'STEREO SHIRT', description: '', image: Stereo_Shirt },
                     { name: 'STONE LOOP', description: 'Active: Releases 5 homing souls which chase down nearby enemies, dealing [1] damage and fearing them for 2 seconds, causing them to run away from you. Doesnt have a cooldown but instead recharges by defeating 5 enemies.', image: soul_loop },
                     { name: 'SUBSTITUTE DOLL', description: 'Passive: Upon taking lethal damage will sacrifice itself to fully heal you.', image: substitute_doll },
                     { name: 'THORN MANTLE', description: 'Passive: Taking damage retaliates with a burst of projectiles.', image: thorn_mantle },
-                    { name: 'TUMBLING BOOTS', description: '', image: Tumbling_boots},
-                    { name: 'UNSTABLE CAPACITOR', description: '', image: Capacitor},
-                    { name: 'VOID BATON', description: '', image: Void_Baton},
+                    { name: 'TUMBLING BOOTS', description: '', image: Tumbling_boots },
+                    { name: 'UNSTABLE CAPACITOR', description: '', image: Capacitor },
+                    { name: 'VOID BATON', description: '', image: Void_Baton },
                     { name: 'YAMAGUCHI GLUE', description: '', image: glue },
 
 

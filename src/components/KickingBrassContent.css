@@ -59,8 +59,13 @@ body {
 }
 
 .MuiPaper-root {
-    background-color: #ffffff00 !important; 
-} 
+    background-color: #ffffff00 !important;
+}
+
+h2,
+p {
+    max-width: 600px;
+}
 
 .card h1,
 h2,
@@ -68,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-    max-width: 500px;
+    max-width: 500px !important;
     color: #a16edd;
 }
 
@@ -192,7 +197,7 @@ h6 {
 }
 
 .download-card {
-    background-color: rgb(41, 0, 52);
+    background-color: rgb(51, 0, 65);
     width: 100%;
     max-width: 800px;
     image-rendering: pixelated;

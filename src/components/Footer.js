@@ -4,6 +4,7 @@ import './Footer.css';
 import twitter_logo from '../images/twitter_icon.png';
 import youtube_logo from '../images/youtube_icon.png';
 import discord_logo from '../images/discord_icon.png';
+import steam_logo from '../images/Icons/Steam_Logo.avif';
 
 import SocialLinks from './SocialLinks';
 
@@ -25,6 +26,9 @@ const Footer = () => {
                     <a href="https://discord.com/invite/fbngXskVkW" target="_blank" rel="noopener noreferrer">
                         <img src={discord_logo} alt="Discord Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
                     </a>
+                    <a href="https://store.steampowered.com/app/2657210/Kicking_Brass/" target="_blank" rel="noopener noreferrer">
+                        <img src={steam_logo} alt="Steam Logo" className={`footer-icon ${isKickingBrassPage ? 'footer-icon-kickingbrass' : ''}`} />
+                    </a>
                 </div>
                 <div className="footer-text-content">
                     © {new Date().getFullYear()} Stepheight. All rights reserved.
@@ -32,8 +36,8 @@ const Footer = () => {
                 <div className="footer-text-content">
                     <a href="/impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
                 </div>
-            </footer>
-        </div>
+            </footer >
+        </div >
     );
 };
 
