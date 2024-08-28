@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import './Footer.css';
 import twitter_logo from '../images/twitter_icon.png';
 import youtube_logo from '../images/youtube_icon.png';
@@ -11,8 +11,6 @@ import SocialLinks from './SocialLinks';
 const Footer = () => {
     const location = useLocation();
     const isKickingBrassPage = location.pathname === '/kickingbrass';
-
-    /**        */
 
     return (
         <div>
@@ -36,11 +34,8 @@ const Footer = () => {
                     © {new Date().getFullYear()} Stepheight. All rights reserved.
                 </div>
                 <div className="footer-text-content">
-                    <a href="/impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
+                    <Link to="/impressum" rel="noopener noreferrer">Impressum</Link>
                 </div>
-         
-
-           
             </footer >
         </div >
     );

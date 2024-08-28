@@ -6,8 +6,6 @@ import './WelcomeContent.css';
 import MainPoster from '../images/Main_Poster.avif';
 import BannerIMG from '../images/Wimmel_Banner_Faded.avif';
 import GroupPhoto from '../images/Group_photo.avif';
-import Garymodel from '../images/Body_Gatling.glb';
-import { colors } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 export default function Welcome() {
@@ -20,23 +18,12 @@ export default function Welcome() {
       />
 
       <div className="welcome-section">
-
-        <div className="welcome-message">
-          <h2>
-            <i>
-              Creating innovative games, one step at a time!
-            </i>
-          </h2>
-
-        </div>
-
-        <a href='/kickingbrass'>
+        <Link to='/kickingbrass' style={{ textDecoration: 'none' }}>
           <div>
             <img src={MainPoster} alt="Hero Poster"></img>
           </div>
           <b> KICKING BRASS </b>
-        </a>
-
+        </Link>
       </div>
 
       <div className="welcome-section">
@@ -47,10 +34,6 @@ export default function Welcome() {
           <b> ABOUT US </b>
         </Link>
       </div>
-
-
-
-
-    </div >
+    </div>
   );
 }
