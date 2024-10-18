@@ -1,38 +1,54 @@
 .Banner {
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     display: grid;
-    height: 100%;
     max-width: 100%;
     height: fit-content;
-    margin: auto;
     position: relative;
+    padding-top: 130px;
 }
 
 .Banner .BannerIMG1 {
     width: 100%;
-    margin: 0;
-    right: 0;
-    padding: 0;
+    height: auto;
+    position: relative;
 }
 
 .Banner .BannerIMG2 {
-    width: 30%;
+    width: 40%;
     position: absolute;
-    top: 55%;
+    top: 90%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .Banner h1 {
-    width: auto;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, 55%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #051a6f;
-    font-size: 7vw;
+    font-size: 9vw;
     font-weight: bold;
-    margin: 0;
+    margin-top: 165px;
+}
+
+@media (max-width: 750px) {
+    .Banner {
+        padding-top: 85px;
+    }
+
+    .Banner .BannerIMG {}
+
+    .Banner .BannerIMG2 {
+        width: 50%;
+        height: auto;
+        top: 95%;
+    }
+
+    .Banner h1 {
+        font-size: 9vw;
+        margin-top: 70px;
+    }
 }
