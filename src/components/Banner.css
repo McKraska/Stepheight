@@ -8,6 +8,19 @@
     padding-top: 130px;
 }
 
+.Banner .BannerText {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #051a6f;
+    font-size: 9vw;
+    font-weight: bold;
+    margin-top: 12%;
+    z-index: 5;
+}
+
 .Banner .BannerIMG1 {
     width: 100%;
     height: auto;
@@ -22,26 +35,42 @@
     transform: translate(-50%, -50%);
 }
 
-.Banner h1 {
+.Banner .BannerIMG3 {
+    width: 80%;
     position: absolute;
-    top: 55%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: #051a6f;
-    font-size: 9vw;
-    font-weight: bold;
-    margin-top: 165px;
+    z-index: 5;
+}
+
+.Banner .BannerIMG4 {
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
 }
 
 @media (max-width: 750px) {
     .Banner {
-        padding-top: 85px;
+        padding-top: 80px;
     }
 
-    .Banner .BannerIMG {}
+    .Banner .BannerText {
+        margin-top: 15%;
+        z-index: 5;
+    }
 
     .Banner .BannerIMG2 {
+        width: 50%;
+        height: auto;
+        top: 95%;
+    }
+
+    .Banner .BannerIMG3 {
         width: 50%;
         height: auto;
         top: 95%;

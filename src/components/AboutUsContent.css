@@ -3,7 +3,6 @@ p {
 }
 
 .aboutus-content {
-    padding: 20px;
     text-align: center;
     background-color: #fffde6;
 }
@@ -23,32 +22,26 @@ p {
 .aboutus-content p {
     color: #051a6f;
     font-size: 1em;
-    margin-top: 20px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
 }
 
-.banner {
+.TeamIMG {
     width: 100%;
     max-width: 800px;
     height: auto;
     margin: 20px auto;
     display: block;
-    border-radius: 10px;
 }
 
-@media (max-width: 750px) {
-    .aboutus-content {
-        padding-top: 50px;
-    }
+.team-content {
+    color: #051a6f;
+    background-color: #fffde6;
 }
 
 @media (min-width: 751px) {
-    .aboutus-content {
-        padding-top: 100px;
-    }
 
     .aboutus-content h1,
     .aboutus-content h3,
@@ -57,9 +50,4 @@ p {
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-.team-content {
-    color: #051a6f;
-    background-color: #fffde6;
 }

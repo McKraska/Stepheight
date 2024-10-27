@@ -5,6 +5,7 @@ import './WelcomeContent.css';
 
 import MainPoster from '../images/Main_Poster.avif';
 import BannerIMG from '../images/Wimmel_Banner_Faded.avif';
+import StepHeightText from '../images/Stepheight_Text.avif';
 import GroupPhoto from '../images/Group_photo.avif';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ export default function Welcome() {
 
       <Banner
         imageSrc1={BannerIMG}
-        bannerText={"STEPHEIGHT"}
+        imageSrc3={StepHeightText}
       />
 
       <div className="welcome-section">

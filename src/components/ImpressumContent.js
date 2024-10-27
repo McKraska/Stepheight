@@ -1,11 +1,18 @@
 import React from 'react';
 import './ImpressumContent.css';
+import Banner from './Banner'
+import ImpressumIMG from '../images/Impressm_Banner_Faded.avif';
 
 const Impressum = () => {
     return (
         <div className='impressum-canvas'>
+            <Banner
+                text={"Impressum"}
+                imageSrc1={ImpressumIMG}
+            />
+
             <div className="impressum-container">
-                <h1>Impressum</h1>
+
                 <h2>Stepheight UG (Haftungsbeschränkt) i.G.</h2>
                 <p><strong>Address:</strong> Helmholtzstr. 15, 99423 Weimar</p>
                 <p><strong>Managing Director:</strong> Samuel Flentje</p>

@@ -1,6 +1,6 @@
 .impressum-container {
     padding: 20px;
-    padding-top: 200px;
+    padding-top: 5%;
     margin-left: 25%;
     padding-bottom: 20%;
     width: 50%;
@@ -9,6 +9,7 @@
     color: #051a6f;
     font-family: 'Arial', sans-serif;
 }
+
 .impressum-canvas {
     background-color: #fffde6;
     width: 100%;
@@ -16,7 +17,10 @@
     color: #051a6f;
 }
 
-.impressum-container h1,
+.impressum-container h1 {
+    font-size: 60px;
+}
+
 .impressum-container h2,
 .impressum-container h3 {
     color: #051a6f;
