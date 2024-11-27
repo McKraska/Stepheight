@@ -87,17 +87,17 @@ export default function TeamContent() {
                 </div>
             </Card>
 
-            <Card className="poster-card" sx={{ boxShadow: 0, backgroundColor: '#fffde6'}} >
+            <Card className="poster-card" sx={{ boxShadow: 0, backgroundColor: '#fffde6' }} >
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
                         <CardContent>
-                            <Typography variant="h6" color="text.primary">
-                                ESF Sponsored
-                            </Typography>
                             <Typography variant="body1" color="text.secondary">
-                            One of our first and greatest achievements was acquiring funding from the Thüringer Zentrum für Existenzgründungen und Unternehmertum (ThEx). After a successful pitch, we received one year’s worth of funding for our preproduction, allowing us to drop side jobs and focus entirely on developing Kicking Brass. Excited by the energy and support we were able to instill in the jury, we’re optimistic about the future for Kicking Brass and Stepheight.
+                                <b>ESF Sponsored</b>
+                                <br />
+
+                                One of our first and greatest achievements was acquiring funding from the Thüringer Zentrum für Existenzgründungen und Unternehmertum (ThEx). After a successful pitch, we received one year’s worth of funding for our preproduction, allowing us to drop side jobs and focus entirely on developing Kicking Brass. Excited by the energy and support we were able to instill in the jury, we’re optimistic about the future for Kicking Brass and Stepheight.
                             </Typography>
-                
+
                         </CardContent>
                     </Grid>
                     <Grid item xs={12} md={6}>
