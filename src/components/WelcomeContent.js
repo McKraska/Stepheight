@@ -1,39 +1,36 @@
-import './Banner.css';
 import React from 'react';
-import Banner from './Banner'
 import './WelcomeContent.css';
-
-import MainPoster from '../images/Main_Poster.avif';
-import BannerIMG from '../images/Wimmel_Banner_Faded.avif';
-import GroupPhoto from '../images/Group_photo.avif';
+import Banner from './Banner';
 import { Link } from 'react-router-dom';
+
+import BannerIMG from '../images/Wimmel_Banner_Faded.avif';
+import kb_banner from '../images/KB_Banner_Faded.avif';
+import kb_logo from '../images/logo_KB.avif';
 
 export default function Welcome() {
   return (
-    <div className='welcome-canvas'>
+    <div className="welcome-page">
+      <Banner primaryTitle={"STEPHEIGHT"} imageSrc1={BannerIMG} />
 
-      <Banner
-        text={"STEPHEIGHT"}
-        imageSrc1={BannerIMG}
-      />
 
-      <div className="welcome-section">
-        <Link to='/kickingbrass' style={{ textDecoration: 'none' }}>
-          <div>
-            <img src={MainPoster} alt="Hero Poster"></img>
-          </div>
-          <b> KICKING BRASS </b>
+      <div className="quote-section">
+        <p className="quote-text">
+          <span className="font-bold">"War</span> <span className="font-italic">never</span> <span className="font-serif">changes."</span>
+        </p>
+        <p className="quote-author">- Fallout Series</p>
+      </div>
+
+      <div className="arrow-down">
+        <i className="fa-solid fa-chevron-down"></i>
+      </div>
+
+      <div className="kb-banner">
+        <img src={kb_banner} alt="KB Banner" className="kb-banner-image" />
+        <Link to="/kicking_brass" className="kb-logo-link">
+          <img src={kb_logo} alt="KB Logo" className="kb-logo" />
         </Link>
       </div>
 
-      <div className="welcome-section">
-        <Link to='/aboutus' style={{ textDecoration: 'none' }}>
-          <div>
-            <img src={GroupPhoto} alt="Team"></img>
-          </div>
-          <b> ABOUT US </b>
-        </Link>
-      </div>
     </div>
   );
-}
+};

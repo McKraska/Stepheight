@@ -1,14 +1,15 @@
 import './Banner.css';
 import React from 'react';
 
-function Banner({ text, imageSrc1, imageSrc2, imageSrc3, imageSrc4 }) {
+function Banner({ primaryTitle, secondaryTitle, imageSrc1, imageSrc2, imageSrc3, imageSrc4 }) {
     return (
         <div className='Banner'>
-            <h1 className='BannerText'>{text}</h1>
-            <img src={imageSrc1} className='BannerIMG1' onerror="this.style.display='none'" />
-            <img src={imageSrc2} className='BannerIMG2' onerror="this.style.display='none'" />
-            <img src={imageSrc3} className='BannerIMG3' onerror="this.style.display='none'" />
-            <img src={imageSrc4} className='BannerIMG4' onerror="this.style.display='none'" />
+            <h1 className='primary-title'>{primaryTitle}</h1>
+            <h1 className='secondary-title'>{secondaryTitle}</h1>
+            <img src={imageSrc1} className='BannerIMG1' onerror="this.style.display='none'" alt='' />
+            <img src={imageSrc2} className='BannerIMG2' onerror="this.style.display='none'" alt='' />
+            <img src={imageSrc3} className='BannerIMG3' onerror="this.style.display='none'" alt='' />
+            <img src={imageSrc4} className='BannerIMG4' onerror="this.style.display='none'" alt='' />
         </div>
     );
 }

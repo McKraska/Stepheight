@@ -17,7 +17,7 @@ p {
 }
 
 .MuiTabs-scroller {
-    margin-top: 20%;
+    margin-top: 30%;
 }
 
 body {
@@ -93,9 +93,20 @@ h6 {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* Full height to ensure centering works vertically */
     width: 100%;
-    /* Full width to ensure centering works horizontally */
+}
+
+.banner01-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100vh;
+    height: 100%;
+}
+
+.banner01-image {
+    width: 100vh;
+    height: 100%;
+    object-fit: cover;
 }
 
 .kickingbrass-content h1 {

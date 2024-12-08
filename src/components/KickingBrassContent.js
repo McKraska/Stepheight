@@ -8,6 +8,7 @@ import CardHeader from '@mui/material/CardHeader';
 
 import kb_logo from '../images/logo_KB.avif';
 import kb_banner from '../images/KB_Banner_Faded.avif';
+import banner01 from '../images/banner_01.jpg';
 import kb_img1 from '../images/Promo_art_bw.png';
 import controlsGif from '../images/Controls.gif';
 import inventory from '../images/Inventory.png';
@@ -79,16 +80,16 @@ import Trumpet from '../images/Instruments/Instrument_Trumpet.avif';
 import violin from '../images/Instruments/Instrument_Violin.avif';
 
 // ENEMIES
-import goose from '../images/goose_walk_right.gif';
-import gary from '../images/gatling_walk_right.gif';
-import mike from '../images/drumen_walk_right.gif';
-import gerhard from '../images/heavybrass_walk_right.gif';
-import brassarian from '../images/bb_walk_right.gif';
-import michaela from '../images/Michaela_walk_right.gif';
-import clyde from '../images/Clyde_spin_attack.gif';
-import roger from '../images/gunner_walk_right.gif';
-import tybalt from '../images/melen_walk_right.gif';
-import bill from '../images/saxen_walk_right.gif';
+// import goose from '../images/goose_walk_right.gif';
+// import gary from '../images/gatling_walk_right.gif';
+// import mike from '../images/drumen_walk_right.gif';
+// import gerhard from '../images/heavybrass_walk_right.gif';
+// import brassarian from '../images/bb_walk_right.gif';
+// import michaela from '../images/Michaela_walk_right.gif';
+// import clyde from '../images/Clyde_spin_attack.gif';
+// import roger from '../images/gunner_walk_right.gif';
+// import tybalt from '../images/melen_walk_right.gif';
+// import bill from '../images/saxen_walk_right.gif';
 
 export default function KickingBrassContent() {
     const [value, setValue] = useState(0);
@@ -139,13 +140,16 @@ function AboutTab() {
 
                 <h2>You awaken with no memory of your past, there’s a talking tuba on your head and it wants you to fight!</h2>
 
+                <div className="banner01-container">
+                    <img className="banner01-image" src={banner01} alt="Banner" />
+                </div>
+
                 <p>
                     Drawing on the Tuba Knight memes, Kicking Brass is set in a world where music dictates everyday life.
                 </p>
 
                 <p>
                     Tools, weapons, clothing and everyday objects are replaced by instruments, whose music is intrinsically magical.
-
                 </p>
 
                 <p>
@@ -161,11 +165,11 @@ function AboutTab() {
                     It is up to Gurdy to fight their way to the top of the arena and free themselves from this strange limbo.
                 </p>
 
-
-
                 <h1>THE COLOSSEUM</h1>
 
-                <img src={kb_img1} alt="Colosseum" className='img1' />
+                <div className="banner01-container">
+                    <img className="banner01-image" src={kb_img1} alt="Banner" />
+                </div>
 
                 <h2>The gates to King Brasshoven’s colosseum open once again!</h2>
 
@@ -207,22 +211,11 @@ function AboutTab() {
 
 function DownloadTab() {
     const bucketName = "stepheight_downloads";
-    const urlKB_Art_01 = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/KB_Art_01.zip?alt=media`;
-    const urlKicking_Brass_v006a = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/Kicking_Brass_v006a.zip?alt=media`;
+    // const urlKB_Art_01 = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/KB_Art_01.zip?alt=media`;
+    // const urlKicking_Brass_v006a = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/Kicking_Brass_v006a.zip?alt=media`;
     const urlKB_A_01a = `https://storage.googleapis.com/storage/v1/b/${bucketName}/o/KB_A_01a.zip?alt=media`;
-    const urlKB_Steam = `https://store.steampowered.com/app/2657210/Kicking_Brass/`;
-    const urlKB_Archive = `https://drive.google.com/drive/u/1/folders/1Wz8C1hsxhlx0hPawPY-jWRFrns9XTt5-`; 
-
-    /*
-        <h3>OR</h3>
-                    <Button
-                        className="kickingbrass-button"
-                        href={urlKB_Steam}
-                        download="KB_Steam"
-                        sx={{ boxShadow: 0, }}
-                    >
-                        STEAM PAGE
-                    </Button> */
+    // const urlKB_Steam = `https://store.steampowered.com/app/2657210/Kicking_Brass/`;
+    const urlKB_Archive = `https://drive.google.com/drive/u/1/folders/1Wz8C1hsxhlx0hPawPY-jWRFrns9XTt5-`;
 
     return (
         <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0, padding: '20px' }} className="card">
@@ -234,9 +227,9 @@ function DownloadTab() {
                     className="kickingbrass-cardheader"
                 />
                 <CardContent sx={{ boxShadow: 0, }}>
-                <iframe src="https://store.steampowered.com/widget/2657210/" frameborder="0" width="646" height="190"></iframe>
+                    <iframe src="https://store.steampowered.com/widget/2657210/" frameborder="0" width="646" height="190" title='Steam Downloader'></iframe>
                     <h3>OR</h3>
-                <Button
+                    <Button
                         className="kickingbrass-button"
                         href={urlKB_A_01a}
                         download="KB_A_01a"
@@ -245,7 +238,7 @@ function DownloadTab() {
                         WEB DOWNLOAD
                     </Button>
                     <h3>To play, exstract und run "kicking_brass.exe"</h3>
-                    
+
 
                 </CardContent>
             </Card>
@@ -394,7 +387,7 @@ function GlossaryTab() {
         <Card sx={{ backgroundColor: '#ffffff00', boxShadow: 0 }} className="card">
             <CardContent>
 
-                <h1> Glossary under construction, lol -Oskar</h1>
+                <h1> Glossary</h1>
                 <h2>INSTRUMENTS</h2>
 
                 {[

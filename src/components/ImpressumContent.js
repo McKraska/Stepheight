@@ -7,7 +7,7 @@ const Impressum = () => {
     return (
         <div className='impressum-canvas'>
             <Banner
-                text={"Impressum"}
+                secondaryTitle={"Impressum"}
                 imageSrc1={ImpressumIMG}
             />
 
