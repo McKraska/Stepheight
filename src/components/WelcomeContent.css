@@ -4,6 +4,7 @@
     background-color: #fffeec;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .promo-section {
@@ -74,9 +75,7 @@
 
 .kb-banner {
     position: relative;
-    margin-top: 30%;
     width: 100%;
-    /* box-shadow: 0 0 8px 8px white inset; */
 }
 
 .kb-banner-image {
@@ -109,12 +108,13 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 10%;
+    margin-top: 20%;
     align-items: center;
     padding: 20px;
+    font-size: 24px;
 }
 
 .quote-text {
-    font-size: 24px;
     margin-right: 10px;
     color: #05196b;
 
@@ -159,7 +159,6 @@
 
 /* DESKTOP */
 @media (min-width: 768px) {
-
     .quote-section {
         margin-top: 10%;
     }
@@ -235,9 +234,15 @@
     .quote-section {
         display: flex;
         justify-content: flex-end;
-        margin-right: 7%;
+        margin-right: 5%;
+        margin-left: 15%;
         align-items: center;
         padding: 20px;
+        font-size: 24px;
+    }
+
+    .quote-author {
+        font-size: 16px;
     }
 
     .arrow-down {

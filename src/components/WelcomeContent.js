@@ -15,9 +15,9 @@ export default function Welcome() {
 
       <div className="quote-section">
         <p className="quote-text">
-          <span className="font-bold">"War</span> <span className="font-italic">never</span> <span className="font-serif">changes."</span>
+          <span className="font-bold">"Stepheight is the natural outcome of a desire to make video games."</span>
         </p>
-        <p className="quote-author">- Fallout Series</p>
+        <p className="quote-author">-Oskar</p>
       </div>
 
       <div className="arrow-down">
@@ -26,7 +26,7 @@ export default function Welcome() {
 
       <div className="kb-banner">
         <img src={kb_banner} alt="KB Banner" className="kb-banner-image" />
-        <Link to="/kicking_brass" className="kb-logo-link">
+        <Link to="/kickingbrass" className="kb-logo-link">
           <img src={kb_logo} alt="KB Logo" className="kb-logo" />
         </Link>
       </div>

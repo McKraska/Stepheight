@@ -16,9 +16,6 @@ p {
     width: 100%;
 }
 
-.MuiTabs-scroller {
-    margin-top: 30%;
-}
 
 body {
     font-family: 'Rubik', sans-serif;
@@ -50,11 +47,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* This will vertically center everything in the div */
     width: 100%;
     max-width: 800px;
     margin: auto;
-    /* Centers the div horizontally within its parent */
     padding: 20px;
 }
 
@@ -110,6 +105,8 @@ h6 {
 }
 
 .kickingbrass-content h1 {
+    color: #a16edd;
+
     font-size: 36px;
     margin-top: 5%;
     margin-bottom: 2%;
@@ -201,25 +198,16 @@ h6 {
 
 .card {
     width: auto;
-    /* Allows the card to adjust its width based on its content */
+    min-width: 100%;
     max-width: 800px;
-    /* Keeps the card from becoming too wide */
     padding: 20px;
-    /* Adds padding inside the card */
     margin: 20px auto;
-    /* Ensures it remains centered horizontally */
     background-color: #180d25;
-    /* Background color of the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional shadow for better visibility */
-    display: inline-flex;
-    /* Makes the card only as wide as its content plus padding */
+    display: flex;
     flex-direction: column;
-    /* Aligns children elements in a column */
     align-items: center;
-    /* Centers the items horizontally */
     justify-content: center;
-    /* Centers the items vertically if there is extra space */
 }
 
 .download-card {
@@ -277,9 +265,24 @@ h6 {
     color: #ccc;
 }
 
-@media (min-width: 751px) {}
+.glossary-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling if needed */
+}
 
+/* DESKTOP */
+@media (min-width: 751px) {
+    .MuiTabs-scroller {
+        margin-top: 30%;
+    }
+}
+
+/* MOBILE */
 @media (max-width: 750px) {
+    .MuiTabs-scroller {
+        margin-top: 20%;
+    }
+
     .MuiCardContent-root {
         text-align: center;
         display: flex;
