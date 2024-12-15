@@ -4,14 +4,15 @@ import Banner from './Banner';
 import { Link } from 'react-router-dom';
 
 import BannerIMG from '../images/Wimmel_Banner_Faded.avif';
+import primaryTitle from '../images/STEPHEIGHT.gif';
+
 import kb_banner from '../images/KB_Banner_Faded.avif';
 import kb_logo from '../images/logo_KB.avif';
 
 export default function Welcome() {
   return (
     <div className="welcome-page">
-      <Banner primaryTitle={"STEPHEIGHT"} imageSrc1={BannerIMG} />
-
+      <Banner primaryTitle={primaryTitle} imageSrc1={BannerIMG} />
 
       <div className="quote-section">
         <p className="quote-text">

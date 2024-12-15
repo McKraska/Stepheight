@@ -6,12 +6,12 @@
     height: fit-content;
     position: relative;
     padding-top: 130px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .primary-title {
     position: absolute;
-    top: 8%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14vw;
@@ -21,90 +21,6 @@
     display: block;
     width: fit-content;
     margin: 0 auto;
-    text-shadow:
-        0 0 6px rgba(255, 255, 255, 0.9),
-        0 0 12px rgba(255, 255, 255, 0.6),
-        0 0 18px rgba(255, 255, 255, 0.4);
-}
-
-.primary-title span {
-    display: inline-block;
-    transform: translateY(calc(var(--i) * 2vh));
-    animation-delay: calc(var(--i) * 0.1s);
-}
-
-
-.primary-title:hover {
-    animation: none;
-}
-
-@keyframes descendSteps {
-    from {
-        transform: translateY(-50%);
-        transform-origin: top center;
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-.primary-title span:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.primary-title span:nth-child(2) {
-    animation-delay: 0.2s;
-    transform: translateY(1vh);
-    margin-top: 1%;
-}
-
-.primary-title span:nth-child(3) {
-    animation-delay: 0.4s;
-    transform: translateY(2vh);
-    margin-top: 2%;
-}
-
-.primary-title span:nth-child(4) {
-    animation-delay: 0.6s;
-    transform: translateY(3vh);
-    margin-top: 3%;
-}
-
-.primary-title span:nth-child(5) {
-    animation-delay: 0.8s;
-    transform: translateY(4vh);
-    margin-top: 4%;
-}
-
-.primary-title span:nth-child(6) {
-    animation-delay: 1s;
-    transform: translateY(5vh);
-    margin-top: 5%;
-}
-
-.primary-title span:nth-child(7) {
-    animation-delay: 1.2s;
-    transform: translateY(6vh);
-    margin-top: 6%;
-}
-
-.primary-title span:nth-child(8) {
-    animation-delay: 1.4s;
-    transform: translateY(7vh);
-    margin-top: 10%;
-}
-
-.primary-title span:nth-child(9) {
-    animation-delay: 1.6s;
-    transform: translateY(8vh);
-    margin-top: 15%;
-}
-
-.primary-title span:nth-child(10) {
-    animation-delay: 1.8s;
-    transform: translateY(9vh);
-    margin-top: 20%;
 }
 
 .Banner .secondary-title {
@@ -133,7 +49,7 @@
 .Banner .BannerIMG2 {
     width: 40%;
     position: absolute;
-    top: 90%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -160,24 +76,48 @@
 /* MOBILE */
 @media (max-width: 750px) {
     .Banner {
-        padding-top: 80px;
+        padding-top: 0;
+        /* Remove unnecessary top padding for better centering */
+        height: 100vh;
+        /* Maintain full viewport height */
+        display: flex;
+        /* Flex layout for easier centering */
+        flex-direction: column;
+        /* Ensure elements stack vertically */
+        justify-content: center;
+        /* Vertically center content */
+        align-items: center;
+        /* Horizontally center content */
+        overflow: hidden;
+        /* Prevent overflow scrolling */
     }
 
     .Banner .primary-title {
-        margin-top: 12%;
-        z-index: 5;
+        font-size: 10vw;
+        margin: 0;
+        position: relative;
+        /* Center it within the flexbox */
+        top: auto;
+        left: auto;
+        transform: none;
     }
 
-    .Banner .BannerIMG2 {
-        width: 50%;
+    .Banner .BannerIMG1 {
+        width: 90%;
         height: auto;
-        top: 95%;
+        max-height: 50vh;
+        position: relative;
     }
 
-    .Banner .BannerIMG3 {
-        width: 50%;
-        height: auto;
-        top: 95%;
+    .Banner .secondary-title {
+        font-size: 6vw;
+        margin-top: 5%;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: center;
+        /* Align text in the center */
     }
 }
 
