@@ -12,7 +12,8 @@ import kb_logo from '../images/logo_KB.avif';
 export default function Welcome() {
   return (
     <div className="welcome-page">
-      <Banner primaryTitle={primaryTitle} imageSrc1={BannerIMG} />
+      <Banner imageSrc1={BannerIMG} />
+      <img className='Title' src={primaryTitle} alt='STEPHEIGHT TITLE'></img>
 
       <div className="quote-section">
         <p className="quote-text">

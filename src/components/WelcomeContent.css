@@ -1,4 +1,17 @@
 /* WelcomePage.css */
+.Title {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14vw;
+    font-weight: bold;
+    z-index: 5;
+    color: #051a6f;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
 
 .welcome-page {
     background-color: #fffeec;
@@ -159,6 +172,12 @@
 
 /* DESKTOP */
 @media (min-width: 768px) {
+    .Title {
+        width: 90%;
+        margin-top: 20%;
+        z-index: 5;
+    }
+
     .quote-section {
         margin-top: 10%;
     }
@@ -231,6 +250,15 @@
 
 /* MOBILE */
 @media (max-width: 768px) {
+    .Title {
+        top: 20%;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        left: auto;
+        transform: none;
+    }
+
     .quote-section {
         display: flex;
         justify-content: flex-end;

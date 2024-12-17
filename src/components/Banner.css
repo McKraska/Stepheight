@@ -5,7 +5,6 @@
     max-width: 100%;
     height: fit-content;
     position: relative;
-    padding-top: 130px;
     overflow: hidden;
 }
 
@@ -43,7 +42,7 @@
 .Banner .BannerIMG1 {
     width: 100%;
     height: auto;
-    position: relative;
+    position: absolute;
 }
 
 .Banner .BannerIMG2 {
@@ -76,34 +75,23 @@
 /* MOBILE */
 @media (max-width: 750px) {
     .Banner {
-        padding-top: 0;
-        /* Remove unnecessary top padding for better centering */
-        height: 100vh;
-        /* Maintain full viewport height */
+        padding-top: 5%;
         display: flex;
-        /* Flex layout for easier centering */
         flex-direction: column;
-        /* Ensure elements stack vertically */
         justify-content: center;
-        /* Vertically center content */
         align-items: center;
-        /* Horizontally center content */
         overflow: hidden;
-        /* Prevent overflow scrolling */
     }
 
     .Banner .primary-title {
-        font-size: 10vw;
+        position: absolute;
+        width: 80%;
         margin: 0;
-        position: relative;
-        /* Center it within the flexbox */
-        top: auto;
         left: auto;
         transform: none;
     }
 
     .Banner .BannerIMG1 {
-        width: 90%;
         height: auto;
         max-height: 50vh;
         position: relative;
@@ -112,19 +100,23 @@
     .Banner .secondary-title {
         font-size: 6vw;
         margin-top: 5%;
-        position: relative;
+        position: absolute;
         top: auto;
         left: auto;
         transform: none;
         text-align: center;
-        /* Align text in the center */
     }
 }
 
 /* DESKTOP */
 @media (min-width: 750px) {
+    .Banner {
+        padding-top: 130px;
+    }
+
     .Banner .primary-title {
-        margin-top: 16%;
+        width: 90%;
+        margin-top: 20%;
         z-index: 5;
     }
 }
