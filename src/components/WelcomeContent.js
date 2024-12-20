@@ -17,9 +17,9 @@ export default function Welcome() {
 
       <div className="quote-section">
         <p className="quote-text">
-          <span className="font-bold">"Stepheight is the natural outcome of a desire to make video games."</span>
+          <span className="font-bold">"Stepheight is the natural outcome of a <i>desire to make video games.</i>"</span>
         </p>
-        <p className="quote-author">-Oskar</p>
+        <p className="quote-author">Oskar</p>
       </div>
 
       <div className="arrow-down">

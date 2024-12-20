@@ -1,4 +1,6 @@
 /* WelcomePage.css */
+
+/* Title Base Styles */
 .Title {
     position: absolute;
     top: 32%;
@@ -13,6 +15,13 @@
     margin: 0 auto;
 }
 
+/* Title Hover Effect */
+.Title:hover {
+    animation: none;
+    /* Disables bounce */
+}
+
+/* Page Background */
 .welcome-page {
     background-color: #fffeec;
     margin: 0;
@@ -20,6 +29,7 @@
     overflow-x: hidden;
 }
 
+/* Promo Section */
 .promo-section {
     display: flex;
     flex-direction: column;
@@ -48,8 +58,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    animation: gif-animation 3s linear infinite;
+    /* Default GIF speed */
+    transition: animation-duration 0.3s ease;
 }
 
+/* Hover Effect for GIF */
+.promo-image img:hover {
+    animation-duration: 1.5s;
+    /* Speeds up the GIF animation */
+}
+
+/* Promo Content */
 .promo-content {
     width: 100%;
     padding: 40px;
@@ -86,6 +106,7 @@
     color: #fff;
 }
 
+/* KB Banner */
 .kb-banner {
     position: relative;
     width: 100%;
@@ -117,6 +138,7 @@
     transform: scale(1.1);
 }
 
+/* Quote Section */
 .quote-section {
     display: flex;
     justify-content: flex-end;
@@ -130,7 +152,6 @@
 .quote-text {
     margin-right: 10px;
     color: #05196b;
-
 }
 
 .quote-author {
@@ -139,6 +160,7 @@
     color: #05196b;
 }
 
+/* Arrow Down */
 .arrow-down {
     text-align: center;
     margin-top: 20%;
@@ -148,29 +170,9 @@
 .arrow-down i {
     font-size: 2em;
     color: #05196ba6;
-    animation: bounce 2s infinite;
 }
 
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-20px);
-    }
-
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
-/* DESKTOP */
+/* Desktop Styles */
 @media (min-width: 768px) {
     .Title {
         width: 90%;
@@ -179,7 +181,7 @@
     }
 
     .quote-section {
-        margin-top: 10%;
+        margin-top: 20%;
     }
 
     .promo-section {
@@ -248,7 +250,7 @@
     }
 }
 
-/* MOBILE */
+/* Mobile Styles */
 @media (max-width: 768px) {
     .Title {
         top: 20%;

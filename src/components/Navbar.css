@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%;
     max-width: 100%;
+    max-height: 10%;
     padding: 0 10%;
     backdrop-filter: blur(2px);
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.4);
